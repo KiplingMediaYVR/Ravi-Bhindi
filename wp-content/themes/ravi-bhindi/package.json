@@ -1,0 +1,31 @@
+{
+  "name": "frontend-boilerplate",
+  "version": "1.0.0",
+  "description": "Front-end Boilerplate",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/murillocamargo/Front-end-Boilerplate.git"
+  },
+  "author": "Murillo Camargo <murillo@murillocamargo.com.br>",
+  "license": "MIT",
+  "homepage": "https://github.com/murillocamargo/Front-end-Boilerplate",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-concurrent": "^2.0.3",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-imagemin": "^3.1.0",
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-newer": "^1.1.1",
+    "grunt-sass": "^3.0.2",
+    "grunt-sass-globbing": "^1.4.0",
+    "grunt-svgmin": "^5.0.0",
+    "jit-grunt": "^0.10.0",
+    "node-sass": "^4.11.0",
+    "time-grunt": "^2.0.0"
+  }
+}

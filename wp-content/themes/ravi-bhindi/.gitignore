@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+/dist
+/assets/css
+/assets/images
+/assets/scripts
+/source/sass/_libs.scss
+/source/sass/_modules.scss
+/source/sass/_components.scss
+/source/sass/_views.scss
+/source/sass/libs/sprite.scss
+/source/sass/libs/_sprite.scss
+Gruntconfig.js
