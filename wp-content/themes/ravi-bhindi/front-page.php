@@ -114,9 +114,49 @@
 
             </div>
 
+            <div class="col">
+                <div class="testimonials-img"></div>
+            </div>
+
         </div>
         <!-- /.row -->
     </div>
     <!-- /.testmonials -->
+
+    <div class="latest-news">
+        <div class="container">
+            <div class="row">
+
+                <?php
+                for ($i = 0; $i < 3; $i++) {
+                    ?>
+
+                    <div class="col">
+                        <div class="post-list-item">
+                            <div class="post-list-img">
+                                <a href="#"><img src="" alt=""></a>
+                            </div>
+
+                            <div class="post-list-body">
+                                <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, numquam.</a></h3>
+                                <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eos fugiat inventore minus nisi perferendis quo quos repellendus sequi voluptatibus!</a></p>
+                                <p><a href="#" class="btn-readmore">Read More</a></p>
+                            </div>
+                            <!-- /.post-list-body -->
+                        </div>
+                        <!-- /.post-list-item -->
+                    </div>
+                    <!-- /.col -->
+
+                    <?php
+                }
+                ?>
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.latest-news -->
 
 <?php get_footer(); ?>
