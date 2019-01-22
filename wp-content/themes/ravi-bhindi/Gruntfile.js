@@ -93,7 +93,7 @@ module.exports = function (grunt) {
 
             jpgDist: {
                 options: {
-                    optimizationLevel: 7,
+                    optimizationLevel: 1,
                     progressive: true
                 },
 
@@ -108,7 +108,7 @@ module.exports = function (grunt) {
             },
             pngDist: {
                 options: {
-                    optimizationLevel: 7
+                    optimizationLevel: 1
                 },
 
                 files: [

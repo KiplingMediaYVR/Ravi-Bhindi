@@ -1,37 +1,65 @@
 <?php get_header(); ?>
 
-    <div class="main-hero">
-        <div class="container">
-            <div class="row">
-
-                <div class="headline">
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, minima.</h2>
-                </div>
-
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </div>
-    <!-- /.main-hero -->
-
     <div class="featured-listings">
         <div class="container">
+
+            <h2>Featured Listings</h2>
+
             <div class="row">
 
-                <div class="col">
-                    <div class="listing-item">
-                        <div class="listing-item-img">
-                            <img src="" alt="">
-                        </div>
-
-                        <div class="listing-item-info">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                        </div>
+                <div class="col col-3">
+                    <div class="listing-item see-all">
+                        <a href="#">See All</a>
                     </div>
                     <!-- /.listing-item -->
                 </div>
                 <!-- /.col -->
+
+                <?php
+                for ($i = 0; $i < 3; $i++) {
+                    ?>
+
+                    <div class="col col-3">
+                        <div class="listing-item">
+                            <div class="listing-item-img">
+                                <img src="https://picsum.photos/400/401" alt="">
+                            </div>
+
+                            <div class="listing-item-info">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            </div>
+                        </div>
+                        <!-- /.listing-item -->
+                    </div>
+                    <!-- /.col -->
+
+                    <?php
+                }
+                ?>
+
+                <div class="w-100"></div>
+
+                <?php
+                for ($i = 0; $i < 4; $i++) {
+                    ?>
+
+                    <div class="col col-3">
+                        <div class="listing-item">
+                            <div class="listing-item-img">
+                                <img src="https://picsum.photos/400/401" alt="">
+                            </div>
+
+                            <div class="listing-item-info">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            </div>
+                        </div>
+                        <!-- /.listing-item -->
+                    </div>
+                    <!-- /.col -->
+
+                    <?php
+                }
+                ?>
 
             </div>
             <!-- /.row -->
@@ -61,9 +89,10 @@
 
     <div class="know-more">
         <div class="container">
-            <div class="row">
 
-                <h3>Know More</h3>
+            <h3>Know More</h3>
+
+            <div class="row">
 
                 <div class="col">
                     <div class="know-more-item">
@@ -94,6 +123,12 @@
     <!-- /.know-more -->
 
     <div class="testimonials">
+
+        <div class="headline">
+            <h3>Testimonials</h3>
+        </div>
+        <!-- /.headline -->
+
         <div class="row">
 
             <div class="col">
@@ -102,8 +137,8 @@
 
                     <div class="testimonials-item">
                         <h3>Karen Burrows</h3>
-                        <div class="testimonials-img">
-                            <img src="" alt="">
+                        <div class="testimonials-author-img">
+                            <img src="https://picsum.photos/200/200" alt="">
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A blanditiis inventore ipsam labore libero nemo non sapiente sed similique. Tenetur.</p>
                     </div>
@@ -125,6 +160,9 @@
 
     <div class="latest-news">
         <div class="container">
+
+            <h3>Latest News</h3>
+
             <div class="row">
 
                 <?php
@@ -134,7 +172,7 @@
                     <div class="col">
                         <div class="post-list-item">
                             <div class="post-list-img">
-                                <a href="#"><img src="" alt=""></a>
+                                <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
                             </div>
 
                             <div class="post-list-body">
