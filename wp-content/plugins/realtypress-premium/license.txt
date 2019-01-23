@@ -1,0 +1,12 @@
+License
+-------
+RealtyPress Premium is licensed under the GNU general public license (http://www.gnu.org/licenses/gpl-2.0.txt).
+
+Support
+-------
+Support is offered to customers with a valid RealtyPress Premium license key. Purchasing a license key gives you access to our support resources and documentation.  Support and automatic product updates are provided for a term of 1 year from the time of purchase. After 1 year a new license will need to be purchased in order to continue receiving support and product updates.
+
+Warranty
+--------
+We do not guarantee our plugin will function with all 3rd party plugins, themes or with all web browsers. We are not responsible for any plugin or theme compatibility conflicts that may occur. It is our policy to support our products as best we can and we will provide support for 3rd party plugin conflicts at our discretion or as time allows. We are not responsible for any data loss or damage that may occur as a result of installing this plugin.
+

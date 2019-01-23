@@ -1,0 +1,76 @@
+
+/**
+ * ------------------------------------------------------------------
+ *  City Link List
+ * ------------------------------------------------------------------
+ */
+
+.rps-city-list-widget .bootstrap-realtypress .city-list {
+  margin:0 0 10px 0;
+  padding: 0 8px;
+  list-style: none;
+  background: #fff;
+}
+
+.rps-city-list-widget .bootstrap-realtypress .city-list li {
+  margin:0;
+  padding: 0;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.rps-city-list-widget .bootstrap-realtypress .city-list li a {
+  padding: 4px;
+  display: block;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out; 
+}
+
+.rps-city-list-widget .bootstrap-realtypress .city-list li a:hover,
+.rps-city-list-widget .bootstrap-realtypress .city-list li a:focus,
+.rps-city-list-widget .bootstrap-realtypress .city-list li a:active {
+  padding-left: 10px;
+  border-left: 4px solid #ddd;
+  text-decoration: none;
+  background: #fafafa;
+}
+
+/**
+ * ------------------------------------------------------------------
+ *  Property Type Link List (rps-property-types)
+ * ------------------------------------------------------------------
+ */
+
+.rps-property-type-list-widget .bootstrap-realtypress .property-types-list {
+  margin:0 0 10px 0;
+  padding: 0 8px;
+  list-style: none;
+  background: #fff;
+}
+
+.rps-property-type-list-widget .bootstrap-realtypress .property-types-list li {
+  margin:0;
+  padding: 0;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.rps-property-type-list-widget .bootstrap-realtypress .property-types-list li a {
+  padding: 4px;
+  display: block;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out; 
+}
+
+.rps-property-type-list-widget .bootstrap-realtypress .property-types-list li a:hover,
+.rps-property-type-list-widget .bootstrap-realtypress .property-types-list li a:focus,
+.rps-property-type-list-widget .bootstrap-realtypress .property-types-list li a:active {
+  padding-left: 10px;
+  border-left: 4px solid #ddd;
+  text-decoration: none;
+  background: #fafafa;
+}

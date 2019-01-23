@@ -1,0 +1,131 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+   .bootstrap-realtypress .rps-property-photo-row .bx-slider li {
+      height: 460px
+   }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+  .bootstrap-realtypress .bx-pager .slide {
+    width:20%;
+  }
+  
+  .bootstrap-realtypress .rps-property-photo-row .bx-pager-wrap {
+    display:none;
+  }
+
+
+   .bootstrap-realtypress .rps-property-photo-row .bx-slider li {
+      height: 460px
+   }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+  .bootstrap-realtypress .rps-text-center-sm {
+    text-align: center !important;
+  }
+
+  .bootstrap-realtypress .bx-pager .slide {
+    width:25%;
+  }
+
+  .bootstrap-realtypress .rps-result-feature-label-sm {
+    float: none;
+    display: inline-block;
+  }
+
+  .text-left-sm {
+    text-align: left !important;
+  }
+
+   .bootstrap-realtypress .rps-property-photo-row .bx-slider li {
+      height: 400px
+   }
+
+  .bootstrap-realtypress .leaflet-popup-content {
+    margin: 0;
+    line-height: 1.4;
+    width: 400px !important;
+  }
+
+  .bootstrap-realtypress .leaflet-popup-content-wrapper {
+    margin-top: 40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+  .bootstrap-realtypress .bx-pager .slide {
+    width:33%;
+  }
+
+  .bootstrap-realtypress .rps-property-photo-row .bx-slider li {
+    height: 300px
+  }
+
+    .bootstrap-realtypress .leaflet-popup-content {
+    margin: 0;
+    line-height: 1.4;
+    width: 200px !important;
+  }
+
+  .bootstrap-realtypress .leaflet-popup-content-wrapper {
+    margin-top: 40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .bootstrap-realtypress .leaflet-popup .map-pop-left {
+    float:none;
+    width:200px;
+    overflow:hidden;
+    border-right: 2px solid #efefef;
+  }
+  .bootstrap-realtypress .leaflet-popup .map-pop-right {
+    float:none;
+    width:200px;
+  }
+
+  .bootstrap-realtypress .leaflet-popup .map-popup-image {
+    width:200px;
+    /*border-bottom: 2px solid #ddd !important;*/
+  }
+
+  .bootstrap-realtypress .leaflet-popup  .rps-popup-description {
+    display:none;
+  }
+
+}
+
+@media screen and (max-width: 380px) {
+
+  .bootstrap-realtypress .rps-property-photo-row .bx-slider li {
+    height: 200px;
+  }
+
+  .bootstrap-realtypress .rps-property-photo-row .bx-viewport {
+      height: 200px !important;
+  }
+  
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
+  .bootstrap-realtypress .bx-pager .slide {
+    width:50%;
+  }
+
+
+}

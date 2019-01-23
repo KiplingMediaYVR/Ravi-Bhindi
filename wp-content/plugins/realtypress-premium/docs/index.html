@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+	
+	<title>RealtyPress Premium WordPress CREA DDF&reg; Plugin | Documentation</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/css/print.min.css" type="text/css" media="print">
+</head>
+<body>
+<div id="wrapper">
+
+	<!-- Pager Top Anchor -->
+	<div id="page-top"></div>
+
+	<a href="#page-top" class="page-top">
+		<img src="assets/images/back-to-top.png" style="width:80px;"/>
+	</a>
+
+	<div id="sidebar">
+		<div class="sidebar-inner">
+
+			<!-- Logo -->
+			<img src="assets/images/realtypress-logo-tagline.png" class="sidebar-logo" />		
+
+			<hr class="small">
+
+			<!-- Navigation -->
+			<ol id="nav">
+
+				<li><a href="#introduction" class="title">Introduction</a></li>
+				<ul>
+					<li><a href="#introduction_to_crea_ddf">Introduction to CREA DDF<sup>&reg;</sup></a></li>
+					<li><a href="#introduction_to_realtypress_premium">Introduction to RealtyPress Premium</a></li>
+					<li><a href="#introduction_to_realtypress_data_sync">Introduction to RealtyPremium Data Sync</a></li>
+				</ul>
+
+				<li><a href="#getting_started" class="title">Getting Started</a></li>
+				<ul>
+					<li><a href="#requirements">Requirements</a></li>
+					<li><a href="#installation">Installation</a></li>
+					<li><a href="#license_activation">License Activation</a></li>
+				</ul>
+
+				<li><a href="#realtypress_ddf_and_sync_setup" class="title">RealtyPress DDF<sup>&reg;</sup> and Sync Setup</a></li>
+				<ul>
+				<li><a href="#configure_realtypress_crea_setup_a_feed">Create a DDF<sup>&reg;</sup> feed at RealtorLink<sup>&reg;</sup></a></li>
+					<li><a href="#configure_realtypress_crea_ddf_data_sync">Configure RealtyPress DDF<sup>&reg;</sup> Data Sync</a></li>
+					<li><a href="#configure_realtypress_cron">Configure RealtyPress CRON (scheduler)</a></li>
+				</ul>
+
+				<li><a href="#administration" class="title">Administration</a></li>
+				<ul>
+					<li><a href="#general_general">General &raquo; General</a></li>
+					<li><a href="#general_analytics">General &raquo; Analytics</a></li>
+					<li><a href="#general_contact">General &raquo; Contact</a></li>
+					<li><a href="#general_social">General &raquo; Social</a></li>
+					<li><a href="#general_api_keys">General &raquo; API Keys</a></li>
+					<li><a href="#crea_ddf_connections">CREA DDF<sup>&reg;</sup> Data &raquo; DDF<sup>&reg;</sup> Connection</a></li>
+					<li><a href="#crea_ddf_sync">CREA DDF<sup>&reg;</sup> Data &raquo; DDF<sup>&reg;</sup> Sync Options</a></li>
+					<li><a href="#appearance_theme">Appearance &raquo; Theme</a></li>
+					<li><a href="#appearance_listing_results">Appearance &raquo; Listing Results</a></li>
+					<li><a href="#appearance_single_listing">Appearance &raquo; Single Listing</a></li>
+					<li><a href="#system_system">System &raquo; System</a></li>
+					<li><a href="#system_libraries">System &raquo; Libraries</a></li>
+					<li><a href="#system_debug">System &raquo; Debug</a></li>
+					<li><a href="#system_logs">System &raquo; Logs</a></li>
+					<li><a href="#license_options">License &raquo; License</a></li>
+					<li><a href="#support_support">Support &raquo; Support</a></li>
+					<li><a href="#support_documentation">Support &raquo; Documentation</a></li>
+				</ul>
+
+				<li><a href="#shortcodes" class="title">Shortcodes</a></li>
+				<ul>
+					<li><a href="#shortcode_listings"> Listing Results</a></li>
+					<li><a href="#shortcode_listing_carousel"> Listing Carousel</a></li>
+					<li><a href="#shortcode_listing_slider"> Listing Slider</a></li>
+					<li><a href="#shortcode_search_box"> Search Box</a></li>
+					<li><a href="#shortcode_search_business"> Search Business</a></li>
+					<li><a href="#shortcode_search_form">Search Form</a></li>
+					<li><a href="#shortcode_single_listing">Single Listing</a></li>
+				</ul>				
+
+				<li><a href="#widgets" class="title">Widgets</a></li>
+				<ul>
+					<li><a href="#widget_cities_list">Cities List</a></li>
+					<li><a href="#widget_contact_form">Contact Form</a></li>
+					<li><a href="#widget_favorites_box">Favorites Box</a></li>
+					<li><a href="#widget_listing_carousel">Listing Carousel</a></li>
+					<li><a href="#widget_listing_preview_box">Listing Preview Box</a></li>
+					<li><a href="#widget_property_types_list">Property Types List</a></li>
+					<li><a href="#widget_search_box">Search Box</a></li>
+					<li><a href="#widget_search_form">Search Form</a></li>
+				</ul>
+
+				<li><a href="#sidebars" class="title">Sidebars</a></li>
+				<ul>
+					<li><a href="#results_left_sidebar">Listing Results - Left Sidebar</a></li>
+					<li><a href="#results_right_sidebar">Listing Results - Right Sidebar</a></li>
+					<li><a href="#single_left_sidebar">Single Listing - Left Sidebar</a></li>
+					<li><a href="#single_right_sidebar">Single Listing - Right Sidebar</a></li>
+				</ul>
+
+				<li><a href="#child_themes" class="title">Child Themes</a></li>
+				<ul>
+					<li><a href="#child_themes">Creating a Child Theme</a></li>
+				</ul>
+
+				<li><a href="#hooks" class="title">Hooks</a></li>
+				<ul>
+					<li><a href="#hooks_listing_results">Listing Results Hooks</a></li>
+					<li><a href="#hooks_listing_results_sidebar">Listing Results Sidebar Hooks</a></li>
+					<li><a href="#hooks_single_listing">Single Listing Hooks</a></li>
+					<li><a href="#hooks_single_listing_sidebar">Single Listing Sidebar Hooks</a></li>
+				</ul>
+
+				<li><a href="#filters" class="title">Filters</a></li>
+
+			</ol>
+		</div><!-- .sidebar-inner (end) -->
+	</div><!-- #sidebar (end) -->
+
+	<div id="content">
+		<div class="content-inner">
+			
+			<!-- Logo -->
+			<img src="assets/images/realtypress-logo-tagline.png" class="intro-logo" style="margin: 30px auto;" />
+
+			<hr>
+
+			<div id="chapter-introduction" class="chapter">
+				<div class="chapter-inner">
+
+					<!-- ============ -->
+					<!-- Introduction  -->
+					<!-- ============ -->
+
+					<h1 id="introduction">Introduction</h1>
+
+					<h2 id="introduction_to_crea_ddf">Introduction to CREA DDF<sup>&reg;</sup></h2>
+					<p>CREA created the Data Distribution Facility (DDF<sup>&reg;</sup>) to enable CREA’s members to easily disseminate MLS<sup>&reg;</sup> listing content to multiple websites, and to ensure that MLS<sup>&reg;</sup> listing content that is displayed on these websites is accurate, up to date, and uses CREA’s trademarks correctly.</p>
+					<p>Members can register at RealtorLink<sup>&reg;</sup> to receive a data feed for their National Shared Pool and Member Websites. After registering for a data feed, Members will need to prepare their sites to receive the data.</p>
+
+					<h4>National Shared Pool Module</h4>
+					<p>Participants can contribute their listings to a national data pool and receive a feed from that pool to display all other participants’ listings on their websites. Participants can filter the data feed they receive based on objective criteria. Participants can also choose to contribute their listings to a data feed made available for display on participating franchisors’ websites.</p>
+
+					<h4>Member Website Feed</h4>
+					<p>Participants can use this module to receive a data feed of their listings to display on their own website in order to track the success of their website as a marketing tool.</p>
+
+					<h2 id="introduction_to_realtypress_premium">Introduction to RealtyPress Premium</h2>
+					<p>RealtyPress Premium is an advanced real estate WordPress CREA DDF<sup>&reg;</sup> plugin, allowing you to turn any WordPress website or blog into a fully functional CREA DDF<sup>&reg;</sup> connected real estate listing website. This plugin is ideal for Canadian REALTORS<sup>&reg;</sup>, Agents, Brokers and Real Estate Agencies looking to add their listings to their website without having to manually enter or update listing data on a regular basis.</p>
+					<p>After installing and configuring RealtyPress Premium, listing data is automatically imported to your local WordPress database from the CREA DDF<sup>&reg;</sup> (Data Distribution Facility) and is updated every 24 hours. Sold listings are removed, changed listings are updated, and new listings are imported with every update, giving you a truly hands free real estate listing website.</p>
+
+					<h2 id="introduction_to_realtypress_data_sync">Introduction to RealtyPress Data Sync</h2>
+					<p>RealtyPress on activation schedules a CREA DDF<sup>&reg;</sup> data feed synchronization to run daily.</p>
+
+					<p>RealtyPress by default utilizes the WP-CRON (WordPress Cron) to schedule and trigger data feed synchronizations with CREA DDF<sup>&reg;</sup> servers. Unix Cron is also available and the better method of scheduling and triggering syncs.</p>
+
+					<h4>WP-CRON (WordPress Cron)</h4>
+
+					<p>WP-CRON is a web-based system and can only run when someone visits the site. Therefore, when someone navigates to your WordPress site, WP-CRON checks to see if any scheduled tasks are due to be run. Ultimately this can be the downfall of WP-CRON, if your site receives less than one visitor per day the WP-CRON schedule will not be checked for due tasks.</p>
+
+					<h4>UNIX CRON</h4>
+
+					<p>CRON is a time-based job scheduler in Unix-like computer operating systems. CRON is used to schedule jobs (commands or shell scripts) to run periodically at fixed times, dates, or intervals. It typically automates system maintenance or administration.  Using a unix CRON fixes the downfalls with WordPress CRON and allows you to trigger the WordPress Cron job to run at it's scheduled interval rather than relying on user visits to trigger your CRON job.</p>
+
+					<p><strong>We recommend using UNIX CRON if available.</strong></p>
+
+					<hr>
+
+					<!-- =============== -->
+					<!-- Getting Started  -->
+					<!-- =============== -->
+
+					<h1 id="getting_started">Getting Started</h1>
+
+					<h2 id="requirements">Requirements</h2>
+					<p>RealtyPress Premium requires the following minimum server requirements.</p>
+					<p>
+					- WordPress 3.9 or higher<br>
+					- PHP 5.3.0 or higher<br>
+					- MySQL 5.0 or higher<br>
+					- CURL v7.19.7 or higher<br>
+					- mod_rewrite Apache Module
+					</p>
+
+					<h2 id="installation">Installation</h2>
+					<ol>
+						<li>Go to <strong>Plugins » Add New</strong>.</li>
+						<li>Click on the <strong>Upload Plugin</strong> button.</li>
+						<li>Click the <strong>Choose File</strong> button and select the RealtyPress plugin zip file downloaded after purchasing RealtyPress, then click <strong>Install Now</strong>.</li>
+						<li>Once complete click the <strong>Activate</strong> plugin link.</li>
+					</ol>
+
+					<h2 id="license_activation">License Activation</h2>
+					<p>Now that RealtyPress Premium has been installed we're ready to activate your license.</p>
+					<ol>
+						<li>Go to <strong>RealtyPress » License</strong>.</li>
+						<li>Enter your license key into the <strong>License Key</strong> text box and click <strong>Activate License</strong>.</li>
+					</ol>
+
+					<p>If activation was successful the system will state the license is active and show the license expiry date, as well as the option to deactivate the license should the need arise.</p>
+
+					<hr>
+
+					<!-- =============================== -->
+					<!-- RealtyPress DDF and Sync Setup -->
+					<!-- =============================== -->
+
+					<h1 id="realtypress_ddf_and_sync_setup">RealtyPress DDF<sup>&reg;</sup> and Sync Setup</h1>
+
+					<h2 id="configure_realtypress_crea_setup_a_feed">Create a DDF feed at RealtorLink</h2>
+
+					<p>When setting up your CREA DDF® Data Feed you will be guided by the DDF® Data Feed Wizard.</p>
+
+					<p><strong>1. Go to the DDF® web application</strong> at <a href="http://tools.realtorlink.ca/Distribution/">http://tools.realtorlink.ca/Distribution/</a> click on the Data Feed icon to get to the Data Feeds page. You will be prompted to login first if you are not already.</p>
+
+					<p><strong>2.</strong> On the "Data Feeds" Page, <strong>click on the "Add a Data Feed" button</strong> to go to the DDF® Data Feed Wizard.</p>
+
+					<p><strong>3.</strong> You will be presented with a guided set of steps to help you create your CREA DDF® Data Feed. <strong>First we need to choose the type of CREA DDF® Data Feed</strong> we would like to create.</p>
+
+					<p><strong>National Shared Pool</strong> - National Shared Pool as a Data Feed Type gives you access to thousands of listings that have been contributed by Brokerage Owners across the country, you can filter those listings by boards, property types, postal codes, price, sale or rent, etc.  This is the most common selection, be sure not to set your filters appropriately so you are not pulling more listings than your server can handle.  Most users of RealtyPress Premium filter by their board.</p>
+
+					<p><strong>Member Website Feed</strong> - My Listings as a Data Feed Type gives you access to all the Listing Content that belongs to you.  Choose this selection if you want only your listings to appear on your site.</p>
+
+					<p><strong>Member Website Feed</strong> - One or More Offices as a Data Feed Type allows Brokerage Owners and Salespeople, with their Brokerage Owner permission, to pull a feed containing all the listing content belonging to one or more offices in their Brokerage.</p>
+
+					<p><strong>4.</strong> Now that we’ve created the feed we need to <strong>identify who will operate the Data Feed</strong>.  Select the "I will not be engaging a 3rd Party Technology Provider to operate my Data Feed." radio button.</p>
+
+					<p><strong>5.</strong> Next we’ll <strong>provide the Technical Contact Information</strong> for your Data Feed.  Your contact information should already be filled out, if not provide the requested details.</p>
+
+					<p><strong>6.</strong> We now need to <strong>provide the URL of the website that will be connecting</strong> to the CREA DDF® Data Feed.  This will be the url of the site you have RealtyPress Premium installed on.</p>
+
+					<p><strong>7. We’re ready to filter our feed</strong>, select the "I want to use filters to limit the listings provided by the Data Feed" radio button.</p>
+
+					<p><strong>8. Set the appropriate filters</strong> to customize the listing content delivered in your Data Feed to meet your needs, most realtors simply choose their board, but this depends on your needs.  Once filters are set click the "Click to review your Data Feed before Saving it" button.</p>
+
+					<p><strong>9. Review the Data Feed Summary</strong> of your CREA DDF&reg; Data Feed settings for errors, and <strong>read the Data Distribution Facilities Terms of Use</strong>.  When you’ve finished reviewing the Data Feed Summary and Terms of Use, click the <strong>"Click Here to Agree to the Terms of Use and Save your Data Feed" button</strong>.</p>
+
+					<p>Your feed has been created.  The username and password will be emailed to the email address specified in the "Technical Contact Information" email field in number of 5 of this guide.</p>
+
+					<div class="alert-doc"><p><strong class="text-blue">Feeds are not immediately live, CREA does give a propagation time of up to 24 hours.  <br>In our experience it's usually active within a few hours of creation.</strong></p></div>
+
+					<p>If you have specific questions regarding your CREA DDF® Data Feed, please contact CREA member support:</p>
+					<p>
+						<strong>1-888-237-7945</strong><br>
+						<a href="mailto:support@crea.ca">support@crea.ca</a>
+					</p>
+
+					<h2 id="configure_realtypress_crea_ddf_data_sync">Configure RealtyPress DDF<sup>&reg;</sup> Data Sync</h2>
+					<ol>
+						<li>Go to <strong>RealtyPress » CREA DDF<sup>&reg;</sup> Data</strong>.</li>
+						<li>Select <strong>Live</strong> from the <strong>Connection Type</strong> dropdown.</li>
+						<li>Enter the DDF<sup>&reg;</sup> Username and Password issued when you created your data feed at RealtorLink and click the <strong>Save Changes</strong> button. Upon saving your credentials will be tested to ensure a successful connection can be established. The results of the connection test will be displayed at the top of the screen.</li>
+						<li>If the connection test came back successful enable the CRON job found found in <strong>RealtyPress » CREA DDF<sup>&reg;</sup> Data » DDF<sup>&reg;</sup> Sync Options</strong> tab. If the connection was not successful check step 2 and repeat step 3.</li>
+					</ol>
+
+					<h2 id="configure_realtypress_cron">Configure RealtyPress CRON (scheduler)</h2>
+
+					<p>RealtyPress by default does not enable the sync cron job. You must go to RealtyPress » CREA DDF<sup>&reg;</sup> Data » DDF<sup>&reg;</sup> Sync Options tab and check the CRON Enabled check box and save the changes.</p>
+
+					<p>RealtyPress on activation schedules a CREA DDF<sup>&reg;</sup> data feed synchronization to run daily.  RealtyPress by default utilizes the WP-CRON (WordPress Cron) to schedule and trigger data feed synchronizations with CREA DDF<sup>&reg;</sup> servers. Unix Cron is also available and the better method of scheduling and triggering syncs.</p>
+
+					<hr>
+
+					<!-- ============== -->
+					<!-- Administration -->
+					<!-- ============== -->
+
+					<h1 id="administration">Administration</h1>
+
+					<h3 class="sub-title" id="general_options">General Options</h3>
+					<p>The general options page holds settings used across RealtyPress Premium.</p>
+					<h4 class="mb0" id="general_general">General &raquo; General</h4>
+					<p>Manage general options.</p>
+					<h4 class="mb0" id="general_analytics">General &raquo; Analytics</h4>
+					<p>Manage analytics options.</p>
+					<h4 class="mb0" id="general_contact">General &raquo; Contact</h4>
+					<p>Manage contact form options.</p>
+					<h4 class="mb0" id="general_social">General &raquo; Social</h4>
+					<p>Manage social options.</p>
+					<h4 class="mb0" id="general_api_keys">General &raquo; API Keys</h4>
+					<p>Manage API keys.</p>
+
+					<h3 class="sub-title" id="crea_ddf_options">CREA DDF<sup>&reg;</sup> Data Options</h3>
+					<p>The DDF<sup>&reg;</sup> Data Sync Page allows you modify the CREA DDF<sup>&reg;</sup> settings.</p>
+					<h4 class="mb0" id="crea_ddf_connections">CREA DDF<sup>&reg;</sup> Data &raquo; DDF<sup>&reg;</sup> Connections Tab</h4>
+					<p>Manage your CREA DDF<sup>&reg;</sup>connection details.</p>
+					<h4 class="mb0" id="crea_ddf_sync">CREA DDF<sup>&reg;</sup> Data &raquo; DDF<sup>&reg;</sup> Sync Options Tab</h4>
+					<p>Manage RealtyPress Cron options and CREA DDF<sup>&reg;</sup>syncing.</p>
+
+					<h3 class="sub-title" id="appearance_options">Appearance Options</h3>
+					<p>The DDF<sup>&reg;</sup> Data Sync Page allows you modify the CREA DDF<sup>&reg;</sup>settings.</p>
+					<h4 class="mb0" id="appearance_theme">Appearance &raquo; Theme Tab</h4>
+					<p>Manage theme appearance options</p>
+					<h4 class="mb0" id="appearance_listing_results">Appearance &raquo; Listing Results Tab</h4>
+					<p>Manage listing results appearance options</p>
+					<h4 class="mb0" id="appearance_single_listing">Appearance &raquo; Single Listing Tab</h4>
+					<p>Manage single listings appearance options</p>
+
+					<h3 class="sub-title" id="system_options">System Options</h3>
+					<p>The system page is where you access system information, configure RealtyPress libraries, use debug tools, and view logs.</p>
+					<h4 class="mb0" id="system_system">System &raquo; System</h4>
+					<p>View and download system report..</p>
+					<h4 class="mb0" id="system_libraries">System &raquo; Libraries</h4>
+					<p>Manage RealtyPress libraries.</p>
+					<h4 class="mb0" id="system_debug">System &raquo; Debug</h4>
+					<p>RealtyPress debugging options.</p>
+					<h4 class="mb0" id="system_logs">System &raquo; Logs</h4>
+					<p>View RealtyPress CREA DDF<sup>&reg;</sup> sync logs</p>
+
+					<h3 class="sub-title" id="license_options">License Options</h3>
+					<p>The license page is where you manage your RealtyPress Premium license.</p>
+
+					<h3 class="sub-title" id="support_options">Support Options</h3>
+					<p>The support page is your go to place when you're having issues or just have questions.</p>
+					<h4 class="mb0" id="support_support">Support &raquo; Support Tab</h4>
+					<p>RealtyPress support options.</p>
+					<h4 class="mb0" id="support_documentation">Support &raquo; Documentations Tab</h4>
+					<p>RealtyPress Premium documentation.</p>
+
+					<!-- ========== -->
+					<!-- Shortcodes -->
+					<!-- ========== -->
+
+					<hr>
+
+					<h1 id="shortcodes">Shortcodes</h1>
+
+					<h3>What's a Shortcode?</h3>
+					<p>In short (no pun intended), WordPress shortcodes are special tags that allow users too quickly and easily pull bits of predefined functionality into their pages and posts.</p>
+
+					<!-- ======== -->
+					<!-- Listings -->
+					<!-- ======== -->
+					
+					<h3 class="sub-title" id="shortcode_listings">Listing Results | Shortcode</h3>
+					<p>The [rps-listings] shortcode allows you to embed a custom listing result, in grid, list, or map view, with or without filtering, headers, etc. This is the most powerful shortcode in RealtyPress and contains advanced filtering capabilities.</p>
+
+					<p><strong>Options Available</strong></p>
+					<p>
+						<span class="rps-option-available">view</span>
+						<span class="rps-option-available">style</span>
+						<span class="rps-option-available">show_header</span>
+						<span class="rps-option-available">show_filters</span>
+						<span class="rps-option-available">show_look_box</span>
+						<span class="rps-option-available">show_views</span>
+						<span class="rps-option-available">show_sort</span>
+						<span class="rps-option-available">show_per_page</span>
+						<span class="rps-option-available">agent_id</span>
+						<span class="rps-option-available">office_id</span>
+						<span class="rps-option-available">property_type</span>
+						<span class="rps-option-available">building_type</span>
+						<span class="rps-option-available">transaction_type</span>
+						<span class="rps-option-available">street_address</span>
+						<span class="rps-option-available">city</span>
+						<span class="rps-option-available">province</span>
+						<span class="rps-option-available">postal_code</span>
+						<span class="rps-option-available">community_name</span>
+						<span class="rps-option-available">neighbourhood</span>
+						<span class="rps-option-available">bedrooms</span>
+						<span class="rps-option-available">bathrooms</span>
+						<span class="rps-option-available">price</span>
+						<span class="rps-option-available">open_house</span>
+						<span class="rps-option-available">description</span>
+					</p>
+
+					<div class="alert-doc">
+							<h4 class="text-blue mb0">KEEP IN MIND!</h4> 
+							<p>
+								<strong>Shortcode filtering options can be used in conjunction create advanced filters.</strong><br>
+								<small>The example below will display Single Family homes located in Toronto, containing 3-6 Bedrooms, 4-6 Bathrooms and are priced between $500,000 to $750,000.</small>
+							</p>
+						<pre>example: [rps-listings city="Toronto" property_type="Single Family" price=500000,750000 bedrooms="3,6" bathrooms="4,6"]</pre>
+					</div>
+					
+					<!-- View -->
+					<h5>view <small>(optional)</small></h5>
+					<p>Specify result view to use for this listing result.</p>
+					<small>
+						Values: <strong class="text-blue">grid / list / map</strong><br>
+						Default: Set value in Appearance=>Listing Results, if no value has been set than grid is used.
+					</small>
+					<pre>example: [rps-listings view=map]</pre>
+
+					<!-- Style -->
+					<h5>style <small>(optional)</small></h5>
+					<p>Specify page layout to use for use for this listing result.</p>
+					<small>
+						Values: <strong class="text-blue">full-width / sidebar-right / sidebar-left</strong><br>
+						Default: <strong class="text-blue">full-width</strong>
+					</small>
+					<pre>example: [rps-listings style=sidebar-right]</pre>
+
+					<!-- show_header -->
+					<h5>show_header <small>(optional)</small></h5>
+					<p>Specify whether to display the result header above the results. This option hides, posts per page, sort, and filtering options.</p>
+					<small>
+						Values: <strong class="text-blue">true / false</strong><br>
+						Default: <strong class="text-blue">true</strong>
+					</small>
+					<pre>example: [rps-listings show_header=false]</pre>
+
+					<!-- show_filters -->
+					<h5>show_filters <small>(optional)</small></h5>
+					<p>Specify whether to display filter forms with the results, allowing users to further refine their search.</p>
+					<small>
+						Values: <strong class="text-blue">true / false</strong><br>
+						Default: <strong class="text-blue">true</strong>
+					</small>
+					<pre>example: [rps-listings show_filters=false]</pre>
+
+					<!-- show_look box -->
+					<h5 class="mb0">show_look_box <small>(optional)</small></h5>
+					<p>Specify whether to display a search box allowing searches by specified area above mapped results. This option only applies to the map result view.</p>
+					<small>
+						Values: <strong class="text-blue">true / false</strong><br>
+						Default: <strong class="text-blue">true</strong>
+					</small>
+					<pre>example: [rps-listings show_look_box=false]</pre>
+
+					<h5 class="mb0">show_views <small>(optional)</small></h5>
+					<p>Specify whether to display result view options, allowing users to switch from grid, list, or mapped result views.</p>
+					<small>
+						Values: <strong class="text-blue">true / false</strong><br>
+						Default: <strong class="text-blue">true</strong>
+					</small>
+					<pre>example: [rps-listings show_views=false]</pre>
+
+					<h5 class="mb0">show_sort <small>(optional)</small></h5>
+					<p>Specify whether to display sorting options, allowing users to sort the results.</p>
+					<small>
+						Values: <strong class="text-blue">true / false</strong><br>
+						Default: <strong class="text-blue">true</strong>
+					</small>
+					<pre>example: [rps-listings sort=false]</pre>
+
+					<h5 class="mb0">show_per_page <small>(optional)</small></h5>
+					<p>Specify whether to display listings per page options, allowing users to select the number of listings to show per page. This option only applies to grid and list result views.</p>
+					<small>
+						Values: <strong class="text-blue">true / false</strong><br>
+						Default: <strong class="text-blue">true</strong>
+					</small>
+					<pre>example: [rps-listings sort=false]</pre>
+
+					<h5 class="mb0">agent_id <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific agent enter the Id of the agent in the agent_id option. Agent Id is retained if user submits filtering options in the listings results filter form.</p>
+					<small>
+						Values: <strong class="text-blue">Agent id's can be found under "Listings" in your WordPress admin in brackets after the agent name.</strong><br>
+					</small>
+					<pre>example: [rps-listings agent_id=12598]</pre>
+
+					<h5 class="mb0">office_id <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific office enter the Id of the office in the office_id option. Office Id is retained if user submits filtering options in the listings results filter form.</p>
+					<small>
+						Values: <strong class="text-blue">Office id's can be found under "Listings" in your WordPress admin in brackets after the office name.</strong><br>
+					</small>
+					<pre>example: [rps-listings office_id=849547]</pre>
+
+					<h5 class="mb0">property_type <small>(optional)</small></h5>
+					<p>To retrieve listings with a specific property type enter the property type in the property_type option.</p>
+					<small>
+						Values: <strong class="text-blue">Agriculture / Business / Industrial / Multi-Family / Office / Other / Retail / Single Family / Vacant Land</strong><br>
+					</small>
+					<pre>example: [rps-listings property_type="Single Family"]</pre>
+
+					<h5 class="mb0">building_type <small>(optional)</small></h5>
+					<p>To include listings with a specific building type enter the building type in the property_type option.</p>
+					<small>
+						Values: <strong class="text-blue">Apartment / Commercial Apartment / Commercial Mix / Duplex / Fourplex / Garden Home / House / Manufactured Home / Manufactured Home/Mobile / Manufacturing / Mobile Home / Modular / Multi-Family / Industrial / Multi-Tenant Industrial / No Building / Offices / Other / Parking / Recreational / Residential Commercial Mix / Retail / Row / Townhouse / Special Purpose / Triplex / Two Apartment House / Unknown / Warehouse</strong>
+					</small>
+					<pre>example: [rps-listings building_type="Apartment"]</pre>
+
+					<h5 class="mb0">transaction_type <small>(optional)</small></h5>
+					<p>To retrieve listings with a specific transaction type enter the transaction type in the transaction_type option.</p>
+					<small>
+						Values: <strong class="text-blue">For Sale / For Lease / For Rent</strong><br>
+					</small>
+					<pre>example: [rps-listings transaction_type='For Sale']</pre>
+
+					<h5 class="mb0">street_address <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific street enter a partial street name or street address in the street_address_option.</p>
+					<pre>example: [rps-listings street_address='348 Waterloo']</pre>
+
+					<h5 class="mb0">city <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific city enter the city in the city option.</p>
+					<small>
+						<strong>You can include more than one value, by comma separating the values.</strong><br>
+					</small>
+					<pre>example: [rps-listings city='Toronto']</pre>
+
+					<h5 class="mb0">province <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific Ontario enter the province in the province option. </p>
+					<pre>example: [rps-listings province=Ontario]</pre>
+
+					<h5 class="mb0">postal_code <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific postal code enter the postal code in the postal code option. The postal_code options allows the use of wildcards "*" in postal codes.</p>
+					<pre>example: [rps-listings postal_code="T8H*,T8J*"]</pre>
+
+					<h5 class="mb0">community_name <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific community enter the name of the community in the community option.</p>
+					<small>
+						<strong>You can include more than one value, by comma separating the values.</strong><br>
+					</small>
+					<pre>example: [rps-listings community_name="Old Toronto"]</pre>
+
+					<h5 class="mb0">neighbourhood <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific neighbourhood enter the name of the neighbourhood in the neighbourhood option.</p>
+					<small>
+						<strong>You can include more than one neighbourhood, by comma separating the values.</strong><br>
+					</small>
+					<pre>example: [rps-listings neighbourhood="Spring Ridge,Stoney Creek"]</pre>
+
+					<h5 class="mb0">bedrooms <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific number of bedrooms or range of bedrooms, enter comma separated values in the bedrooms option.</p>
+					<small>
+						Values: <strong class="text-blue">The first comma separated value is the min number of bedrooms the second is the max, if you would like a fixed number of bedrooms both values should be the same.</strong><br>
+					</small>
+					<pre>example: [rps-listings bedrooms=3,4]</pre>
+
+					<h5 class="mb0">bathrooms <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific number of bathrooms or range of bathrooms, enter comma separated values in the bathrooms option.</p>
+					<small>
+						Values: <strong class="text-blue">The first comma separated value is the min number of bathrooms the second is the max, if you would like a fixed number of bathrooms both values should be the same.</strong><br>
+					</small>
+					<pre>example: [rps-listings bathrooms=2,3]</pre>
+
+					<h5 class="mb0">price <small>(optional)</small></h5>
+					<p>To retrieve listings for a price range, enter comma separated values in the price option. The first comma separated value is the min price, the second is the max price.</p>
+					<small>
+						Values: <strong class="text-blue">The first comma separated value is the min price of a listing the second is the max. Do not enter commas in your price or a $ sign, numeric values only.</strong><br>
+					</small>
+					<pre>example: [rps-listings bathrooms=2,3]</pre>
+
+					<h5 class="mb0">open_house <small>(optional)</small></h5>
+					<p>To retrieve only listings with upcoming open house, set the open_house option to "true".</p>
+					<small>
+						Values: <strong class="text-blue">true / false</strong><br>
+						Default: <strong class="text-blue">false</strong>
+					</small>
+					<pre>example: [rps-listings open_house=true]</pre>
+
+					<h5 class="mb0">description <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific keyword in the description enter the text you would like to search for in the description option. You can include more than one description phrase or word, by separating multiples with a "|" character.  This returns a result consisting on only listings found with a description containing the specified description(s). Description is retained if user submits filtering options in the listings results filter form.</p>
+					<pre>example: [rps-listings description="foreclose,bankruptcy,distress"]</pre>
+
+					<!-- Listing Carousel -->
+					<!-- ================ -->		
+
+					<h3 class="sub-title" id="shortcode_listing_carousel">Listing Carousel | Shortcode</h3>
+					<p>The [rps-listing-carousel] shortcode allows you to embed a listing carousel showing a single or multiple listings simultaneously. Listings can be retrieved by and agent id or office id.</p>
+
+					<p>
+						<span class="rps-option-available">title</span>
+						<span class="rps-option-available">agent_id</span>
+						<span class="rps-option-available">office_id</span>
+						<span class="rps-option-available">property_type</span>
+						<span class="rps-option-available">building_type</span>
+						<span class="rps-option-available">transaction_type</span>
+						<span class="rps-option-available">street_address</span>
+						<span class="rps-option-available">city</span>
+						<span class="rps-option-available">province</span>
+						<span class="rps-option-available">postal_code</span>
+						<span class="rps-option-available">community_name</span>
+						<span class="rps-option-available">neighbourhood</span>
+						<span class="rps-option-available">bedrooms</span>
+						<span class="rps-option-available">bathrooms</span>
+						<span class="rps-option-available">price</span>
+						<span class="rps-option-available">open_house</span>
+						<span class="rps-option-available">description</span>
+						<span class="rps-option-available">style</span>
+						<span class="rps-option-available">num_slides</span>
+						<span class="rps-option-available">min_slides</span>
+						<span class="rps-option-available">max_slides</span>
+						<span class="rps-option-available">move_slides</span>
+						<span class="rps-option-available">pager_type</span>
+						<span class="rps-option-available">auto_rotate</span>
+						<span class="rps-option-available">auto_controls</span>
+						<span class="rps-option-available">speed</span>
+						<span class="rps-option-available">captions</span>
+						<span class="rps-option-available">class</span>
+					</p>
+
+					<div class="alert-doc">
+							<h4 class="text-blue mb0">KEEP IN MIND!</h4> 
+							<p>
+								<strong>Shortcode filtering options can be used in conjunction create advanced filters.</strong><br>
+								<small>The example below will display Single Family homes located in Toronto, containing 3-6 Bedrooms, 4-6 Bathrooms and are priced between $500,000 to $750,000.</small>
+							</p>
+						<pre>example: [rps-listings city="Toronto" property_type="Single Family" price=500000,750000 bedrooms="3,6" bathrooms="4,6"]</pre>
+					</div>
+
+					<h5 class="mb0">title <small>(optional)</small></h5>
+					<p>Specify an optional title for the carousel which is displayed in a carousel header left aligned.</p>
+					<small>Default: empty and no title or carousel header is shown.</small>
+					<pre>example: [rps-listing-carousel title='My Recent Listings']</pre>
+
+
+					<h5 class="mb0">agent_id <small>(optional)</small></h5>
+					<p>To include listings for a specific agent enter the Id of the agent in the agent_id option.</p>
+					<small>
+						Values: <strong class="text-blue">Agent id's can be found under "Listings" in your WordPress admin in brackets after the agent name.</strong><br>
+					</small>
+					<pre>example: [rps-listing-carousel agent_id=12598]</pre>
+
+					<h5 class="mb0">office_id <small>(optional)</small></h5>
+					<p>To include listings for a specific office enter the Id of the office in the office_id option.</p>
+					<small>
+						Values: <strong class="text-blue">Office id's can be found under "Listings" in your WordPress admin in brackets after the office name.</strong><br>
+					</small>
+					<pre>example: [rps-listing-carousel office_id=849547]</pre>
+
+					<h5 class="mb0">property_type <small>(optional)</small></h5>
+					<p>To include listings with a specific property type enter the property type in the property_type option.</p>
+					<small>
+						Values: <strong class="text-blue">Agriculture / Business / Industrial / Multi-Family / Office / Other / Retail / Single Family / Vacant Land</strong><br>
+					</small>
+					<pre>example: [rps-listing-carousel property_type="Single Family"]</pre>
+
+					<h5 class="mb0">building_type <small>(optional)</small></h5>
+					<p>To include listings with a specific building type enter the building type in the property_type option.</p>
+					<small>
+						Values: <strong class="text-blue">Apartment / Commercial Apartment / Commercial Mix / Duplex / Fourplex / Garden Home / House / Manufactured Home / Manufactured Home/Mobile / Manufacturing / Mobile Home / Modular / Multi-Family / Industrial / Multi-Tenant Industrial / No Building / Offices / Other / Parking / Recreational / Residential Commercial Mix / Retail / Row / Townhouse / Special Purpose / Triplex / Two Apartment House / Unknown / Warehouse</strong><br>
+					</small>
+					<pre>example: [rps-listing-carousel building_type="Apartment"]</pre>
+
+					<h5 class="mb0">transaction_type <small>(optional)</small></h5>
+					<p>To include listings with a specific transaction type enter the transaction type in the transaction_type option.</p>
+					<small>
+						Values: <strong class="text-blue">For Sale / For Lease / For Rent</strong><br>
+					</small>
+					<pre>example: [rps-listing-carousel transaction_type="For Sale"]</pre>
+
+					<h5 class="mb0">street_address <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific street enter a partial street name or street address in the street_address_option.</p>
+					<pre>example: [rps-listings street_address='348 Waterloo']</pre>
+
+					<h5 class="mb0">city <small>(optional)</small></h5>
+					<p>To include listings for a specific city enter the city in the city option.</p>
+					<small>
+						<strong>You can include more than one value, by comma separating the values.</strong><br>
+					</small>
+					<pre>example: [rps-listing-carousel city="Toronto"]</pre>
+
+					<h5 class="mb0">province <small>(optional)</small></h5>
+					<p>To include listings for a specific province enter the province in the province option. </p>
+					<pre>example: [rps-listing-carousel province="Ontario"]</pre>
+
+					<h5 class="mb0">postal_code <small>(optional)</small></h5>
+					<p>To include listings for a specific postal code enter the postal code in the postal code option. The postal_code options allows the use of wildcards "*" in postal codes.</p>
+					<pre>example: [rps-listing-carousel postal_code="T8H*,T8J*"]</pre>
+
+					<h5 class="mb0">community_name <small>(optional)</small></h5>
+					<p>To include listings for a specific community enter the name of the community in the community option.</p>
+					<small>
+						<strong>You can include more than one value, by comma separating the values.</strong><br>
+					</small>
+					<pre>example: [rps-listing-carousel community_name="Old Toronto"]</pre>
+
+					<h5 class="mb0">neighbourhood <small>(optional)</small></h5>
+					<p>To include listings for a specific neighbourhood enter the name of the neighbourhood in the neighbourhood option.</p>
+					<small>
+						<strong>You can include more than one neighbourhood, by comma separating the values.</strong><br>
+					</small>
+					<pre>example: [rps-listing-carousel neighbourhood="Spring Ridge,Stoney Creek"]</pre>
+
+					<h5 class="mb0">bedrooms <small>(optional)</small></h5>
+					<p>To include listings for a specific number of bedrooms or range of bedrooms, enter comma separated values in the bedrooms option.</p>
+					<small>
+						Values: <strong class="text-blue">The first comma separated value is the min number of bedrooms the second is the max, if you would like a fixed number of bedrooms both values should be the same.</strong><br>
+					</small>
+					<pre>example: [rps-listing-carousel bedrooms=3,4]</pre>
+
+					<h5 class="mb0">bathrooms <small>(optional)</small></h5>
+					<p>To include listings for a specific number of bathrooms or range of bathrooms, enter comma separated values in the bathrooms option.</p>
+					<small>
+						Values: <strong class="text-blue">The first comma separated value is the min number of bathrooms the second is the max, if you would like a fixed number of bathrooms both values should be the same.</strong><br>
+					</small>
+					<pre>example: [rps-listing-carousel bathrooms=2,3]</pre>
+
+					<h5 class="mb0">price <small>(optional)</small></h5>
+					<p>To include listings for a price range, enter comma separated values in the price option. The first comma separated value is the min price, the second is the max price.</p>
+					<small>
+						Values: <strong class="text-blue">The first comma separated value is the min price of a listing the second is the max. Do not enter commas in your price or a $ sign, numeric values only.</strong><br>
+					</small>
+					<pre>example: [rps-listing-carousel bathrooms=2,3]</pre>
+
+					<h5 class="mb0">open_house <small>(optional)</small></h5>
+					<p>To include only listings with upcoming open house, set the open_house option to "true".</p>
+					<small>
+						Values: <strong class="text-blue">true / false</strong><br>
+						Default: <strong class="text-blue">false</strong>
+					</small>
+					<pre>example: [rps-listing-carousel open_house=true]</pre>
+
+					<h5 class="mb0">description <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific keyword in the description enter the text you would like to search for in the description option. You can include more than one description phrase or word, by separating multiples with a "|" character.  This returns a result consisting on only listings found with a description containing the specified description(s). Description is retained if user submits filtering options in the listings results filter form.</p>
+					<pre>example: [rps-listings description="foreclose,bankruptcy,distress"]</pre>
+
+					<h5 class="mb0">style <small>(optional)</small></h5>
+					<p>Specify the style of the carousel to load.</p>
+					<small>
+						Values: <strong class="text-blue">horizontal / vertical</strong><br>
+						Default: <strong class="text-blue">horizontal</strong>
+					</small>
+					<pre>example: [rps-listing-carousel style=vertical]</pre>
+
+					<h5 class="mb0">num_slides <small>(optional)</small></h5>
+					<p>Specify the max number of slides in the carousel.</p>
+					<small>
+						Default: <strong class="text-blue">24</strong>
+					</small>
+					<pre>example: [rps-listing-carousel num_slides=50]</pre>
+
+					<h5 class="mb0">min_slides <small>(optional)</small></h5>
+					<p>Specify the minimum number of slides to show simultaneously. The carousel is responsive and will adjust number of slides based on the users screen size. This value should be as small as possible to cater to mobile devices.</p>
+					<small>
+						Default: <strong class="text-blue">1</strong>
+					</small>
+					<pre>example: [rps-listing-carousel min_slides=2]</pre>
+
+					<h5 class="mb0">max_slides <small>(optional)</small></h5>
+					<p>Specify the maximum number of slides to show simultaneously. The carousel is responsive and will adjust number of slides based on the users screen size. This value should be the ideal number of slides to be displayed simultaneously. </p>
+					<small>
+						Default: <strong class="text-blue">4</strong>
+					</small>
+					<pre>example: [rps-listing-carousel max_slides=6]</pre>
+
+					<h5 class="mb0">move_slides <small>(optional)</small></h5>
+					<p>Specify the number of slides to advance when the carousel cycles. You can move one slide at a time or multiple.</p>
+					<small>
+						Default: <strong class="text-blue">1</strong>
+					</small>
+					<pre>example: [rps-listing-carousel move_slides=1]</pre>
+
+					<h5 class="mb0">pager <small>(optional)</small></h5>
+					<p>Specify whether a pager should be displayed on the carousel. Valid values include true or false.</p>
+					<small>
+						Values: <strong class="text-blue">true / false</strong><br>
+						Default: <strong class="text-blue">false</strong>
+					</small>
+					<pre>example: [rps-listing-carousel pager=true]</pre>
+
+					<h5 class="mb0">pager_type <small>(optional)</small></h5>
+					<p>Specify the style of pager to use if pager is enabled.</p>
+					<small>
+						Values: <strong class="text-blue">full / short</strong><br>
+						Default: <strong class="text-blue">full</strong>
+					</small>
+					<pre>example: [rps-listing-carousel pager=true pager_type=short]</pre>
+
+					<h5 class="mb0">auto_rotate <small>(optional)</small></h5>
+					<p>Specify whether the carousel should rotate automatically.</p>
+					<small>
+						Values: <strong class="text-blue">true / false</strong><br>
+						Default: <strong class="text-blue">false</strong>
+					</small>
+					<pre>example: [rps-listing-carousel auto_rotate=false]</pre>
+
+					<h5 class="mb0">auto_controls <small>(optional)</small></h5>
+					<p>Specify whether to show start and stop buttons if auto_rotate is enabled.</p>
+					<small>
+						Values: <strong class="text-blue">true / false</strong><br>
+						Default: <strong class="text-blue">false</strong>
+					</small>
+					<pre>example: [rps-listing-carousel auto_controls=true]</pre>
+
+					<h5 class="mb0">speed <small>(optional)</small></h5>
+					<p>Specify the amount of time to pause before advancing to the next slide.</p>
+					<small>
+						Values: <strong class="text-blue">This value must be supplied in milliseconds, the example below would wait 5 seconds before loading the next slide.</strong><br>
+						Default: <strong class="text-blue">4000</strong>
+					</small>
+					<pre>example: [rps-listing-carousel speed=5000]</pre>
+
+					<h5 class="mb0">captions <small>(optional)</small></h5>
+					<p>Specify the whether to show captions on listings.  Captions contain the full address, beds and baths.</p>
+					<small>
+						Values: <strong class="text-blue">true / false</strong><br>
+						Default: <strong class="text-blue">true</strong>
+					</small>
+					<pre>example: [rps-listing-carousel captions=false]</pre>
+
+					<h5 class="mb0">class <small>(optional)</small></h5>
+					<p>Specify an additional class to add to the outer wrap of the listing carousel. This enables you to add additional css to carousel within your own themes style.css file by referencing the specified class. You must know css to use this feature.</p>
+					<pre>example: [rps-listing-carousel class=custom_carousel]</pre>
+
+					<!-- Listing Slider -->
+					<!-- ============== -->
+
+					<h3 class="sub-title" id="shortcode_listing_slider">Listing Slider | Shortcode</h3>
+					<p>The [rps-listing-slider] shortcode allows you to embed a slider component for cycling through listings. Listings can be retrieved by a group of Listing Id's, an Agent Id, or Office Id.</p>
+
+					<p>
+						<span class="rps-option-available">agent_id</span>
+						<span class="rps-option-available">office_id</span>
+						<span class="rps-option-available">listing_ids</span>
+						<span class="rps-option-available">max_slides</span>
+						<span class="rps-option-available">wrap</span>
+						<span class="rps-option-available">class</span>
+					</p>
+
+					<h5 class="mb0">agent_id <small>(conditionally required)</small></h5>
+					<p>To include listings for a specific agent enter the Id of the agent in the agent_id option.</p>
+					<small>
+						Values: <strong class="text-blue">Agent id's can be found under "Listings" in your WordPress admin in brackets after the agent name.</strong><br>
+					</small>
+					<pre>example: [rps-listing-carousel agent_id=12598]</pre>
+
+					<h5 class="mb0">office_id <small>(conditionally required)</small></h5>
+					<p>To include listings for a specific office enter the Id of the office in the office_id option.</p>
+					<small>
+						Values: <strong class="text-blue">Office id's can be found under "Listings" in your WordPress admin in brackets after the office name.</strong><br>
+					</small>
+					<pre>example: [rps-listing-carousel office_id=849547]</pre>
+
+					<h5 class="mb0">listing_ids <small>(conditionally required)</small></h5>
+					<p>To retrieve a specific set of listings enter the listing Id's separated by comma's in the listing_id option.</p>
+					<pre>example: [rps-listing-slider listing_ids=159845,154854,842657,748592,859652]</pre>
+
+					<h5 class="mb0">speed <small>(optional)</small></h5>
+					<p>Specify the amount of time to pause before advancing to the next slide. This value must be supplied in milliseconds, the example below would wait 5 seconds before loading the next slide.</p>
+					<small>
+						Values: <strong class="text-blue">This value must be supplied in milliseconds, the example below would wait 5 seconds before loading the next slide.</strong><br>
+						Default: <strong class="text-blue">4000</strong>
+					</small>
+					<pre>example: [rps-listing-slider agent_id=12598 speed=5000]</pre>
+
+					<h5 class="mb0">max_slides <small>(optional)</small></h5>
+					<p>Specify the max amount of slides to load in the slider.</p>
+					<small>
+						Default: <strong class="text-blue">10</strong>
+					</small>
+					<pre>example: [rps-listing-slider agent_id=12598 max_slides=20]</pre>
+
+					<h5 class="mb0">wrap <small>(optional)</small></h5>
+					<p>Specify the whether the slider should wrap and continuously cycle when the end of the slider is reached.</p>
+					<small>
+						Values: <strong class="text-blue">true / false</strong><br>
+						Default: <strong class="text-blue">true</strong>
+					</small>
+					<pre>example: [rps-listing-slider agent_id=12598 wrap=false]</pre>
+
+					<h5 class="mb0">class <small>(optional)</small></h5>
+					<p>Specify an additional class to add to the outer wrap of the listing slider. This enables you to add additional css within your own themes style.css file by referencing the specified class. You must know css to use this feature. </p>
+					<pre>example: [rps-listing-slider agent_id=12598 class=custom_slider_style]</pre>
+
+					<!-- Search Box -->
+					<!-- ========== -->					
+
+					<h3 class="sub-title" id="shortcode_search_box">Search Box | Shortcode</h3>
+					<p>The [rps-listing-search-box] shortcode allows you to embed a search box where users can enter a city, province, postal code, neighborhood or combination thereof and view mapped listings within the area specified.</p>
+
+					<p>
+						<span class="rps-option-available">box_text</span>
+						<span class="rps-option-available">btn_text</span>
+						<span class="rps-option-available">class</span>
+					</p>
+
+					<h5 class="mb0">box_text <small>(optional)</small></h5>
+					<p>Specify the placeholder text to be shown in the text box, this text disappears when the user begins entering their search terms.</p>
+					<small>
+						Default: <strong class="text-blue">Where would you like to look today?</strong>
+					</small>
+					<pre>example: [rps-listing-search-box box_text="Search our Properties"]</pre>
+
+					<h5 class="mb0">btn_text <small>(optional)</small></h5>
+					<p>Specify text to be shown on the search button before the default search icon.</p>
+					<pre>example: [rps-listing-search-box btn_text=Search]</pre>
+
+					<h5 class="mb0">class <small>(optional)</small></h5>
+					<p>Specify an additional class to add to the outer wrap of the listing search box. This enables you to add additional css within your own themes style.css file by referencing the specified class. You must know css to use this feature.</p>
+					<pre>example: [rps-listing-search-box class=custom_search_box]</pre>
+
+
+					<!-- Search Business -->
+					<!-- =============== -->					
+
+					<h3 class="sub-title" id="shortcode_search_business">Search Business | Shortcode</h3>
+					<p>The [rps-listing-search-business] shortcode allows you to embed a search box where users can enter a city, province, postal code, neighborhood or combination thereof, select a business from the dropdown and view mapped business listings within the area specified.</p>
+
+					<p>
+						<span class="rps-option-available">box_text</span>
+						<span class="rps-option-available">btn_text</span>
+						<span class="rps-option-available">class</span>
+					</p>
+
+					<h5 class="mb0">box_text <small>(optional)</small></h5>
+					<p>Specify the placeholder text to be shown in the text box, this text disappears when the user begins entering their search terms.</p>
+					<small>
+						Default: <strong class="text-blue">Enter a City, Neighbourhood or Address'</strong>
+					</small>
+					<pre>example: [rps-listing-search-box box_text="Enter a Business Location"]</pre>
+
+					<h5 class="mb0">btn_text <small>(optional)</small></h5>
+					<p>Specify text to be shown on the search button before the default search icon.</p>
+					<pre>example: [rps-listing-search-box btn_text=Go]</pre>
+
+					<h5 class="mb0">class <small>(optional)</small></h5>
+					<p>Specify an additional class to add to the outer wrap of the business search box. This enables you to add additional css within your own themes style.css file by referencing the specified class. You must know css to use this feature.</p>
+					<pre>example: [rps-listing-search-box class=custom_search_box]</pre>
+
+					<!-- Search Form -->
+					<!-- =========== -->
+
+					<h3 class="sub-title" id="shortcode_search_form">Search Form | Shortcode</h3>
+					<p>The [rps-listing-search-box] shortcode allows you to embed a detailed search form where users can enter a price range, bed range, bath range, city, province, property type, transaction type, or combination thereof and search your listings.</p>
+
+					<p>
+						<span class="rps-option-available">style</span>
+						<span class="rps-option-available">title</span>
+						<span class="rps-option-available">hide</span>
+						<span class="rps-option-available">class</span>
+					</p>
+
+					<h5 class="mb0">style <small>(optional)</small></h5>
+					<p>Specify the style of form to load. Horizontal forms are better for wider content spaces, vertical forms are better for narrower content spaces, but either can be used. Valid values include horizontal and vertical.</p>
+					<small>
+						Values: <strong class="text-blue">horizontal / vertical</strong><br>
+						Default: <strong class="text-blue">horizontal</strong>
+					</small>
+					<pre>example: [rps-listing-search-form style=vertical]</pre>
+
+					<h5 class="mb0">title <small>(optional)</small></h5>
+					<p>Specify an optional title for the search form title displayed in the carousel header left aligned.</p>
+					<pre>example: [rps-listing-carousel title='My Recent Listings']</pre>
+
+					<h5 class="mb0">hide <small>(optional)</small></h5>
+					<p>Specify search options to hide on the search form. By default all are displayed</p>
+					<small>
+						Values: <strong class="text-blue">type / business / transaction / building / bedrooms / bathrooms / price / street_address / city / community / neighbourhood / province / postal_code / mls / open_house</strong><br>
+					</small>
+					<pre>example: [rps-listing-search-box hide="business,street_address,community"]</pre>
+
+
+					<h5 class="mb0">class <small>(optional)</small></h5>
+					<p>Specify an additional class to add to the outer wrap of the search form. This enables you to add additional css to search form within your own themes style.css file by referencing the specified class. You must know css to use this feature.</p>
+					<pre>example: [rps-listing-search-box class=custom_search_box]</pre>
+
+					<!-- Single Listing -->
+					<!-- ============== -->
+
+					<h3 class="sub-title" id="shortcode_single_listing">Single Listing | Shortcode</h3>
+					<p>The [rps-single-listing] shortcode allows you to embed a single listing's full details page into a page or post.</p>
+
+					<p>
+						<span class="rps-option-available">listing_id</span>
+						<span class="rps-option-available">post_id</span>
+						<span class="rps-option-available">view</span>
+						<span class="rps-option-available">back_button</span>
+					</p>
+
+					<p>You must specify either a Listing ID or Post ID to display a single listing.</p>
+
+					<h5 class="mb0">listing_id (conditionally required)</h5>
+					<p>Specify the ListingID of the listing you would like to display. If no value is present the system will check if the post_id option is set, if it is the post_id will be used to retrieve the listing or an error will be shown in the shortcodes output if both values have not been supplied.</p>
+					<pre>example: [rps-single-listing listing_id=1489564]</pre>
+
+					<h5 class="mb0">post_id (conditionally required)</h5>
+					<p>Specify the Post ID of the listing you would like to display. If no value is present the system will check if the listing_id option is set, if it is the listing_id will be used to retrieve the listing or an error will be shown in the shortcodes output if both values have not been supplied.</p>
+					<pre>example: [rps-single-listing post_id=456]</pre>
+
+					<h5 class="mb0">view <small>(optional)</small></h5>
+					<p>Specify the page layout for full listing details.</p>
+					<small>
+						Values: <strong class="text-blue">full-width / sidebar-right / sidebar-left</strong><br>
+						Default: <strong class="text-blue">full-width</strong>
+					</small>
+					<pre>example: [rps-single-listing post_id=456 view=sidebar-right]</pre>
+
+					<h5 class="mb0">back_button <small>(optional)</small></h5>
+					<p>Specify whether to display a back button at the top left of the listing details.</p>
+					<small>
+						Values: <strong class="text-blue">true / false</strong><br>
+						Default: <strong class="text-blue">false</strong>
+					</small>
+					<pre>example: [rps-single-listing post_id=456 view=map]</pre>
+
+					<!-- ======= -->
+					<!-- Widgets -->
+					<!-- ======= -->
+
+					<hr>
+
+					<h1 id="widgets">Widgets</h1>
+
+					<h3>What's a Widget?</h3>
+
+					<p>A WordPress Widget is a small block that performs a specific function. You can add these widgets in widget-ready areas on your web page.</p>
+					<p>Widgets were originally designed to provide a simple and easy-to-use way of giving design and structure control of the WordPress Theme to the user. Widgets require no code experience or expertise. They can be added, removed, and rearranged on the Theme Customizer or Appearance > Widgets in the WordPress Administration Screens.</p>
+
+					<!-- Cities List -->
+					<!-- =========== -->
+
+					<h3 class="sub-title" id="widget_cities_list">Cities List | Widget</h3>
+					<p>Display horizontal or vertical listing carousel.</p>
+
+					<h5 class="mb0">Widget Title <small>(optional)</small></h5>
+					<p>Specify an optional widget title for the list, this type of title is displayed in native widget title tag.</p>
+					<small>Default: empty and no widget title is displayed.</small>
+
+					<h5 class="mb0">City List Title <small>(optional)</small></h5>
+					<p>Specify an optional title for the city list which is displayed in the city list panel header.</p>
+					<small>Default: empty and no city list title is shown.</small>
+
+					<h5 class="mb0">Cities To Include (conditionally required)</h5>
+					<p>Select all cities to include in the city list by enabling the checkbox to the left of the city name.</p>
+
+					<h5 class="mb0">Additional Cities to Include (conditionally required)</h5>
+					<p>Include additional cities not found in the "Cities to Include" options. Enter comma separated city names.</p>
+
+					<h5 class="mb0">Additional CSS Class <small>(optional)</small></h5>
+					<p>Specify an additional class to add to the outer wrap of the cities list.</p>
+
+
+					<!-- Contact Form -->
+					<!-- ============ -->
+
+					<h3 class="sub-title" id="widget_contact_form">Contact Form | Widget</h3>
+
+					<h5 class="mb0">Widget Title <small>(optional)</small></h5>
+					<p>Specify an optional widget title for the contact form, this type of title is displayed in native widget title tag.</p>
+					<small>Default: empty and no widget title is displayed.</small>
+
+					<h5 class="mb0">Contact Title <small>(optional)</small></h5>
+					<p>Specify an optional title for the contact form which is displayed in the contact forms panel header.</p>
+					<small>Default: empty and no contact title is shown.</small>
+
+					<h5 class="mb0">Contact Style (required)</h5>
+					<p>Select the style of the contact form. Default: Vertical</p>
+
+					<h5 class="mb0">Additional CSS Class <small>(optional)</small></h5>
+					<p>Specify an additional class to add to the outer wrap of the contact form.</p>
+
+					<!-- Favorites Box -->
+					<!-- ============= -->
+
+					<h3 class="sub-title" id="widget_favorites_box">Favorites Box | Widget</h3>
+
+					<h5 class="mb0">Widget Title <small>(optional)</small></h5>
+					<p>Specify an optional widget title for the favorite’s box, this type of title is displayed in native widget title tag.</p>
+					<small>Default: empty and no widget title is displayed.</small>
+
+					<h5 class="mb0">Favorites Title <small>(optional)</small></h5>
+					<p>Specify an optional title for the favorites box which is displayed in the favorites panel header.</p>
+					<small>Default: empty and no favorite’s title is shown.</small>
+
+					<h5 class="mb0">Favorites Style (required)</h5>
+					<p>Select the style of the favorites box.</p>
+					<small>Default: Vertical</small>
+
+					<h5 class="mb0">Additional CSS Class <small>(optional)</small></h5>
+					<p>Specify an additional class to add to the outer wrap of the favorites box.</p>
+
+					<!-- Listing Carousel -->
+					<!-- ================ -->
+
+					<h3 class="sub-title" id="widget_listing_carousel">Listing Carousel</h3>
+					<p>The listing carousel widget allows you to embed a listing carousel showing single or multiple listings simultaneously. Listings can be retrieved by and agent id or office id.</p>
+
+					<h4 class="underline">Carousel Style Settings</h4>
+
+					<h5 class="mb0">Widget Title <small>(optional)</small></h5>
+					<p>Specify an optional widget title for the carousel, this type of title is displayed in native widget title tag. Default: empty and no widget title is displayed.</p>
+
+					<h5 class="mb0">Carousel Title <small>(optional)</small></h5>
+					<p>Specify an optional title for the carousel which is displayed in the carousel panel header. Default: empty and no title or carousel header is shown.</p>
+
+					<h5 class="mb0">Carousel Style (required)</h5>
+					<p>Select the style of the carousel to load.</p>
+					<small>Default: Horizontal</small>
+ 
+					<h5 class="mb0">Slide Captions (required)</h5>
+					<p>Toggle slide captions overlay showing Address, City, Price, Bedrooms, and Bathrooms on hover.</p>
+					<small>Default: Yes</small>
+ 
+					<h5 class="mb0">Additional CSS Class <small>(optional)</small></h5>
+					<p>Specify an additional class to add to the outer wrap of the listing carousel.</p>
+
+					<h4 class="underline">Carousel Filters</h4>					
+
+					<h5 class="mb0">Agent ID <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific agent enter the id of the agent in the Agent ID input. This option can be combined with other options like Property Type, Price, Bedrooms, Bathrooms, City, etc., to further refine the results.</p>
+
+					<h5 class="mb0">Office ID <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific office enter the Id of the office in the Office ID option. This returns a result consisting on only the specified offices listings. This option can be combined with other options like Property Type, Price, Bedrooms, Bathrooms, City, etc., to further refine the results.</p>
+					<small>Default: empty, the carousel will not be filtered by office id.</small>
+
+					<h5 class="mb0">Property Type <small>(optional)</small></h5>
+					<p>To retrieve listings with a specific property type enter the property type in the Property Type option. This returns a result consisting of only listings with the specified property types. This option can be combined with other options like agent_id, office_id, Property Type, Price, Bedrooms, etc. to further refine the results. Valid values include Agriculture, Business, Industrial, Multi-Family, Office, Other, Retail, Single Family or Vacant Land.</p>
+					<small>Default: empty, the carousel will not be filtered by property types.</small>
+
+					<h5 class="mb0">Transaction Type <small>(optional)</small></h5>
+					<p>To retrieve listings with a specific transaction type enter the transaction type in the Transaction Type option. This returns a result consisting of only listings with the specified property types. This option can be combined with other options like agent_id, office_id, Property Type, Price, Bedrooms, etc. to further refine the results. Valid values include For Sale, For Lease or For Rent.</p>
+					<small>Default: empty, the carousel will not be filtered by transaction types.</small>
+
+					<h5 class="mb0">City <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific City, etc.,enter the City, etc.,in the City, etc.,option. This returns a result consisting of only listings located in the specified City, etc., This option can be combined with other options like agent_id, office_id, Property Type, Price, Bedrooms, etc. to further refine the results.</p>
+					<small>Default: empty, the carousel will not be filtered by cities.</small>
+
+					<h5 class="mb0">Community <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific community enter the name of the community in the community option. You can include more than one community, by comma separating the values.  This returns a result consisting on only the specified community(s). This option can be combined with other options like Property Type, Price, Bedrooms, Bathrooms, City, etc., to further refine the results.</p>
+					<small>Default: empty, the carousel will not be filtered by communities.</small>
+
+					<h5 class="mb0">Neighbourhood <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific neighbourhood enter the name of the neighbourhood in the neighbourhood option. You can include more than one neighbourhood, by comma separating the values.  This returns a result consisting on only the specified neighbourhood(s). This option can be combined with other options like Property Type, Price, Bedrooms, Bathrooms, City, etc., to further refine the results.</p>
+					<small>Default: empty, the carousel will not be filtered by neighbourhoods.</small>
+
+					<h5 class="mb0">Province <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific Ontario enter the province in the province option. This returns a result consisting of only listings located in the specified province. This option can be combined with other options like agent_id, office_id, Property Type, Price, Bedrooms, etc. to further refine the results.</p>
+					<small>Default: empty, the carousel will not be filtered by provinces.</small>
+
+					<h5 class="mb0">Postal Code <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific postal code enter the postal code in the postal code option. You can include more than one postal code, by comma separating the values.  You can also specify wildcards by placing "*" in your postal code.  This returns a result consisting on only listings found within the specified postal code(s). This option can be combined with other options like Property Type, Price, Bedrooms, Bathrooms, City, etc., to further refine the results.</p>
+					<small>Default: empty, the carousel will not be filtered by postal codes.</small>
+
+					<h5 class="mb0">Bedrooms <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific number of Bedrooms or range of Bedrooms, enter comma separated values in the Bedrooms option. The first comma separated value is the min number of Bedrooms the second is the max, if you would like a fixed number of Bedrooms both values should be the same. This returns a result consisting of only listings matching the number of, or range of Bedrooms specified. This option can be combined with other options like agent_id, office_id, Property Type, Price, Bedrooms, etc. to further refine the results.</p>
+					<small>Default: empty, the carousel will not be filtered by Bedrooms.</small>
+
+					<h5 class="mb0">Bathrooms <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific number of Bathrooms or range of Bathrooms, enter comma separated values in the Bathrooms option. The first comma separated value is the min number of Bathrooms the second is the max, if you would like a fixed number of Bathrooms both values should be the same. This returns a result consisting of only listings matching the number of, or range of Bathrooms specified. This option can be combined with other options like agent_id, office_id, Property Type, Price, Bedrooms, etc. to further refine the results.</p>
+					<small>Default: empty, the carousel will not be filtered by Bathrooms.</small>
+
+					<h5 class="mb0">Price <small>(optional)</small></h5>
+					<p>To retrieve listings for a Price range, enter comma separated values in the Price option. The first comma separated value is the min Price, the second is the max Price. This returns a result consisting of only listings matching the Price range specified. This option can be combined with other options like agent_id, office_id, Property Type, baths, Bedrooms, etc. to further refine the results. Do not enter commas in your price or a $ sign, numeric values only</p>
+					<small>Default: empty, the carousel will not be filtered by Bathrooms.</small>
+
+					<h5 class="mb0">Open House <small>(optional)</small></h5>
+					<p>To retrieve listings with and open house listed, set the Open House option to "Yes". This option can be combined with other options like Property Type, Price, Bedrooms, Bathrooms, City, etc., to further refine the results.</p>
+					<small>Default: false, the carousel will not be filtered by open house.</small>
+
+					<h5 class="mb0">description <small>(optional)</small></h5>
+					<p>To retrieve listings for a specific keyword in the description enter the text you would like to search for in the description option. You can include more than one postal code, by separating multiples with a "|" character.  This returns a result consisting on only listings found with a description containing the specified description(s). This option can be combined with other options like Property Type, Price, Bedrooms, Bathrooms, City, etc., to further refine the results. Description is retained if user submits filtering options in the listings results filter form.</p>
+					<small>Default: empty, the carousel will include all descriptions.</small>
+
+					<h4 class="underline">Carousel Slides Settings</h4>
+
+					<h5 class="mb0">Max. Slide Width (required)</h5>
+					<p>Specify the max width of the slides in the carousel. This setting is combined with min and max slides to achieve the best settings for you page setup.</p>
+					<small>Default: 180.</small>
+
+					<h5 class="mb0">Max. Number of Slides (required)</h5>
+					<p>Specify the max number of slides to load into the carousel in the carousel.</p>
+					<small>Default: 24.</small>
+
+					<h5 class="mb0">Max. Number of Slides Displayed (required)</h5>
+					<p>Specify the minimum number of slides to show simultaneously. The carousel is responsive and will adjust number of slides based on the users screen size. This value should be as small as possible to cater to mobile devices.</p>
+					<small>Default: 1</small>
+
+					<h5 class="mb0">Min. Number of Slides Displayed (required)</h5>
+					<p>Specify the maximum number of slides to show simultaneously. The carousel is responsive and will adjust number of slides based on the users screen size. This value should be the ideal number of slides to be displayed simultaneously.</p>
+					<small>Default: 4</small>
+
+					<h5 class="mb0">Number of Slides to Rotate per Advance (required)</h5>
+					<p>Specify the number of slides to advance when the carousel cycles. You can move one slide at a time or multiple.</p>
+					<small>Default: 1</small>
+
+					<h4 class="underline">Carousel Slides Settings</h4>
+
+					<h5 class="mb0">Auto Rotate (required)</h5>
+					<p>Specify whether the carousel should rotate automatically.</p>
+					<small>Default: Yes</small>
+
+					<h5 class="mb0">Rotate Speed (required)</h5>
+					<p>Specify the amount of time to pause before advancing to the next slide. This value must be supplied in milliseconds, the example below would wait 5 seconds before loading the next slide.</p>
+					<small>Default: 4 seconds.</small>
+
+					<h5 class="mb0">Auto Play Controls (required)</h5>
+					<p>Specify whether to show start and stop buttons if auto_rotate is enabled.</p>
+					<small>Default: No</small>
+
+					<h5 class="mb0">Show Paging Controls (required)</h5>
+					<p>Specify whether a pager should be displayed on the carousel.</p>
+					<small>Default: No</small>
+
+					<h5 class="mb0">Paging Control Style (required)</h5>
+					<p>Specify the style of pager to use if pager is enabled.</p>
+					<small>Default: Full.</small>
+
+					<!-- Listing Preview Box -->
+					<!-- =================== -->
+
+					<h3 class="sub-title" id="widget_listing_preview_box">Listing Preview Box | Widget</h3>
+
+					<h5 class="mb0">Widget Title <small>(optional)</small></h5>
+					<p>Specify an optional widget title for the listing preview, this type of title is displayed in native widget title tag.</p>
+					<small>Default: empty and no widget title is displayed.</small>
+
+					<h5 class="mb0">Listing ID (required)</h5>
+					<p>Specify the Listing ID of the listing to preview.</p>
+
+					<h5 class="mb0">Preview Style (required)</h5>
+					<p>Select the style of the favorites box.</p>
+					<small>Default: Vertical</small>
+
+					<h5 class="mb0">Additional CSS Class <small>(optional)</small></h5>
+					<p>Specify an additional class to add to the outer wrap of the listing preview.</p>
+
+					<!-- Property Types List -->
+					<!-- =================== -->
+
+					<h3 class="sub-title" id="widget_property_types_list">Property Types List | Widget</h3>
+
+					<h5 class="mb0">Widget Title <small>(optional)</small></h5>
+					<p>Specify an optional widget title for the list, this type of title is displayed in native widget title tag.</p>
+					<small>Default: empty and no widget title is displayed.</small>
+
+					<h5 class="mb0">City List Title <small>(optional)</small></h5>
+					<p>Specify an optional title for the city list which is displayed in the property type list panel header.</p>
+					<small>Default: empty and no property list title is shown.</small>
+
+					<h5 class="mb0">Property Types To Include (conditionally required)</h5>
+					<p>Select all property types to include in the property types list by enabling the checkbox to the left of the city name.</p>
+
+					<h5 class="mb0">Additional Property Types to Include (conditionally required)</h5>
+					<p>Include additional property types not found in the "Property Types to Include" options.  Enter comma separated property types.</p>
+
+					<h5 class="mb0">Additional CSS Class <small>(optional)</small></h5>
+					<p>Specify an additional class to add to the outer wrap of the property types list.</p>
+
+					<!-- Search Box -->
+					<!-- ========== -->
+
+					<h3 class="sub-title" id="widget_search_box">Search Box | Widget</h3>
+
+					<h5 class="mb0">Widget Title <small>(optional)</small></h5>
+					<p>Specify an optional widget title for the listing preview, this type of title is displayed in native widget title tag.</p>
+					<small>Default: empty and no widget title is displayed.</small>
+
+					<h5 class="mb0">Box Text <small>(optional)</small></h5>
+					<p>Enter a custom place holder for the search box. Default: "Where would you like to look today?"</p>
+
+					<h5 class="mb0">Button Text <small>(optional)</small></h5>
+					Enter text to display on search button.
+					<small>Default: empty and only a search icon is show on the button.</small>
+
+					<h5 class="mb0">Additional CSS Class <small>(optional)</small></h5>
+					<p>Specify an additional class to add to the outer wrap of the search box.</p>
+
+					<!-- Search Form -->
+					<!-- =========== -->
+
+					<h3 class="sub-title" id="widget_search_form">Search Form | Widget</h3>
+
+					<h4 class="underline">Title Settings</h4>
+
+					<h5 class="mb0">Widget Title <small>(optional)</small></h5>
+					<p>Specify an optional widget title for the search form, this type of title is displayed in native widget title tag.</p>
+					<small>Default: empty and no widget title is displayed.</small>
+
+					<h5 class="mb0">Search Form Title <small>(optional)</small></h5>
+					<p>Specify an optional title for the search form which is displayed in the search form panel header.</p>
+					<small>Default: empty and no favorite’s title is shown.</small>
+
+					<h4 class="underline">Style Settings</h4>
+
+					<h5 class="mb0">Search Form Style (required)</h5>
+					<p>Select the style of the search form.</p>
+					<small>Default: Vertical</small>
+
+					<h5 class="mb0">Additional CSS Class <small>(optional)</small></h5>
+					<p>Specify an additional class to add to the outer wrap of the search form.</p>
+
+					<h4>Options Settings</h4>
+					<p>Select all search input options you would like include in the widget search form. By default all inputs are selected.</p>
+
+					<!-- ======== -->
+					<!-- Sidebars -->
+					<!-- ======== -->
+
+					<hr>
+
+					<h1 id="sidebars">Sidebars</h1>
+
+					<p>The following sidebars area widgetized and can have additional widgets added on top of the content that is loaded in the sidebars as configured under RealtyPress » Appearance » Single Listing and the RealtyPress » Appearance » Listing Results tabs. Additional widgets are always shown after content configured in appearance options.</p>
+
+					<h4 id="results_left_sidebar">RealtyPress Results – Left Sidebar</h4>
+					<p>RealtyPress Results – Left Sidebar is displayed on listing results pages. This sidebar only displays if the listing results layout has been configured to use a left sidebar layout. Listing results layout settings can be found under RealtyPress » Appearance » Listing Results tabs.</p>
+					<small>The RealtyPress Results sidebar always contains a search filter for the results at the top of the sidebar.</small>
+
+					<h4 id="results_right_sidebar">RealtyPress Results – Right Sidebar</h4>
+					<p>RealtyPress Results – Right Sidebar is displayed on listing results pages. This sidebar only displays if the listing results layout has been configured to use a right sidebar layout. Listing results layout settings can be found under RealtyPress » Appearance » Listing Results tab.</p>
+					<small>The RealtyPress Results sidebar always contains a search filter for the results at the top of the sidebar.</small>
+
+					<h4 id="single_left_sidebar">RealtyPress Single– Left Sidebar</h4>
+					<p>RealtyPress Single – Left Sidebar is displayed on single listing pages. This sidebar only displays if the single listing layout has been configured to use a left sidebar layout. Single listing layout settings can be found under RealtyPress » Appearance » Single Listing tab.</p>
+
+					<h4 id="single_right_sidebar">RealtyPress Single – Right Sidebar</h4>
+					<p>RealtyPress Single – Right Sidebar is displayed on single listing pages. This sidebar only displays if the single listing layout has been configured to use a right sidebar layout. Single listing layout settings can be found under RealtyPress » Appearance » Single Listing tab.</p>
+
+					<!-- ============ -->
+					<!-- Child Themes -->
+					<!-- ============ -->
+
+					<hr>
+
+					<h1 id="child_themes">Child Themes</h1>
+
+					<p>The information below is based on using the default parent theme for RealtyPress Premium.</p>
+
+					<p>The RealtyPress template files contain the template structure and markup for the front-end content of RealtyPress . These template files can be found within the /realtypress/public/templates/default directory.</p>
+
+					<p>You can edit these files in an upgrade safe way through overrides. Simply create a directory called realtypress in your theme and copy the files you wish to override from realtypress/public/templates/default/ to the /realtypress directory you created previously, you must retain the same file structure.</p>
+
+					<p>Example: To override the grid result template, copy:</p>
+
+					<p>
+					<strong>realtypress/public/templates/default/partials/property-result-grid.php</strong> to<br>
+					<strong>your-theme/realtypress/partials/ property-result-grid.php</strong>
+					</p>
+
+					<p>The copied file will now override the RealtyPress default template file.</p>
+
+					<p>RealtyPress was built with themes in mind and most templates are broken up into many partials to give flexibility. Currently 32 partials for RealtyPress content can be found in the partials directory within the default theme.</p>
+
+					<p>Shortcodes are also themed and can be found in the shortcodes directory within the default theme.</p>
+
+					<h4 class="mb0">Where to find what</h4>
+					<table>
+						<tr>
+							<td class="p0 strong">/</td>
+							<td class="p0">RealtyPress Layout Templates</td>
+						</tr>
+						<tr>
+							<td class="p0 strong">/email</td>
+							<td class="p0">Email Templates</td>
+						</tr>
+						<tr>
+							<td class="p0 strong">/partials</td>
+							<td class="p0">Partial Templates</td>
+						</tr>
+						<tr>
+							<td class="p0 strong">/shortcodes</td>
+							<td class="p0">Shortcode Templates</td>
+						</tr>
+					</table>
+
+					<p class="text-red"><strong>Not creating a child theme and editing the files within the RealtyPress core plugin itself <span class="underline">will cause your changes to be overwritten during the upgrade process</span> and any changes will be lost permanently.</strong></p>
+
+					<!-- ===== -->
+					<!-- Hooks -->
+					<!-- ===== -->
+
+					<hr>
+
+					<h1 id="hooks">Hooks</h1>
+
+					<h3 class="sub-title" id="hooks_single_listing">Single Listing Hooks</h3>
+					<p>realtypress_before_listing_single_header</p>
+					<p>realtypress_after_listing_single_header</p>
+					<p>realtypress_before_listing_single_property_photos</p>
+					<p>realtypress_after_listing_single_property_photos</p>
+					<p>realtypress_before_listing_single_intro</p>
+					<p>realtypress_after_listing_single_intro</p>
+					<p>realtypress_before_listing_single_open_house</p>
+					<p>realtypress_after_listing_single_open_house</p>
+					<p>realtypress_before_listing_single_events</p>
+					<p>realtypress_after_listing_single_events</p>
+					<p>realtypress_before_listing_single_business</p>
+					<p>realtypress_after_listing_single_business</p>
+					<p>realtypress_before_listing_single_details</p>
+					<p>realtypress_after_listing_single_details</p>
+					<p>realtypress_before_listing_single_building</p>
+					<p>realtypress_after_listing_single_building</p>
+					<p>realtypress_before_listing_single_parking</p>
+					<p>realtypress_after_listing_single_parking</p>
+					<p>realtypress_before_listing_single_land</p>
+					<p>realtypress_after_listing_single_land</p>
+					<p>realtypress_before_listing_single_room</p>
+					<p>realtypress_after_listing_single_room</p>
+					<p>realtypress_before_listing_single_utilities</p>
+					<p>realtypress_after_listing_single_utilities</p>
+					<p>realtypress_before_listing_single_tabs</p>
+					<p>realtypress_after_listing_single_tabs</p>
+					<p>realtypress_before_listing_single_footer</p>
+					<p>realtypress_after_listing_single_footer</p>
+
+					<h3 class="sub-title" id="hooks_single_listing_sidebar">Single Listing Sidebar Hooks</h3>
+					<p>The hooks below hook to both left and right sidebars.</p>
+
+					<p>realtypress_before_listing_single_sidebar</p>
+					<p>realtypress_before_listing_single_contact_form</p>
+					<p>realtypress_after_listing_single_contact_form</p>
+					<p>realtypress_before_listing_single_agent_vertical</p>
+					<p>realtypress_before_listing_single_agent_vertical</p>
+					<p>realtypress_before_listing_single_sidebar_favorites</p>
+					<p>realtypress_before_listing_single_sidebar_favorites</p>
+					<p>realtypress_after_listing_single_sidebar</p>
+
+					<h3 class="sub-title" id="hooks_listing_results">Listing Results Hooks</h3>
+
+					<p>realtypress_before_listing_result_header</p>
+					<p>realtypress_after_listing_result_header</p>
+					<p>realtypress_before_listing_result_grid</p>
+					<p>realtypress_after_listing_result_grid</p>
+					<p>realtypress_before_listing_result_list</p>
+					<p>realtypress_after_listing_result_list</p>
+					<p>realtypress_before_listing_result_map</p>
+					<p>realtypress_after_listing_result_map</p>
+
+					<h3 class="sub-title" id="hooks_listing_results_sidebar">Listing Result Sidebar Hooks</h3>
+					<p>The hooks below hook to both left and right sidebars.</p>
+
+					<p>realtypress_before_listing_result_sidebar</p>
+					<p>realtypress_before_listing_result_sidebar_search</p>
+					<p>realtypress_after_listing_result_sidebar_search</p>
+					<p>realtypress_before_listing_result_sidebar_favorites</p>
+					<p>realtypress_before_listing_result_sidebar_favorites</p>
+					<p>realtypress_before_listing_result_sidebar_contact</p>
+					<p>realtypress_before_listing_result_sidebar_contact</p>
+					<p>realtypress_after_listing_result_sidebar</p>
+
+					<h1 id="filters">Filters</h1>
+
+					<p>realtypress_new_post_title</p>
+					<p>realtypress_new_post_name</p>
+
+					<hr>
+
+					<p class="strong">&copy; RealtyPress.ca | RealtyPress Documentation (RPS20151221)</p>
+
+					<small>The trademarks REALTOR®, REALTORS®, and the REALTOR® logo are controlled by The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of CREA. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA. The trademark DDF® is owned by The Canadian Real Estate Association (CREA) and identifies CREA's Data Distribution Facility (DDF®)</small>
+					
+				</div><!-- .chapter-inner (end) -->
+			</div><!-- .chapter (end) -->
+			
+		</div><!-- .content-inner (end) -->
+	</div><!-- #content (end) -->
+</div><!-- #wrapper (end) -->
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+$( document ).ready(function() {
+
+	$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 600);
+            return false;
+        }
+    }
+	});
+
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+<?php // No longer used, kept in place for backwards compatibility

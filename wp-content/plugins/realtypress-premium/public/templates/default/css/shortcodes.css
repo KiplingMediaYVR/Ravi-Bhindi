@@ -1,0 +1,732 @@
+/**
+ * ----------------------------------------------------------------------------------------------------
+ *   Listing Search Box
+ * ----------------------------------------------------------------------------------------------------
+ */
+
+.bootstrap-realtypress .sc-rps-search-location-form {
+  margin: 0 0 15px 0;
+}
+
+.bootstrap-realtypress .sc-rps-search-location-form form {
+  margin: 0;
+  padding: 0;
+}
+
+.bootstrap-realtypress .sc-rps-search-location-form .look-search-blurb {
+  padding-left:15px;
+  color: #bbbbbb;
+}
+
+/**
+ * ----------------------------------------------------------------------------------------------------
+ *   Listing Search Business Type
+ * ----------------------------------------------------------------------------------------------------
+ */
+
+.sc-rps-search-business-type .input-business-type {
+  font-size: 14px !important;
+  padding: 10px 16px 10px 10px !important;
+}
+
+/**
+ * ----------------------------------------------------------------------------------------------------
+ *   Carousel
+ * ----------------------------------------------------------------------------------------------------
+ */
+
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode.vertical .panel {
+    display: inline-block;
+}
+
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode .panel-body {
+  padding:2px;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode .progress-bar {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode .bx-wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode .bx-wrapper .bx-viewport {
+  border: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  left:0;
+  width: auto !important;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode .bx-wrapper .bx-controls-direction a {
+  display: block;
+  background: rgba(0,0,0,0.1);
+  width: 22px;
+  height: 100%;
+  top: 0;
+  margin-top: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out; 
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+/**
+ * Carousel Horizontal
+ * -------------------
+ */
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode.horizontal .bx-wrapper .bx-viewport {
+  margin: 0 23px 0 23px; 
+  left:0;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode.horizontal .bx-wrapper .bx-controls-direction a.bx-prev {
+  background: rgba(0,0,0,.01) url(../img/slider-arrow-left-sm.png) center center no-repeat;
+  left: 0;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode.horizontal .bx-wrapper .bx-controls-direction a.bx-prev:hover {
+  background: rgba(0,0,0,.03) url(../img/slider-arrow-left-sm.png) center center no-repeat;
+  left: 0;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode.horizontal .bx-wrapper .bx-controls-direction a.bx-next {
+  background: rgba(0,0,0,.01) url(../img/slider-arrow-right-sm.png) center center no-repeat;
+  right: 0;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode.horizontal .bx-wrapper .bx-controls-direction a.bx-next:hover {
+  background: rgba(0,0,0,.03) url(../img/slider-arrow-right-sm.png) center center no-repeat;
+  right: 0;
+}
+
+
+/**
+ * Carousel Vertical
+ * -----------------
+ */
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode.vertical  .bx-wrapper .bx-viewport .slide {
+  width: 100% !important;
+  margin-top:1px;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode.vertical  .bx-wrapper .bx-viewport {
+  margin: 31px 0 31px 0;
+  padding:0;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode.vertical .bx-wrapper .bx-controls-direction a {
+  height: 30px;
+  width: 100%;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode.vertical .bx-wrapper .bx-controls-direction a.bx-prev {
+  background: rgba(0,0,0,.03) url(../img/slider-arrow-up-sm.png) center center no-repeat;
+  top: 0;
+  left: 0;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode.vertical .bx-wrapper .bx-controls-direction a.bx-prev:hover {
+  background: rgba(0,0,0,0.01) url(../img/slider-arrow-up-sm.png) center center no-repeat;
+  top:0;
+  left: 0;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode.vertical .bx-wrapper .bx-controls-direction a.bx-next {
+  background: rgba(0,0,0,.03) url(../img/slider-arrow-down-sm.png) center center no-repeat;
+  top: calc( 100% - 29px );
+  right:0;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode.vertical .bx-wrapper .bx-controls-direction a.bx-next:hover {
+  background: rgba(0,0,0,0.01) url(../img/slider-arrow-down-sm.png) center center no-repeat;
+  top: calc( 100% - 29px );
+  right:0;
+}
+
+/**
+ *  Carousel Caption
+ *  ----------------
+ */
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode .bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-shadow: 0 1px 1px #000;
+  background: rgba(30,30,30,0.6);
+  width: 100%;
+  font-weight:700;
+  font-size:1em;
+  overflow:hidden;
+  height:46px;
+  padding: 0;
+  cursor: pointer;
+  border-top: 2px solid #428bca;
+  text-align:center;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode .bx-wrapper .bx-caption.caption-hover {
+  padding-top: 40px;
+}
+
+.bx-wrapper .bx-caption span {
+  color: #fff;
+  font-family: inherit;
+  display: block;
+  font-size: .85em;
+  padding: 2px;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode .bx-wrapper .bx-caption .price {
+  font-size: 18px;
+  line-height: 22px;
+  text-align:center;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode .bx-wrapper .bx-caption .price.sold {
+  font-size: 32px;
+  line-height: 36px;
+  text-align:center;
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode .bx-wrapper .bx-caption .bed_bath {
+  display: inline-block;
+  background-color: rgba(66,139,202,0.8);
+  border: 1px solid #428bca;
+  margin: 4px auto;
+  padding: 6px 8px;
+  font-size: 0.9em;
+}
+
+/**
+ * ----------------------------------------------------------------------------------------------------
+ *   Listing Preview
+ * ----------------------------------------------------------------------------------------------------
+ */
+
+/**
+ * Property Preview Vertical
+ * -------------------------
+ */
+  
+.bootstrap-realtypress .rps-listing-preview-shortcode.vertical {
+  padding: 0;
+  margin-bottom:20px;
+}
+
+.bootstrap-realtypress .rps-listing-preview-shortcode.vertical .rps-property-result {
+  border: 1px solid #e5e5e5;
+  margin-bottom:10px;
+}
+
+.bootstrap-realtypress .rps-listing-preview-shortcode.vertical .rps-property-result .rps-property-info {
+  background: #fbfbfb;
+  padding: 10px 10px 5px 10px;
+  font-size:0.9em;
+  border-top: 3px solid #337ab7;
+  color:#6f6f6f;
+}
+
+.bootstrap-realtypress .rps-listing-preview-shortcode.vertical .rps-property-result h4 {
+  color: #428bca;
+  font-size: 14px;
+  font-weight: 300 !important;
+  margin: 0;
+}
+
+.bootstrap-realtypress .rps-listing-preview-shortcode.vertical .rps-property-info .city-province-postalcode {
+  font-size: 12px;
+  color: #888888;
+  margin-bottom:0;
+  padding: 2px 0;
+}
+
+.bootstrap-realtypress .rps-listing-preview-shortcode.vertical .rps-property-result .rps-property-info .property-features {
+  margin-bottom: 10px;
+}
+
+.bootstrap-realtypress .rps-listing-preview-shortcode.vertical .rps-property-result .rps-property-info .property-features .label.label-default {
+  background-color: #bbb;
+}
+
+/**
+ * Property Preview Horizontal
+ * ---------------------------
+ */
+/*  
+
+*/
+.bootstrap-realtypress .rps-listing-preview-shortcode.horizontal {
+  padding: 0;
+  background: #fbfbfb;
+  margin-bottom:20px;
+}
+
+.bootstrap-realtypress .rps-listing-preview-shortcode.horizontal .rps-property-result h4 {
+  color: #428bca;
+  font-size: 18px;
+  font-weight: 300 !important;
+  margin: 20px 0 0 0;
+}
+
+.bootstrap-realtypress .rps-listing-preview-shortcode.horizontal .rps-property-result {
+  border: 1px solid #e5e5e5;
+  margin-bottom:10px;
+}
+
+.bootstrap-realtypress .rps-listing-preview-shortcode.horizontal .rps-property-result .rps-property-info {  
+  padding: 10px 15px 10px 15px;
+  font-size:1em;
+  color:#6f6f6f;
+}
+
+.bootstrap-realtypress .rps-listing-preview-shortcode.horizontal .rps-property-info .city-province-postalcode {
+  font-size: 14px;
+  color: #666;
+  margin-bottom:10px;
+}
+
+.bootstrap-realtypress .rps-listing-preview-shortcode.horizontal .rps-property-office {
+  font-size: 14px;
+  color: #888;
+  margin:10px 0;
+}
+
+.bootstrap-realtypress .rps-listing-preview-shortcode.horizontal .rps-property-result .rps-property-info .property-features {
+  margin-bottom: 10px;
+}
+
+.rps-result-feature-label {
+  color: #fff;
+  font-size: 15px;
+  padding: 4px 8px;
+  background: #bbb;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  border-radius: 0;
+  display: block;
+  float: left;
+}
+
+/**
+ * ----------------------------------------------------------------------------------------------------
+ *   Big Listing Slider
+ * ----------------------------------------------------------------------------------------------------
+ */
+
+/**
+ *  Big Listing Slider
+ *  ------------------
+ */
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel {
+  position: relative;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  text-align: center
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  opacity:1;
+  height:100%;
+  border:0;
+  background: rgba(0,0,0,1);
+  border-radius: 0;
+  margin:0;
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-control:hover {
+
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-control.left,
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-control.right {
+  -moz-transition: 200ms;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  background: rgba(0,0,0,0.1);
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-control.left {
+  left: 0;
+  background: rgba(0,0,0,0.1) url(../img/slider-arrow-left-sm.png) center center no-repeat;
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-control.left:hover {
+  background: rgba(0,0,0,0.4) url(../img/slider-arrow-left-sm.png) center center no-repeat;
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-control.right {
+  right: 0;
+  background: rgba(0,0,0,0.1) url(../img/slider-arrow-right-sm.png) center center no-repeat;
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-control.right:hover {
+  background: rgba(0,0,0,0.4) url(../img/slider-arrow-right-sm.png) center center no-repeat;
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-inner > .active {
+  display: flex;
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-inner > .item {
+  min-height: 600px;
+  max-height: 600px;
+  height: 600px;
+  align-items: center;
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-inner > .item > img, 
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-inner > .item > a > img {
+  line-height: 1;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: auto;
+  margin: auto;
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-inner .carousel-caption {
+  position: absolute;
+  top:30px;
+  right: 60px;
+  left:auto;
+  bottom:auto;
+  z-index: 10;
+  margin-left:30px;
+  padding: 0 40px 15px 60px;
+  color: #ffffff;
+  text-align: right;
+  width:  auto;
+  height: auto;
+  background: rgba(0,0,0,0.6);
+}
+
+.bootstrap-realtypress .rps-listing-carousel-shortcode .carousel-caption h3 {
+  color: #fff;
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-inner .carousel-caption .rps-result-feature-label-sm {    
+  color: #fff;  
+  font-size:14px;
+  padding:4px 6px;
+  background: #337ab7;
+  margin-right:3px;
+  margin-bottom:3px;
+  border-radius: 0;
+  display:block;
+  float:right;
+  text-shadow: 0 1px 0 #444;
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-inner .carousel-caption p {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-inner .carousel-caption h3 {
+  font-size:  2.2em;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-inner .carousel-caption small {
+  color:  #fff;
+    font-weight: 500;
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-indicators { 
+  position: absolute;
+  top: auto;
+  bottom: 10px;
+  left: 50%;
+  right: auto;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center !important;
+  list-style: none;
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-indicators li {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 1px 2px;
+  text-indent: -999px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bootstrap-realtypress .rps-listing-slider-shortcode .carousel-indicators .active {
+  margin: 1px 2px;
+  width: 12px;
+  height: 12px;
+  background-color: #337ab7;
+}
+
+/**
+ * ----------------------------------------------------------------------------------------------------
+ *   Listing Screen Slider
+ * ----------------------------------------------------------------------------------------------------
+ */
+
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-listings-screen-slider-container {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-listing-screen-slider {
+  position:absolute;
+  top:0;
+  left:0;
+  width:78%;
+  height:100%;
+  background:#fff;
+}
+
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-listing-screen-slider .carousel {
+  position: relative;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-listing-screen-slider .carousel,
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-listing-screen-slider .item,
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-listing-screen-slider .active {
+  height: 100%;
+}
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-listing-screen-slider .carousel-inner {
+  height: 100%;
+}
+
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-listing-screen-slider .carousel-inner .carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  z-index: 10;
+  margin-left: 0;
+  padding: 10px 20px 10px 10px;
+  color: #ffffff;
+  text-align: right;
+  width: 100%;
+  height:auto;
+  min-height: 180px;
+  background: -moz-linear-gradient(22deg, rgba(184,0,0,1) 0%, rgba(117,0,0,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(184,0,0,1)), color-stop(100%, rgba(117,0,0,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(22deg, rgba(184,0,0,1) 0%, rgba(117,0,0,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(22deg, rgba(184,0,0,1) 0%, rgba(117,0,0,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(22deg, rgba(184,0,0,1) 0%, rgba(117,0,0,1) 100%); /* ie10+ */
+  background: linear-gradient(68deg, rgba(184,0,0,1) 0%, rgba(117,0,0,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b80000', endColorstr='#750000',GradientType=1 ); /* ie6-9 */
+  border-top: 3px solid #970000;
+  border-bottom: 3px solid #970000;
+  box-shadow: 0 0 10px 6px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 0 10px 6px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 0 10px 6px rgba(0,0,0,0.2);
+  text-shadow: none;
+}
+
+/* Carousel Item */
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-listing-screen-slider .carousel-inner > .active {
+  display: flex;
+}
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-listing-screen-slider .carousel-inner > .item {
+  min-height: 100%;
+  max-height: 100%;
+  height: 100%;
+  align-items: center;
+}
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-listing-screen-slider .carousel-inner > .item > img, 
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-listing-screen-slider .carousel-inner > .item > a > img {
+  line-height: 1;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: -9999px;
+  right: -9999px;
+  top: -9999px;
+  bottom: -9999px;
+  margin: auto;
+}
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-listing-screen-slider .carousel-inner .carousel-caption p {
+  color: #fff;
+}
+
+/* ===================== */
+/*  Left Listing Column  */
+/* ===================== */
+
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .row {
+  margin-bottom: 0;
+}
+
+/* Listing Details */
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-screen-slider-listing-image {
+  padding-bottom: 250px;
+}
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-screen-slider-title {
+  margin-top:0;
+  font-size:26px;
+}
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-screen-slider-city-province {
+  display:block;
+  font-size:.7em;
+  margin-top:5px; 
+}
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-screen-slider-bed-bath {
+  font-weight:700;
+  font-size:1em;
+}
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-screen-slider-public-remarks {
+  color: #fff;
+  font-size:0.9em;
+}
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-screen-slider-mls {
+  font-size: 1.2em;
+}
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-screen-slider-price {
+  margin-top:0;
+  margin-bottom:0;
+  color:#fff !important;
+  font-size:36px;
+}
+
+/* Agent */
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-screen-slider-agent-col {
+  border-right: 2px solid rgba(255,255,255,0.2);
+}
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-screen-slider-agent-name {
+  font-size:1.5em;
+}
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-screen-slider-agent-position {
+  font-size:1.2em;
+}
+
+/* Office Details */
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-screen-slider-agent-container {
+  height: 120px;
+}
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-screen-slider-agent-photo {
+  height: 110px;
+  float:left;
+  border:4px solid #fff
+}
+.bootstrap-realtypress .rps-listing-screen-slider-shortcode .rps-screen-slider-office-photo {
+  width: 80px;
+  float:left;
+  margin-right:10px;
+}
+
+/* ====================== */
+/*  Right Sidebar Column  */
+/* ====================== */
+
+/* Containers */
+.rps-listings-screen-slider-sidebar {
+  position:absolute;
+  top:0;
+  right:0;
+  width:22%;
+  height:100%;
+  background:#D2CCB4;
+  box-shadow: 0 0 10px 6px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 0 10px 6px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 0 10px 6px rgba(0,0,0,0.2);
+  color:#333
+}
+.rps-listings-screen-slider-sidebar .rps-listings-screen-slider-sidebar-inner {
+  padding:20px;
+}
+
+/* Logo */
+.rps-listings-screen-slider-sidebar .rps-listings-screen-slider-sidebar-inner .screen-slider-logo,
+.rps-listings-screen-slider-sidebar .rps-listings-screen-slider-sidebar-inner .screen-slider-image {
+  margin-top:20px
+}
+
+/* Announcements */
+#rps-listing-screen-slider-announcements {
+  background:#efefef;
+  padding:15px 20px;
+  color:#333;
+  border:2px solid #bbb
+}
+.rps-listing-screen-slider-announcements-title {
+  font-size:16px !important;
+  font-weight:700 !important;
+  margin-top: 30px !important;
+  margin-bottom: 5px !important;
+  text-align: center;
+}
+
+/* Office Details */
+.rps-listings-screen-slider-sidebar-office-wrap {
+  padding-bottom:10px;
+  border-bottom: 3px solid #CF1E24;
+}
+.rps-listing-screen-slider-shortcode h3.rps-sidebar-screen-slider-office-name {
+  font-weight: 700;
+  margin-bottom:0;
+  text-align:center;
+}
+.rps-listing-screen-slider-shortcode .rps-sidebar-screen-slider-office-location {
+  color: #555;
+  margin-bottom:5px; 
+  text-align:center;
+}
+.rps-listing-screen-slider-shortcode .rps-sidebar-screen-slider-office-telephone {
+  color: #555; 
+  font-size:18px;
+  margin-top:0;
+  text-align:center;
+}
+
+/* Sidebar Carousel*/
+.bootstrap-realtypress .rps-listings-screen-slider-sidebar .carousel {
+  position: relative;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+.bootstrap-realtypress .rps-listings-screen-slider-sidebar .carousel .carousel-inner .carousel-caption {
+  position:static;
+  padding:0;
+  text-align: left;
+  color: #333;
+  text-shadow: none;
+}

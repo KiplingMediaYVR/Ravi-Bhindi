@@ -1,0 +1,1620 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: RealtyPress Premium\n"
+"POT-Creation-Date: 2018-01-28 19:18+0000\n"
+"PO-Revision-Date: 2018-01-28 20:04+0000\n"
+"Last-Translator: justin <justin@hellomedia.ca>\n"
+"Language-Team: English (United States)\n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"Report-Msgid-Bugs-To: \n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"X-Poedit-SearchPath-0: /home/justin/Desktop/realtypress-premium-1.0."
+"0/Plugin/realtypress/languages"
+
+#: public/class-realtypress-public.php:655
+#: public/templates/default/shortcodes/shortcode-property-slider.php:71
+#: public/templates/default/shortcodes/shortcode-listing-preview-h.php:96
+#: public/templates/default/shortcodes/shortcode-listing-favorites.php:117
+#: public/templates/default/shortcodes/shortcode-listing-preview-v.php:89
+#: public/templates/default/partials/property-result-grid.php:152
+#: public/templates/default/partials/property-single-intro.php:13
+#: public/templates/default/partials/property-result-list.php:150
+msgid "Bedroom"
+msgstr ""
+
+#: public/class-realtypress-public.php:661
+#: public/templates/default/shortcodes/shortcode-property-slider.php:74
+#: public/templates/default/shortcodes/shortcode-listing-preview-h.php:100
+#: public/templates/default/shortcodes/shortcode-listing-favorites.php:121
+#: public/templates/default/shortcodes/shortcode-listing-preview-v.php:93
+#: public/templates/default/partials/property-result-grid.php:156
+#: public/templates/default/partials/property-single-intro.php:17
+#: public/templates/default/partials/property-result-list.php:154
+msgid "Bathroom"
+msgstr ""
+
+#: public/class-realtypress-public.php:982
+#: public/class-realtypress-public.php:1092
+msgid "Please correct the following"
+msgstr ""
+
+#: public/class-realtypress-public.php:1146
+#: public/class-realtypress-public.php:1193
+msgid "Post ID cannot be found"
+msgstr ""
+
+#: public/class-realtypress-public.php:1160
+msgid "Property was added to Favourites"
+msgstr ""
+
+#: public/class-realtypress-public.php:1163
+msgid "Property is already in Favourites"
+msgstr ""
+
+#: public/class-realtypress-public.php:1166
+msgid "Error adding to Favourites, try again."
+msgstr ""
+
+#: public/class-realtypress-public.php:1207
+msgid "This item has been removed from your favourites"
+msgstr ""
+
+#: public/class-realtypress-public.php:1210
+msgid "Error removing Favorite, try again."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:450
+msgid "RealtyPress Premium requires PHP 5.3.0 or higher."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:452
+msgid "</strong>.<br>"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:453 admin/class-realtypress-admin.php:467
+#: admin/class-realtypress-admin.php:481
+msgid ""
+"If you are unsure what of to do, start by contacting your hosting provider "
+"for support on upgrading your hosting environments version of PHP.</strong>"
+"<br><br>"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:464
+msgid "RealtyPress Premium requires cURL."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:466
+msgid ""
+"You must install cURL 7.19.7 or higher in order to run RealtyPress Premium."
+"<br>"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:478
+msgid "RealtyPress Premium requires cURL 7.19.7 or higher."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:480
+msgid ""
+"You must update your install cURL 7.19.7 or higher in order to run "
+"RealtyPress Premium.<br>"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:494
+msgid "RealtyPress Premium requires WordPress v3.6 or higher."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:496
+msgid "</strong>."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:497
+msgid ""
+" is out of date and contains many security vulnerabilities that have been "
+"patched in future versions of WordPress.<br>"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:499
+msgid "Go to WordPress Updates"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:511
+msgid ""
+"This update may take a while and time is directly affected by number of "
+"listings in the database.<br>\n"
+"            <span class=\"rps-text-red\">If you receive a timeout error "
+"continue to run the update you receive a success notice.</span>"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:514
+msgid "Update Database"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:527
+msgid "This notice will no longer be shown."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:538
+msgid "RealtyPress Premium requires a Google API key for mapping."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:540
+msgid ""
+"As of June 22, 2016 Google has made API keys required for the Javascript "
+"Maps API."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:541
+msgid ""
+"To allow maps to function correctly please create a <strong>server token api "
+"key</strong> and enable <strong>Maps Javascript API</strong>, <strong>"
+"GeoCoding API</strong> and <strong>Places API Web Service</strong> for the "
+"server token key created."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:542
+msgid ""
+"?page=rps_admin_page_slug&tab=api\">RealtyPress=>General Options=>API "
+"Keys</a> tab</strong>."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:554
+msgid "WordPress MultiSite is currently enabled."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:555
+msgid ""
+"RealtyPress Premium has not been tested using WordPress Multisite, you may "
+"have unexpected results."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:556
+msgid "</a>)."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:568
+msgid "RealtyPress CREAD DDF&reg; is Sample Mode"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:569
+msgid ""
+"CREA DDF&reg; data feed connection type is currently set to sample mode, all "
+"data being provided by CREA DDF&reg; is for development purposes only."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:583
+msgid "Your RealtyPress Premium license has expired!"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:584 admin/class-realtypress-admin.php:603
+msgid ""
+"Click the button below to visit our site and renew your RealtyPress Premium "
+"license before it expires."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:585 admin/class-realtypress-admin.php:604
+msgid "Renew License"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:602
+msgid "Your RealtyPress Premium license is going to expire in "
+msgstr ""
+
+#: admin/class-realtypress-admin.php:602
+msgid " day(s) on "
+msgstr ""
+
+#: admin/class-realtypress-admin.php:619
+msgid "RealtyPress Premium has not been activated!"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:620
+msgid ""
+"Click the button below to go to the licensing section of RealtyPress Premium "
+"and enter your license key to activate RealtyPress Premium."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:621
+msgid "Go to License Activation"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:648
+msgid "Realtypress Custom Interval"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:689 admin/class-realtypress-admin.php:1004
+msgid "Listings"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:698
+msgid "General Options"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:707
+msgid "Appearance Options"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:716
+msgid "Support"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:725
+msgid "CREA DDF&reg; Documentation"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:736
+msgid "REALTOR Link&reg;"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:754 admin/class-realtypress-admin.php:1025
+#: admin/class-realtypress-admin.php:1314
+#: admin/class-realtypress-admin.php:1458
+msgid "RealtyPress"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:797
+msgid "RealtyPress Premium | CREA DDF&reg; Plugin"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1002
+msgctxt "Listings"
+msgid "Listings"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1003
+msgctxt "Listing"
+msgid "Listing"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1005
+msgid "Parent Listing"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1006
+msgid "All Listings"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1007
+msgid "View Listing"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1008
+msgid "Add New Listing"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1009
+msgid "New Listing"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1010
+msgid "Edit Listing"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1011
+msgid "Update Listing"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1012
+msgid "Search listings"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1013
+msgid "No listing found"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1014
+msgid "No listing found in Trash"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1026
+msgid "Property Listings"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1192
+msgid "Beds"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1198
+msgid "Baths"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1291
+msgctxt "Post Type General Name"
+msgid "Agents"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1292
+msgctxt "Post Type Singular Name"
+msgid "Agent"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1293
+#: admin/class-realtypress-admin.php:1315
+msgid "Agents"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1294
+msgid "Parent Agent"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1295
+msgid "All Agents"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1296
+msgid "View Agent"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1297
+msgid "Add New Agent"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1298
+msgid "New Agent"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1299
+msgid "Edit Agent"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1300
+msgid "Update Agent"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1301
+msgid "Search agents"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1302
+msgid "No agent found"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1303
+msgid "No agent found in trash"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1435
+msgctxt "Post Type General Name"
+msgid "Offices"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1436
+msgctxt "Post Type Singular Name"
+msgid "Office"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1437
+msgid "Offices"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1438
+msgid "Parent Office"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1439
+msgid "All Offices"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1440
+msgid "View Office"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1441
+msgid "Add New Office"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1442
+msgid "New Office"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1443
+msgid "Edit Office"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1444
+msgid "Update Office"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1445
+msgid "Search Offices"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1446
+msgid "No office found"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1447
+msgid "No office found in trash"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1459
+msgid "offices"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1580
+msgid "RealtyPress Search"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1673
+msgid "Google GeoCoding"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1788
+msgid "Listing Details"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:1911
+msgid "Open Houses"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:2432
+msgid "Maintenance Fee"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:2435
+msgid ""
+" <strong>If applicable</strong> enter the maintenance fee for this listing."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:2991
+msgid "Agent Details"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:3198
+msgid "Office Details"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4422
+msgid "Slug"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4423
+msgid "Schema.org"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4441
+msgid ""
+"Slug contains an invalid characters, must contain only A-Z, a-z, 0-9, _ and -"
+" characters."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4483
+msgid "RealtyPress Analytics"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4484
+msgid "RealtyPress Analytics Intervals<sup>"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4527
+msgid ""
+"Integrating RealtyPress analytics will allow you to see your listing top "
+"views in your WordPress dashboard in the RealtyPress Dashboard Widget.</span>"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4574
+msgid "Email Address"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4575
+msgid "Agent Email Addresses"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4576
+msgid "Math Captcha"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4592
+msgid "REALTOR&reg; Analytics contains an invalid value."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4603
+msgid "Email Address format is invalid."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4706
+msgid "Social Networks"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4707
+msgid "Tweet Card"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4708
+msgid "Open Graph Protocol"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4784
+msgid "Google Mapping API Key<br><small>HTTP Protected Key</small>"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4785
+msgid "Google GeoCoding API Key<br><small>IP Protected Key</small>"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4786
+msgid "Bing API Key"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4787
+msgid "Walk Score&reg; API Key"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4861
+msgid ""
+"The <a href=\"https://www.bingmapsportal.com/\" target=\"_blank\">Bing Maps "
+"API</a> includes map controls and services that you can use to incorporate "
+"Bing Maps in applications and websites. Bing Maps Portal"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4868
+msgid ""
+"<a href=\"https://www.walkscore.com/professional/api-sign-up.php\" "
+"target=\"_blank\">Walkscore API</a> returns the Walk Score for any location. "
+"Programmers can use the API to; Integrate Walk Score into your site, Add "
+"Walk Score to your property listings, Enable searching and sorting by Walk "
+"Score."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4889
+msgid "Connection Type"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4890
+msgid "Username"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4891
+msgid "Password"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4892
+msgid "Language"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4949
+msgid "CRON Enabled"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4952
+msgid "CRON Type"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:4953
+msgid "CRON Schedule"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5034
+msgid "CREA Member Options"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5036
+#: admin/class-realtypress-admin.php:5955
+msgid ""
+"The details entered below are used to populate the CREA DDF&reg; Terms of "
+"Use, which users must agree to prior to viewing listing results and single "
+"listings."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5038
+msgid "Theme Options"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5041
+msgid "Default Images"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5047
+msgid "Enable CREA DDF&reg; Terms"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5048
+msgid "CREA Member Type"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5049
+msgid "CREA Member Name"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5050
+msgid "Theme"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5051
+msgid "Fluid Layout"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5052
+msgid "Default Property Image"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5109
+msgid ""
+"Enter URL to a listing image you would like displayed by default if a "
+"listing does not have any attached images."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5139
+#: admin/class-realtypress-admin.php:5652
+msgid "Page Layout"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5140
+msgid "Result View Default"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5141
+msgid "Grid Columns"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5142
+msgid "Results Per Page"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5143
+msgid "Result Sort By"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5144
+#: admin/class-realtypress-admin.php:5656
+msgid "Contact Form"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5145
+#: admin/class-realtypress-admin.php:5657
+msgid "User Favourites"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5146
+#: admin/class-realtypress-admin.php:5654
+msgid "Listing Office"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5147
+#: admin/class-realtypress-admin.php:5661
+msgid "Default Map Type"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5148
+msgid "Map Types (layers)"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5149
+msgid "Google Map Style"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5151
+#: admin/class-realtypress-admin.php:5663
+msgid "Map Zoom"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5152
+msgid "Map Center Latitude"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5153
+msgid "Map Center Longitude"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5156
+#: includes/widgets/widget_rps-listing-search-form.php:147
+msgid "Form Labels"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5157
+msgid "Form Inputs"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5159
+msgid "Range Sliders"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5160
+msgid "Range Sliders & Dropdown Min/Max Values"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5162
+msgid "Show Business Type"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5448
+#: admin/class-realtypress-admin.php:5703
+msgid "Left Sidebar"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5462
+#: admin/class-realtypress-admin.php:5718
+msgid "Right Sidebar"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5477
+#: admin/class-realtypress-admin.php:5733
+msgid "Full Width"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5653
+msgid "Listing Agent"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5655
+msgid "Print Button"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5659
+msgid "Maps Displayed"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5660
+msgid "Aerial Map Types (layers)"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5662
+msgid "Google Custom Style"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5953
+msgid "Advanced Appearance Options"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5960
+msgid "Trim Prices"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5961
+msgid "Include Custom Listings"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5962
+msgid "Include Sold"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5963
+msgid "Merge Neighbourhood & Community Name"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5964
+msgid "Phone & Website Labels"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:5965
+msgid "Phone & Website Icons"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6052
+msgid "Scripts &amp; Styles"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6053
+msgid "Minification"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6190
+msgid "HTTP(S)"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6191
+msgid "Disable Thumbnail Download"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6192
+msgid "Resize Large Listing Photos"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6193
+msgid "Resize Large Agent Photos"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6194
+msgid "Delete Logs"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6195
+msgid "Mail Headers"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6196
+msgid "Shortcode JS"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6314
+msgid "The license key below is currently active and valid until "
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6319
+msgid "Deactivate License"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6328
+msgid "License has been successfully deactivated."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6336
+msgid "Invalid License Key!"
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6344
+#: admin/class-realtypress-admin.php:6352
+msgid "."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6360
+msgid "License key has no activations left!."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6368
+msgid ""
+"The license key entered is invalid, please cut and paste your license key."
+msgstr ""
+
+#: admin/class-realtypress-admin.php:6377
+msgid "Activate License"
+msgstr ""
+
+#: includes/functions-realtypress.php:159
+msgid "&laquo;"
+msgstr ""
+
+#: includes/functions-realtypress.php:160
+msgid "&raquo;"
+msgstr ""
+
+#: includes/functions-realtypress.php:773
+#: includes/functions-realtypress.php:833
+#: includes/functions-realtypress.php:872
+msgid "Maintenance, "
+msgstr ""
+
+#: includes/class-realtypress-contact.php:148
+msgid "Thank you for contacting us!<br>We'll be in touch asap."
+msgstr ""
+
+#: includes/class-realtypress-contact.php:151
+msgid "An unexpected error occurred."
+msgstr ""
+
+#: includes/class-realtypress-contact.php:196
+msgid "What is "
+msgstr ""
+
+#: includes/class-realtypress-contact.php:197
+msgid "Change Question"
+msgstr ""
+
+#: includes/class-realtypress-contact.php:214
+msgid "Answer"
+msgstr ""
+
+#: admin/pages/ddf.php:53 admin/pages/tabs/tab-system-debug.php:368
+msgid "Successfully connected to CREA DDF server, currently pulling data from"
+msgstr ""
+
+#: admin/pages/ddf.php:56 admin/pages/tabs/tab-system-debug.php:371
+msgid "Successfully passed all required firewall tests."
+msgstr ""
+
+#: admin/pages/ddf.php:60 admin/pages/tabs/tab-system-debug.php:375
+msgid "Failed to pass required firewall tests."
+msgstr ""
+
+#: admin/pages/ddf.php:66 admin/pages/tabs/tab-system-debug.php:381
+msgid "Unable to connect to CREA DDF"
+msgstr ""
+
+#: includes/widgets/widget_rps-contact-form.php:65
+#: includes/shortcodes/shortcode_rps-contact-form.php:7
+msgid "Contact"
+msgstr ""
+
+#: includes/widgets/widget_rps-contact-form.php:72
+#: includes/widgets/widget_rps-listing-preview.php:68
+#: includes/widgets/widget_rps-listing-carousel.php:147
+#: includes/widgets/widget_rps-search-box.php:68
+#: includes/widgets/widget_rps-list-property-types.php:102
+#: includes/widgets/widget_rps-listing-user-favorites.php:69
+#: includes/widgets/widget_rps-listing-search-form.php:120
+#: includes/widgets/widget_rps-list-city.php:101
+msgid "Widget Title"
+msgstr ""
+
+#: includes/widgets/widget_rps-contact-form.php:78
+msgid "Contact Title"
+msgstr ""
+
+#: includes/widgets/widget_rps-contact-form.php:85
+msgid "Contact Style"
+msgstr ""
+
+#: includes/widgets/widget_rps-contact-form.php:96
+#: includes/widgets/widget_rps-listing-preview.php:92
+#: includes/widgets/widget_rps-listing-carousel.php:183
+#: includes/widgets/widget_rps-search-box.php:86
+#: includes/widgets/widget_rps-list-property-types.php:144
+#: includes/widgets/widget_rps-listing-user-favorites.php:94
+#: includes/widgets/widget_rps-listing-search-form.php:158
+#: includes/widgets/widget_rps-list-city.php:143
+msgid "Additional CSS Class"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-preview.php:74
+msgid "Listing ID"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-preview.php:81
+msgid "Preview Style"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:100
+msgid "Property Carousel"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:153
+msgid "Carousel Title"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:160
+msgid "Carousel Style"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:172
+msgid "Slide Captions"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:202
+msgid "Agent ID"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:211
+msgid "Office ID"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:223
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:54
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:45
+#: public/templates/default/partials/property-result-search-form-v.php:73
+#: public/templates/default/partials/property-result-search-form-h.php:84
+msgid "Property Type"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:233
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:79
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:70
+#: public/templates/default/partials/property-result-search-form-v.php:102
+#: public/templates/default/partials/property-result-search-form-h.php:113
+msgid "Transaction Type"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:245
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:277
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:264
+#: public/templates/default/partials/property-result-search-form-v.php:309
+#: public/templates/default/partials/property-result-search-form-h.php:327
+msgid "Street Address"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:254
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:287
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:274
+#: public/templates/default/partials/property-result-search-form-v.php:321
+#: public/templates/default/partials/property-result-search-form-h.php:340
+msgid "City"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:266
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:317
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:304
+#: public/templates/default/partials/property-result-search-form-v.php:357
+#: public/templates/default/partials/property-result-search-form-h.php:379
+msgid "Province"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:275
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:329
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:316
+#: public/templates/default/partials/property-result-search-form-v.php:372
+#: public/templates/default/partials/property-result-search-form-h.php:395
+msgid "Postal Code"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:287
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:297
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:284
+#: public/templates/default/partials/property-result-search-form-v.php:333
+#: public/templates/default/partials/property-result-search-form-h.php:353
+msgid "Community"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:296
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:307
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:294
+#: public/templates/default/partials/property-result-search-form-v.php:345
+#: public/templates/default/partials/property-result-search-form-h.php:366
+msgid "Neighbourhood"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:308
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:105
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:119
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:95
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:109
+#: public/templates/default/partials/property-result-search-form-v.php:132
+#: public/templates/default/partials/property-result-search-form-v.php:148
+#: public/templates/default/partials/property-result-search-form-h.php:143
+#: public/templates/default/partials/property-result-search-form-h.php:161
+msgid "Bedrooms"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:317
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:161
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:175
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:151
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:165
+#: public/templates/default/partials/property-result-search-form-v.php:191
+#: public/templates/default/partials/property-result-search-form-v.php:208
+#: public/templates/default/partials/property-result-search-form-h.php:203
+#: public/templates/default/partials/property-result-search-form-h.php:221
+msgid "Bathrooms"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:329
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:217
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:232
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:207
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:222
+#: public/templates/default/partials/property-result-search-form-v.php:250
+#: public/templates/default/partials/property-result-search-form-v.php:267
+#: public/templates/default/partials/property-result-search-form-h.php:263
+#: public/templates/default/partials/property-result-search-form-h.php:282
+msgid "Price"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:338
+msgid "Listing ID (MLS&reg; or RP Number)"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:350
+msgid "Description"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:360
+msgid "Open House Only"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:379
+msgid "Condominium Only"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:395
+msgid "Pool Only"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:414
+msgid "Waterfront Only"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:429
+msgid "Custom Only"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:447
+msgid "Sold Only"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:471
+msgid "Max. Slide Width"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:477
+msgid "Max. Number of Slides"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:483
+msgid "Min. Number of Slides Displayed"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:489
+msgid "Max. Number of Slide Displayed"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:495
+msgid "Number of Slides to Rotate per Advance"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:504
+msgid "Auto Rotate"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:515
+msgid "Rotate Speed (seconds)"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:522
+msgid "Auto Play Controls"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:534
+msgid "Show Paging Controls"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-carousel.php:546
+msgid "Paging Control Style"
+msgstr ""
+
+#: includes/widgets/widget_rps-search-box.php:61
+#: includes/shortcodes/shortcode_rps-listing-search-box.php:6
+msgid "Where would you like to look today?"
+msgstr ""
+
+#: includes/widgets/widget_rps-search-box.php:74
+msgid "Box Text"
+msgstr ""
+
+#: includes/widgets/widget_rps-search-box.php:80
+msgid "Button Text"
+msgstr ""
+
+#: includes/widgets/widget_rps-list-property-types.php:108
+msgid "Property Type List Title"
+msgstr ""
+
+#: includes/widgets/widget_rps-list-property-types.php:113
+msgid "Property Types to Include"
+msgstr ""
+
+#: includes/widgets/widget_rps-list-property-types.php:137
+msgid "Additional Property Types to Include"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-user-favorites.php:61
+#: includes/shortcodes/shortcode_rps-listing-favorites-box.php:7
+#: public/templates/default/partials/user-favorites-v.php:15
+#: public/templates/default/partials/user-favorites-h.php:15
+msgid "Your Favourites"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-user-favorites.php:75
+msgid "Favourites Title"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-user-favorites.php:83
+msgid "Favourites Style"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-search-form.php:108
+msgid "Property Search"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-search-form.php:116
+msgid "Titles"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-search-form.php:126
+msgid "Search Form Title"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-search-form.php:130
+msgid "Styles"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-search-form.php:135
+msgid "Search Form Style"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-search-form.php:163
+msgid "Options"
+msgstr ""
+
+#: includes/widgets/widget_rps-listing-search-form.php:164
+msgid "Select all options you would like included in the widget search form."
+msgstr ""
+
+#: includes/widgets/widget_rps-list-city.php:107
+msgid "City List Title"
+msgstr ""
+
+#: includes/widgets/widget_rps-list-city.php:112
+msgid "Cities to Include"
+msgstr ""
+
+#: includes/widgets/widget_rps-list-city.php:136
+msgid "Additional Cities to Include"
+msgstr ""
+
+#: includes/shortcodes/shortcode_rps-listing-search-business.php:6
+msgid "Enter a City, Neighbourhood or Address"
+msgstr ""
+
+#: includes/shortcodes/shortcode_rps-single-listing.php:50
+msgid "You must specify the Listing ID or Post ID of the listing to display."
+msgstr ""
+
+#: includes/shortcodes/shortcode_rps-single-listing.php:67
+msgid "Listing Not Found!."
+msgstr ""
+
+#: includes/shortcodes/shortcode_rps-listing-search-form.php:7
+msgid "Search"
+msgstr ""
+
+#: includes/shortcodes/shortcode_rps-listing-data.php:34
+msgid "You must specify a Listing ID and Key to retrieve data for."
+msgstr ""
+
+#: includes/shortcodes/shortcode_rps-listing-preview.php:60
+msgid "You must specify a Listing ID to preview"
+msgstr ""
+
+#: admin/pages/tabs/tab-support-support.php:14
+msgid "Support Methods"
+msgstr ""
+
+#: admin/pages/tabs/tab-support-support.php:22
+msgid "RealtyPress Documentation"
+msgstr ""
+
+#: admin/pages/tabs/tab-support-support.php:25
+msgid ""
+"Our documentation provides step-by-step instructions to help you understand, "
+"setup, and use RealtyPress Premium and it's various features, including "
+"shortcodes, widgets, apperance options, etc."
+msgstr ""
+
+#: admin/pages/tabs/tab-support-support.php:28
+msgid "Go to Documentation"
+msgstr ""
+
+#: admin/pages/tabs/tab-support-support.php:50
+msgid "this is our first line of support."
+msgstr ""
+
+#: admin/pages/tabs/tab-support-support.php:58
+msgid "Contact Us"
+msgstr ""
+
+#: admin/pages/tabs/tab-support-support.php:61
+msgid ""
+"You can contact us via email or twitter for support as well, but you will "
+"get faster support by submitting a topic on our support forum which is our "
+"first line of support for RealtyPress customers"
+msgstr ""
+
+#: admin/pages/tabs/tab-support-support.php:63
+msgid "This option requires a valid license."
+msgstr ""
+
+#: admin/pages/tabs/tab-support-support.php:65
+msgid "Twitter (@realtypress_)"
+msgstr ""
+
+#: admin/pages/tabs/tab-system-debug.php:510
+#: admin/pages/tabs/tab-system-debug.php:526
+#: admin/pages/tabs/tab-system-debug.php:542
+#: admin/pages/tabs/tab-system-debug.php:558
+#: admin/pages/tabs/tab-system-debug.php:577
+#: admin/pages/tabs/tab-system-debug.php:593
+#: admin/pages/tabs/tab-system-debug.php:633
+#: admin/pages/tabs/tab-system-debug.php:649
+#: admin/pages/tabs/tab-system-debug.php:689
+msgid "I understand the effect of this debug action."
+msgstr ""
+
+#: admin/pages/tabs/tab-system-debug.php:750
+msgid ""
+"Limit the number of listing transaction from the CREA DDF&reg; when "
+"performing a sync."
+msgstr ""
+
+#: admin/pages/tabs/tab-system-debug.php:754
+msgid "Enable Limiting of Listing Transactions"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:72
+msgid "DDF&reg; Cron Sync Disabled"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:73
+msgid "DDF&reg; Cron Sync is currently disabled."
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:83
+msgid "WordPress Cron (WP-CRON)"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:84
+msgid "You are currently using WordPress Cron to trigger DDF&reg; syncs."
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:94
+msgid "Unix WordPress Cron"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:95
+msgid ""
+"Use the command below when creating your unix cron task to trigger the WP-"
+"CRON.<br>This command below works in most cases but servers vary widely, "
+"<strong>you may need to adjust to suit your needs</strong>."
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:106
+msgid "Unix CRON"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:107
+msgid ""
+"When creating your cron use the command below.<br>This command below works "
+"in most cases but servers vary widely, <strong>you may need to adjust to "
+"suit your needs.</strong>"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:122
+msgid "RealtyPress CRON Schedule"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:124
+msgid "IMPORTANT - How WordPress CRON Works:"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:126
+msgid ""
+"Every time a page is loaded in the wordpress admin or on the front-end of "
+"your site, WordPress triggers the CRON fuction. This function checks for any "
+"RealtyPress scheduled tasks and runs them if they are due to be run.  The "
+"possible issue here is that if your site is not visited within a 24 hours "
+"period than wordpress cannot trigger the CRON function and will not check is "
+"scheduled tasks need to be run.  This is why we only recommend WordPress "
+"CRON if you have more than one vistor per day."
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:133
+msgid "Job"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:134
+msgid "Hook"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:135
+msgid "Schedule"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:136
+msgid "Interval"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:137
+msgid "Last Run"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:138
+msgid "Next Run"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:149
+msgid "Listing Data"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:152
+msgid "hours"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-sync-settings.php:160
+msgid "Not Run"
+msgstr ""
+
+#: admin/pages/tabs/tab-ddf-connection-settings.php:17
+msgid "Your settings will be tested upon saving."
+msgstr ""
+
+#: admin/pages/tabs/tab-support-docs.php:23
+msgid "Documentation"
+msgstr ""
+
+#: admin/pages/tabs/tab-system-logs.php:14
+msgid "RealtyPress Logs"
+msgstr ""
+
+#: admin/pages/tabs/tab-system-logs.php:19
+msgid "Name"
+msgstr ""
+
+#: admin/pages/tabs/tab-system-logs.php:20
+msgid "Size"
+msgstr ""
+
+#: admin/pages/tabs/tab-system-logs.php:21
+msgid "Date Created"
+msgstr ""
+
+#: admin/pages/tabs/tab-system-system.php:25
+#: admin/pages/tabs/tab-system-system.php:27
+#: admin/pages/tabs/tab-system-system.php:28
+msgid "Yes"
+msgstr ""
+
+#: admin/pages/tabs/tab-system-system.php:25
+#: admin/pages/tabs/tab-system-system.php:27
+#: admin/pages/tabs/tab-system-system.php:28
+msgid "No"
+msgstr ""
+
+#: admin/pages/tabs/tab-system-system.php:127
+msgid "Download System Report"
+msgstr ""
+
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:66
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:57
+#: public/templates/default/partials/property-result-search-form-v.php:87
+#: public/templates/default/partials/property-result-search-form-h.php:98
+msgid "Business Type"
+msgstr ""
+
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:91
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:82
+#: public/templates/default/partials/property-result-search-form-v.php:117
+#: public/templates/default/partials/property-result-search-form-h.php:127
+msgid "Building Type"
+msgstr ""
+
+#: public/templates/default/shortcodes/shortcode-search-form-h.php:339
+#: public/templates/default/shortcodes/shortcode-search-form-v.php:326
+#: public/templates/default/partials/property-result-search-form-v.php:384
+#: public/templates/default/partials/property-result-search-form-h.php:408
+msgid "MLS&reg; or RP Number"
+msgstr ""
+
+#: public/templates/default/shortcodes/shortcode-listing-preview-h.php:112
+#: public/templates/default/shortcodes/shortcode-listing-preview-v.php:105
+#: public/templates/default/partials/property-single-intro.php:31
+msgid "Fireplace"
+msgstr ""
+
+#: public/templates/default/shortcodes/shortcode-listing-preview-h.php:132
+#: public/templates/default/shortcodes/shortcode-listing-preview-v.php:125
+#: public/templates/default/partials/property-single-intro.php:51
+msgid "Acreage"
+msgstr ""
+
+#: public/templates/default/shortcodes/shortcode-contact-form-v.php:22
+#: public/templates/default/shortcodes/shortcode-contact-form-h.php:25
+#: public/templates/default/partials/property-result-contact-form-v.php:13
+#: public/templates/default/partials/property-single-contact-form-v.php:24
+#: public/templates/default/partials/property-single-contact-form-h.php:26
+#: public/templates/default/partials/property-result-contact-form-h.php:16
+msgid " Name"
+msgstr ""
+
+#: public/templates/default/shortcodes/shortcode-contact-form-v.php:27
+msgid " Email Address"
+msgstr ""
+
+#: public/templates/default/shortcodes/shortcode-contact-form-v.php:32
+#: public/templates/default/shortcodes/shortcode-contact-form-h.php:44
+#: public/templates/default/partials/property-result-contact-form-v.php:23
+#: public/templates/default/partials/property-result-contact-form-h.php:35
+msgid " Subject"
+msgstr ""
+
+#: public/templates/default/shortcodes/shortcode-contact-form-v.php:37
+#: public/templates/default/shortcodes/shortcode-contact-form-h.php:49
+#: public/templates/default/partials/property-result-contact-form-v.php:28
+#: public/templates/default/partials/property-single-contact-form-v.php:34
+#: public/templates/default/partials/property-single-contact-form-h.php:45
+#: public/templates/default/partials/property-result-contact-form-h.php:40
+msgid " Message"
+msgstr ""
+
+#: public/templates/default/shortcodes/shortcode-contact-form-v.php:42
+#: public/templates/default/shortcodes/shortcode-contact-form-h.php:54
+#: public/templates/default/partials/property-result-contact-form-v.php:33
+#: public/templates/default/partials/property-single-contact-form-v.php:42
+#: public/templates/default/partials/property-single-contact-form-h.php:50
+#: public/templates/default/partials/property-result-contact-form-h.php:45
+msgid "Sending"
+msgstr ""
+
+#: public/templates/default/shortcodes/shortcode-contact-form-v.php:48
+#: public/templates/default/shortcodes/shortcode-contact-form-h.php:60
+#: public/templates/default/partials/property-result-contact-form-v.php:39
+#: public/templates/default/partials/property-single-contact-form-v.php:48
+#: public/templates/default/partials/property-single-contact-form-h.php:59
+msgid "Generating Captcha"
+msgstr ""
+
+#: public/templates/default/shortcodes/shortcode-contact-form-v.php:55
+#: public/templates/default/shortcodes/shortcode-contact-form-h.php:70
+#: public/templates/default/partials/property-result-contact-form-v.php:46
+#: public/templates/default/partials/property-single-contact-form-v.php:53
+#: public/templates/default/partials/property-single-contact-form-h.php:64
+#: public/templates/default/partials/property-result-contact-form-h.php:62
+msgid "Send"
+msgstr ""
+
+#: public/templates/default/shortcodes/shortcode-listing-favorites.php:25
+msgid "You currently have"
+msgstr ""
+
+#: public/templates/default/shortcodes/shortcode-listing-favorites.php:25
+msgid "properties in your favourites"
+msgstr ""
+
+#: public/templates/default/shortcodes/shortcode-listing-favorites.php:28
+msgid ""
+"You can remove a favourite by clicking the button labeled \"Remove from "
+"Favourites\"."
+msgstr ""
+
+#: public/templates/default/shortcodes/shortcode-contact-form-h.php:33
+#: public/templates/default/partials/property-result-contact-form-v.php:18
+#: public/templates/default/partials/property-single-contact-form-v.php:29
+#: public/templates/default/partials/property-single-contact-form-h.php:34
+#: public/templates/default/partials/property-result-contact-form-h.php:24
+msgid " Email"
+msgstr ""
+
+#: public/templates/default/partials/property-single-open-house.php:9
+msgid "Open House"
+msgstr ""
+
+#: public/templates/default/partials/property-single-open-house.php:11
+msgid "This property has open houses!"
+msgstr ""
+
+#: public/templates/default/partials/property-single-open-house.php:71
+msgid "Starts at:"
+msgstr ""
+
+#: public/templates/default/partials/property-single-open-house.php:74
+msgid "Ends at:"
+msgstr ""
+
+#: public/templates/default/partials/property-single-not-found.php:8
+msgid "Listing Not Found"
+msgstr ""
+
+#: public/templates/default/partials/property-result-search-form-v.php:45
+msgid "Search Properties"
+msgstr ""
+
+#: public/templates/default/partials/property-filter-location-form.php:36
+msgid "Try a City, Neighbourhood, Province, Postal Code MLS&reg; or RP Number"
+msgstr ""
+
+#. Name of the plugin
+msgid "RealtyPress Premium"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"RealtyPress is a Premium WordPress Plugin that provides REALTORS® seamless "
+"integration of the CREA Data Distribution Facility feed. Easily synchronize "
+"MLS® listings and ensure that MLS® content displayed is accurate, up to date,"
+" and uses CREA’s trademarks correctly."
+msgstr ""
+
+#. URI of the plugin
+msgid "realtypress.ca"
+msgstr ""
+
+#. Author of the plugin
+msgid "RealtyPress Team"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://realtypress.ca"
+msgstr ""
+
+#: public/templates/default/partials/property-single-contact-form-v.php:16
+#: public/templates/default/partials/property-single-contact-form-h.php:16
+msgid "Contact us for more information"
+msgstr ""
+
+#: public/templates/default/partials/property-result-contact-form-v.php:7
+#: public/templates/default/partials/property-single-contact-form-v.php:15
+#: public/templates/default/partials/property-single-contact-form-h.php:15
+#: public/templates/default/partials/property-result-contact-form-h.php:7
+msgid "Interested?"
+msgstr ""

@@ -1,0 +1,577 @@
+
+### IMPORTANT: READ ME! #################################
+### --------------------------------------------------------------------------------------------
+### REALTYPRESS v1.5.0+ REQUIRES CHILD TEMPLATE UPDATES, if the child was created prior v1.5.0.
+### See our blog post at https://realtypress.ca/v1-5-0-template-updates/ for more information.
+### --------------------------------------------------------------------------------------------
+
+## 1.6.9 (2018-10-17)
+---------------------------------------------------------
+Added:       RealtyPress color styles to the customizer.
+Added:       Option to disable RealtyPress customizer completeley under RealtyPress->System->Advanced.
+Added:       Option to disable downloading of agent photos.
+             Saves disk space if you're not displaying agents or offices.
+Added:       Option to disable downloading of office photos.
+             Saves disk space if you're not displaying agents or offices.
+Added:       Import filters for city names to include or exclude during import..
+Added:       Button to delete repair cache.
+Updated:     UI to flat vs gradients.
+Optimized:   Listing Photo repair script.
+
+
+## 1.6.8 (2018-10-01)
+---------------------------------------------------------
+Updated:     Single listing slider to fit full image.
+Updated:     Map to discard listings with missing coordinates.
+Updated:     Single listing appearance page to hide street view when google is not being used.
+Added:       Support to import listings with not address specified.
+Optimized:   Listing Photo repair script to find and repair further missing images.
+
+
+## 1.6.7 (2018-09-17)
+---------------------------------------------------------
+Added:      Listing Photo repair script to resolve missing images.
+Updated:    Search Location Form to be targeted by class not id.
+Updated:    Wider column for photo on List view Listing Result.
+Fixed:      Quotes in og:description tag.
+Fixed:      Quotes in twitter:description tag.
+Fixed:      Minor bugs.
+
+## 1.6.6 (2018-08-18)
+---------------------------------------------------------
+Updated:    CREA trademarks on single listing page.
+
+## 1.6.5 (2018-07-11)
+---------------------------------------------------------
+Fixed:      GeoCoding API limit settings bug.
+
+## 1.6.4 (2018-06-11)
+---------------------------------------------------------
+Added:      Pre PHP 5.6 write context bug.
+Updated:    WP admin notices.
+
+## 1.6.3 (2018-06-04)
+---------------------------------------------------------
+Added:      DDF Geo Coordinate support.
+            https://support.crea.ca/DDF#/discussion/58/june-5-2018-release-notes
+Added:      Geocodio Geocoding API service provider.
+Added:      OpenCage Data Geocoding API service provider.
+Added:      GeoCoding API limit settings.
+Added:      GeoCoding API call counters.
+Removed:    Google static map and street view from edit listing page.
+Removed:    Bing map options from listing results.
+Fixed:      PHP 5.6.0 notice for RealtyPress installations without RealtyPress S3 add-on installed.
+
+## 1.6.2 (2018-05-02)
+---------------------------------------------------------
+Added:      Option to disable swipebox library.
+Added:      Neighbourhood to single listing view.
+Added:      Community Type to single listing view.
+Added:      business_type filter to [rps-listings] shortcode.
+Added:      business_type filter to [rps-listing-carousel] shortcode.
+Added:      business_type filter to [rps-listing-slider] shortcode.
+Added:      data.crea.ca HTTPS support.
+Added:      Additional print media CSS to single listing page.
+Added:      Listing map popup office details.
+Added:      PHP version check when Amazon S3 Addon is acivated.
+Added:      Hiding of condo, pool and waterfront in search form widget.
+Added:      Missing closing div to horizontal agent details.
+Updated:    LoadingType table column to support up to 35 characters.
+Updated:    CeilingType table column to support up to 50 characters.
+Updated:    Single listing default map handling to be set dynamically based on enabled map layers.
+Updated:    MLS® logo to black and white.
+Fixed:      Display of single listing utlities.
+Fixed:      Hiding of building type in search form widget.
+Fixed:      building_type filter for [rps-listing-slider] shortcode.
+Fixed:      Yandex map on single listings error.
+Fixed:      Listing result appearance "Result Sort By" not saving value in admin.
+Fixed:      Minor bugs and notices.
+
+## 1.6.1 (2018-03-06)
+---------------------------------------------------------
+Updated:    GeoCoding variations.
+Updated:    Address suffix conversion (WY, RG, BA, BV).
+Updated:    Geocoding city name conversion of "Rural Rocky View County" to "Rocky View County".
+Updated:    Bing API url to https only.
+Updated:    Single listing youtube video CSS width to 100%.
+Removed:    Trimming of description search parameter values.
+
+## 1.6.0 (2018-02-23)
+---------------------------------------------------------
+Updated:    GeoCoding zero results log entries.
+
+## 1.5.9 (2018-02-22)
+---------------------------------------------------------
+Fixed:      Minor bug fix.
+
+## 1.5.8 (2018-02-21)
+---------------------------------------------------------
+Fixed:      Sort bug on installs that do not have a sort order value saved.
+
+## 1.5.7 (2018-02-20)
+---------------------------------------------------------
+Added:      Handling for city names with "St.", "St", or "Saint" to match all.
+Updated:    Listing sort by newest and oldest to include listing contract date value in order.
+Updated:    SizeInterior formatting to remove decimal points if in the value.
+Updated:    CREA_phRETS class to handle some LargePhoto requests that return a 400 code. 
+Updated:    Migration of previous API key to separate API keys. 
+Updated:    English US language file. 
+Updated:    ScrollTo JS with and offset of 150. 
+Fixed:      Display of office details on single listings when full width view is enabled.
+Fixed:      Utility warning in admin when viewing single listing.
+Fixed:      Setting new listing to draft status.
+Fixed:      Bing maps V8 error.
+
+## 1.5.6 (2018-01-07)
+---------------------------------------------------------
+Added:      rps-single-listing-information-link class to single listing more information link.
+Fixed:      Duplicate realtypress_before_listing_single_header hook.
+
+## 1.5.5 (2017-12-11)
+---------------------------------------------------------
+Added:      Debug option to resize existing large agent images.
+Added:      Debug option to resize existing large listing images.
+Added:      Sync option to resize large agent images.
+Added:      Sync option to resize large listing images.
+Fixed:      Listing import transaction type conversion bug.
+Fixed:      Listing preview shortcode fireplace bug.
+Fixed:      Tab map height for RealtySpace theme.
+Updated:    Listing photo download handling.
+
+
+## 1.5.4 (2017-08-24)
+---------------------------------------------------------
+Added:      Option to exclude sold listings from current results to RealtyPress->Appearance->Advanced.
+Added:      Option to exclude custom listings from being mixed with DDF® results to RealtyPress->Appearance->Advanced.
+Added:      Option to merge community name and neighbourhood search queries to RealtyPress->Appearance->Advanced.
+Updated:    Listing import to convert for sale to for lease if only a lease price exists.
+Updated:    [rps-listing-carousel] parameter custom_listings to custom.
+Updated:    [rps-listing-slider] parameter custom_listings to custom.
+Updated:    [rps-listings] parameter custom_listings to custom.
+Fixed:      Building Type search on map.
+
+## 1.5.3 (2017-08-13)
+---------------------------------------------------------
+Fixed:      Listing result "sort by" default selection for price sorting.
+Fixed:      Listing search box by neigbourhood not passing neighbourhood.
+
+## 1.5.2 (2017-08-05)
+---------------------------------------------------------
+Added:      Flex room, Walk-in Closet, and Wardrobe to manual listing room type dropdown.
+Added:      realtypress_before_listing_contact_email_send hook to class-realtypress-contact.php:30
+Updated:    Listing search box queries.
+Updated:    Manual listing MLS number input blurb.
+Updated:    Neighbourhood value source order (DDF, DDF Embedded, GeoCoding).
+Updated:    Neighbourhood query to match partials.
+Updated:    Listing price search query.
+Fixed:      Duplicate hook names in property-results.php.
+
+## 1.5.1 (2017-06-24)
+---------------------------------------------------------
+Removed:  fix_default_marker_points function from cron job.
+Updated:  RealtyPress agent slug to rps-agent.
+Updated:  RealtyPress office slug to rps-office.
+Fixed:    City search apostrophe slash.
+Fixed:    Converted shortform arrays [] to array() for PHP 5.3 support.
+
+## 1.5.0 (2017-06-18)
+---------------------------------------------------------
+Added:    cURL admin notice if cURL is not installed.
+Added:    Custom listings, allowing manually entered listings.
+Added:    Custom agents, allowing manually entered agents for use with custom listings.
+Added:    Custom office, allowing manually entered offices for use with custom listings.
+Added:    Custom listings sold option, listings are displayed as sold on front end of site.
+Added:    Import of Agent Phone Type & Phone Contact Type.
+Added:    Import of Agent Website Type & Website Contact Type.
+Added:    Import of Office Phone Type & Phone Contact Type.
+Added:    Import of Office Website Type & Website Contact Type.
+Added:    [rps-listing-carousel] shortcode sold only parameter.
+Added:    [rps-listing-carousel] shortcode custom_listings parameter.
+Added:    [rps-listing-slider] shortcode sold parameter.
+Added:    [rps-listing-slider] shortcode custom_listings parameter.
+Added:    [rps-listings] shortcode sold parameter.
+Added:    [rps-listings] shortcode custom_listings parameter.
+Added:    Listing Carousel widget sold option.
+Added:    Listing Carousel widget custom listings option.
+Added:    Phone & Website Labels option under RealtyPress->Appearance->Advanced
+Added:    Phone & Website Icon option under RealtyPress->Appearance->Advanced
+Added:    Trim Pricing option under RealtyPress->Appearance->Advanced (trims .00 from prices)
+Added:    Divi smooth scroll disabled classes to single listing tabs to prevent smooth scroll which breaks tabs.
+Updated:  call_user_method function with call_user_func for PHP 7.0 compatibility.
+Updated:  Walkscore to support https.
+Updated:  Single listing tab js to only initialize street view on change (required for firefox).
+Updated:  Single listing tab css, moved styles to classes.
+Updated:  Updated curl wp admin notice to include both install and version check.
+Updated:  Text case function to accommadate Re/max as an all uppercase string.
+Updated:  Text case function to capitalize any characters following a hyphen.
+Removed:  ini_get('safe_mode'), deprecated in PHP 5.3.
+Fixed:    Saving of bed, bath, and price dropdowns on refresh.
+Fixed:    Minor bug in list view getting agent data after sorting array.
+Fixed:    Minor admin border-box css.
+Fixed:    Enqueue script non minified bootstrap javascript filename.
+
+## 1.4.1 (2017-03-07)
+---------------------------------------------------------
+Added:     Curl to map_look geocoding call, used if allow_url_fopen is disabled
+Updated:   Search box to populate city in filter form on search.
+Updated:   Map functionality to match results across grid, list and map views.
+Updated:   Favorites functionality.
+Fixed:     [rps-listing-search-box] search bug.
+Fixed:     Display of static map and street view on edit listing screen.
+
+## 1.4.0 (2017-02-26)
+---------------------------------------------------------
+Added:     Agreement parameter to [rps-listings] for toggling of the agreement display.
+Added:     Master list check, if master list is empty syncing is halted.
+Added:     Condominium checkbox to search forms.
+Added:     Pool checkbox to search forms.
+Added:     WaterFront checkbox to search forms.
+Added:     "condominium" parameter to [rps-listings] shortcode.
+Added:     "pool" parameter to [rps-listings] shortcode.
+Added:     "waterfront" parameter to [rps-listings] shortcode.
+Added:     "condominium" parameter to [rps-listing-carousel] shortcode.
+Added:     "pool" parameter to [rps-listing-carousel] shortcode.
+Added:     "waterfront" parameter to [rps-listing-carousel] shortcode.
+Added:     4 Geocoding address variations.
+Updated:   "Agent Email Addresses" text.
+Updated:   Geocoding with street suffix conversions.
+Updated:   Geocoding neighbourhood handling with conversion of city names containing neighbourhood.
+Updated:   Geocoding to convert unsupported province "Newfoundland & Labrador" to "Newfoundland".
+Updated:   Geocoding to run address variations during import.
+Updated:   Map marker JS to populate loader title on click.
+Fixed:     Minor "Agent Email Addresses" bug when adding rows.
+Fixed:     Search box shortcode google autocomplete functionality.
+Fixed:     Full width contact and favorite panels being displayed if single listing appearance have not been saved.
+
+## 1.3.9 (2017-02-05)
+---------------------------------------------------------
+Updated:   Unix cron script relative paths.
+
+## 1.3.8 (2017-01-25)
+---------------------------------------------------------
+Updated:   CREA Analytics, d.rare.io causing 504
+
+## 1.3.7 (2017-01-17)
+---------------------------------------------------------
+Fix:   Price search sql bug.
+
+## 1.3.6 (2017-01-15)
+---------------------------------------------------------
+Updated:   Hiding of match captcha on single listing.
+Updated:   Passing of agent to contact form on single listing.
+
+## 1.3.5 (2017-01-14)
+---------------------------------------------------------
+Updated:   RealtyPress create tables SQL.
+
+## 1.3.4 (2017-01-08)
+---------------------------------------------------------
+Updated:   Price sort to include both Price and Lease columns.
+Updated:   Price sql to include Lease values as well.
+Updated:   Admin renewal notice.
+Updated:   Debug listing cleanup function.
+Fixed:     Hiding of Open House on default listing archive filter form.
+Fixed:     Custom class in vertical search form shortcode
+Fixed:     Custom class in horizontal favorites shortcode
+
+## 1.3.3 (2016-11-30)
+---------------------------------------------------------
+Added:     Grid and List Ribbon for "for sale or rent" listings.
+Added:     Indexes to BuildingType, BusinessType, TransactionType, Type, Province
+Added:     Street_address option to listings carousel widget.
+Added:     Purging of logs 30 days or older to debug page and cron sync.
+Updated:   Ribbon color for "for rent" to a distinct color.
+Updated:   RealtyPress admin footer to only display on RealtyPress pages.
+Updated:   All references as Favorite to Favourite (canadian spelling).
+Updated:   Map location search geocoding call to include configured API key.
+Updated:   Unix cron command example.
+Updated:   MLS footer columns.
+Updated:   Enabled disabling thumbnail image downloads by default on 
+           new installs or existing installs with no child theme in use.
+Optimized: Distinct dropdown value sql query.
+Optimized: Grid, List and Map queries.
+Fixed:     Single listing zoom value to honour value set in admin.
+
+## 1.3.2 (2016-10-26)
+---------------------------------------------------------
+Added:    Custom agent email addresses for listing inquiry form.
+Added:    ListingID search support to search box input.
+Added:    Option to disable office in Listings Results.
+Added:    New parameters to rps-listing-slider shortcode.
+          property_type, transaction_type, bedrooms, bathrooms, 
+          price, street_address, city, neighbourhood, community, 
+          postal_code, description, province, building_type, open_house
+Updated:  Single listing image thumbnails href value.
+Updated:  Single listing image rel="nofollow".
+Fixed:    Strip slashes from $_GET in property-results.php.
+Fixed:    Minor carousel photo loading order bug.
+
+## 1.3.1 (2016-09-18)
+---------------------------------------------------------
+Added: Open House to listing search form input options under RealtyPress=>Appearance=>Listing Results.
+Added: Database upgrade notification.
+Fixed: Insert of agent telephone, websites and designations.
+Fixed: Display of full width contact form on map when using full width view.
+Fixed: Insert of office telephone and websites.
+
+## 1.3.0 (2016-08-12)
+---------------------------------------------------------
+Added:     Advanced options tab to RealtyPress=>System page.
+Added:     Option to disable thumbnail image downloads.
+           ** Thumbs are not required with RealtyPress v1.3.0+ templates **
+Added:     Option to disable "From:" and "Reply-To:" headers when sending mail.
+Added:     Option to always load shortcode JS.
+Added:     Disabling of Leaflet hash js code when library is disabled.
+Added:     Disabling of Leaflet history js code when library is disabled.
+Added:     Clean Up Database cron script admin/cron/cleanup-database.php.
+Added:     Clean Up Missing Images script admin/cron/cleanup-missing-images.php.
+Added:     Upgrade Database script admin/cron/upgrade-database.php, for large populated databases.
+Added:     Missing Image Cleanup to listing cleanup in debug.
+Updated:   Refactored table col character limits on all tables.
+Updated:   Licensing check and activation to be WP 4.6.1 compatible.
+Updated:   Domain parameter to false in set_cookie. 
+Updated:   Listing Data Cleanup on debug page to include orphaned posts.
+Updated:   Listing Data Cleanup on debug page to include images with missing images.
+Updated:   Rooms table on mobile to hide headers and columns.
+Removed:   Events from table and templates.
+Optimized: Syncing of DDF data, reduced number of local mysql queries and other refactoring.
+Optimized: Handling of agent and office data during syncs to reduce redundancy.
+Optimized: Flushing of wpdb to improve memory usage during syncs.
+
+## 1.2.9 (2016-07-19)
+---------------------------------------------------------
+Fixed: Single Listing Contact form subject line bug.
+Fixed: Generic Contact form subject line bug.
+
+## 1.2.8 (2016-07-18)
+---------------------------------------------------------
+Added:   Option to disable Google Maps Autocomplete.
+Added:   JS to hide title popup on map makers which was showing some html.
+Added:   CSS to optimize image slider on single listings for devices < 380px.
+Fixed:   Listing link href value in email template.
+Fixed:   Searching of listings by province.
+
+## 1.2.7 (2016-06-25)
+---------------------------------------------------------
+Fixed: Display of LeaseTerm value.
+
+## 1.2.6 (2016-06-24)
+---------------------------------------------------------
+Added: Disabling of Bootstrap JS.
+Added: Disabling of Bootstrap CSS.
+Fixed: JetPack Photon carousel shortcode conflict.
+Fixed: Missing closing div in property-results.php template.
+Fixed: Shortcode filtering by mls option.
+Fixed: Disabling of jRange, LocalScroll and Leaflet Hash libraries.
+Fixed: Missing Building Type dropdown on search form shortcodes.
+
+## 1.2.5 (2016-05-28)
+---------------------------------------------------------
+Fixed: Sorting of results with a left hand sidebar bug.
+Fixed: WalkScore firefox display bug.
+
+## 1.2.4 (2016-05-25)
+---------------------------------------------------------
+Added:   Support for AlternateURL DDF field.
+Added:   AlternateURL Video / Virtual Tour link in single listing.
+Added:   Automatic embedding of Video / Virtual Tour YouTube video links in single listing.
+Added:   AlternateURL Brochure link in single listing.
+Added:   AlternateURL Audio link in single listing.
+Added:   AlternateURL Photos link in single listing.
+Added:   AlternateURL Map link in single listing.
+Added:   Support for RealtyPress Amazon S3 Storage Plugin.
+Updated: City parameter in searches to include a wildcard *.
+Updated: DDF Neighbourhood overwrites, geo data Neighbourhood.
+Updated: DDF CommunityName overwrites, geo data CommunityName.
+Updated: Map popup size on devices < 480px.
+Updated: Map popup to stack on devices < 320px.
+Updated: Appliances column length to 255.
+Updated: Features column length to 255.
+
+## 1.2.3 (2016-05-07)
+---------------------------------------------------------
+Fixed: fix_default_marker_points to run during sync.
+
+## 1.2.2 (2016-05-04)
+---------------------------------------------------------
+Fixed: Sample data population bug.
+Fixed: street_address filter option for rps-listings shortcode.
+Added: street_address filter option for rps-listing-carousel shortcode.
+
+## 1.2.1 (2016-04-22)
+---------------------------------------------------------
+Fixed: MLS Number reference in admin listings table.
+Fixed: rps-listing-single shortcode display bug.
+
+## 1.2.0 (2016-04-18)
+---------------------------------------------------------
+Fixed: Mapping point debug error.
+Fixed: WordPress Cron scheduled times display.
+Removed: Striking out of past open houses.
+
+## 1.1.9 (2016-04-06)
+---------------------------------------------------------
+Added:   Manual editing of a listings Latitude & Longitude values.
+Added:   Building type inputs to listing result search forms.
+Added:   Building type filtering option to rps-listings shortcode.  Supports comma separated values.
+Added:   Building type filtering option to rps-listing-carousel shortcode.  Supports comma separated values.
+Added:   Map point cleanup to cron sync.
+Added:   Minimum slides option to rps-listing-slider, always populates x number of listings regardless of filters set.
+Fixed:   Display of Utilities in single listing.
+Fixed:   Listing Result Map style option.
+Fixed:   Single Listing Map style option.
+Updated: Map point cleanup.
+
+## 1.1.8 (2016-03-28)
+---------------------------------------------------------
+Added: GeoCoding debug tools.
+Added: Explicit enabling of Google API key for geocoding requests.
+Added: Better handling of CREA DDF feed updates.
+
+## 1.1.7 (2016-03-17)
+---------------------------------------------------------
+Added: Listing result map center latitude and longitude options.
+Added: Listing result map center zoom level option.
+
+## 1.1.6 (2016-03-16)
+---------------------------------------------------------
+Added: Option to remove CREA display and requirement of disclaimer.
+       *** You MUST show the CREA disclaimer if using National Shared Pool data ***
+       *** Failure to do so is breaking CREA terms. ***
+Fixed: Comma separated agent id's in [rps-listings] shortcode.
+Fixed: Comma separated office id's in [rps-listings] shortcode.
+
+## 1.1.5 (2016-03-09)
+---------------------------------------------------------
+Added: New value released by CREA (2016-03-08) "ListingContractDate".
+Added: New value released by CREA (2016-03-08) "PhotoLastUpdated".
+
+## 1.1.4 (2016-03-05)
+---------------------------------------------------------
+Added: Admin options for CREA member name and type for custom CREA terms.
+Added: CREA Custom terms of service.
+Added: MLS, REALTOR Logo's to footer.
+Added: ListingID to listing details.
+Added: Find and remove obsolete photos debug actions.
+Enhanced: GeoCoding latitude longitude lookup
+
+## 1.1.3 (2016-02-20)
+---------------------------------------------------------
+Fixed: Line break in agent address in admin edit listing page.
+Fixed: Fix double display of public remarks in single listing.
+Fixed: Removed true echo in fireplace.
+Added: Social links open a new window.
+
+## 1.1.2 (2016-02-16)
+---------------------------------------------------------
+Fixed: Left behind dump from 1.1.1
+
+## 1.1.1 (2016-02-16)
+---------------------------------------------------------
+Fixed: Hiding of full width page contact form and favorites Panel when disabled in appearance.
+Fixed: Warning notice thrown from open graph bug.
+Added: Fireplace showing in single listing bug.
+
+## 1.1.0 (2016-02-11)
+---------------------------------------------------------
+Fixed: Math Captcha disabling on contact forms.
+Fixed: MLS Number Search.
+Added: WordPress text editor can now be used to add content to your listings.
+Added: Street Address to search form for widget, shortcode and listing results form.
+Added: True Unix Cron syncing.
+Added: Many syncing enhancements and optimizations.
+Added: Class around map look search box input.
+
+## 1.0.9 (2016-01-23)
+---------------------------------------------------------
+Fixed: Carousel pricing display.
+Fixed: Carousel widget speed.
+Fixed: Preview widget default image.
+Fixed: Admin listing table community and neighbourhood line break.
+Added: Further debug information when running an image resize.
+
+## 1.0.8 (2016-01-18)
+---------------------------------------------------------
+Added: RealtyPress table prefix rename for <= 1.0.8 installs using custom prefixes.
+
+## 1.0.7 (2016-01-18)
+---------------------------------------------------------
+Added: ThumbnailPhoto resize to sync and debug.
+Added: Photo resize to sync and debug.
+Added: Search business shortcode.
+Added: Business type above street name option.
+Added: Configurable jRange and dropdown start and end values.
+Added: Configurable jRange and dropdown step.
+Added: Pricing, bed, and bath dropdown option in place of jRange sliders.
+Added: Map latitude/longitude cleanup.
+Added: Address variation for failed geo coding look ups.
+Fixed: Some tables not using wpdb prefix var.
+Fixed: Child loading of common.js.
+
+## 1.0.6 (2016-01-02)
+---------------------------------------------------------
+Fixed: rps-listings parameter form population error.
+Fixed: rps-listings shortcode price filter option.
+Fixed: rps-listing-carousel parameters error handling.
+Updated: Default image path to defined constant.
+
+## 1.0.5 (2015-12-22)
+---------------------------------------------------------
+Fixed: Error writing/accessing index.php files in upload directories on some configurations.
+
+## 1.0.4 (2015-12-20)
+---------------------------------------------------------
+Added: Neighbourhood filtering option to rps-listings shortcode.  Supports comma separated values.
+Added: Community filtering option to rps-listings shortcode.  Supports comma separated values.
+Added: Postal Code filtering option to rps-listings shortcode.  Supports comma separated values and wildcards.
+Added: Neighbourhood filtering option to rps-listing-carousel shortcode.  Supports comma separated values.
+Added: Community filtering option to rps-listing-carousel shortcode.  Supports comma separated values.
+Added: Postal Code filtering option to the listing carousel widget.  Supports comma separated values and wildcards.
+Added: Neighbourhood filtering option to listing carousel widget.  Supports comma separated values.
+Added: Community filtering option to listing carousel widget.  Supports comma separated values.
+Added: Postal Code filtering option to rps-listing-carousel shortcode.  Supports comma separated values and wildcards.
+Added: Options to admin "Appearance => Listing Results" to toggle search / filter form inputs.
+Added: Options to admin "Appearance => Listing Results" to toggle search / filter form labels.
+Added: Deletion of custom post data and photos on post delete from trash.
+Added: Cron schedule option in "DDF Sync Options".
+Added: No scroll or panning on single listing map.
+Fixed: Malformed url on shortcode map pagination change.
+Fixed: phRETS "cookie not writeable" warning.
+Fixed: Display of rental pricing.
+Fixed: Display of expired open house details in single listing view.
+Fixed: Individual sync action undefined method error.
+Fixed: LastUpdated undefined error in administration edit listing.
+
+## 1.0.3 (2015-12-15)
+---------------------------------------------------------
+Fixed: Listing results horizontal contact and favorites bug on page change.
+Fixed: Pagination bug on shortcode listing results.
+
+## 1.0.2 (2015-12-14)
+---------------------------------------------------------
+Added: Neighborhood data from google geocoding to db.
+Added: CommunityName data from google geocoding to db.
+Added: Debug listing transaction limit.
+Added: Debug sync listing action confirmation boxes.
+Added: Debug PHP and WP info.
+Added: Debug master list count, and connection test.
+Updated: Admin listing table UI extensively.
+Fixed: Incorrect display of some pricing types and 0 values.
+Fixed: Some shortcode boolean options being passed as string.
+Fixed: Boards table data updated to replace demo boards.
+Fixed: Display of default listing image in admin listing table.
+Fixed: _leaflet_id undefined error on maps in some configurations.
+
+## 1.0.1 (2015-12-10)
+---------------------------------------------------------
+Added: Automatic disabling of Bing services if API key is deleted.
+Added: Automatic disabling of Walkscore API if API key is deleted.
+Added: flush_rewrite_rules on slug save.
+Added: Cron sync before hook (realtypress_before_cron_sync).
+Added: Cron sync after hook (realtypress_after_cron_sync).
+Fixed: Language loading error when saving some general options.
+Fixed: phRETS library double utf-8 encoding.
+
+## 1.0.0 (2015-12-07)
+---------------------------------------------------------
+Initial Release

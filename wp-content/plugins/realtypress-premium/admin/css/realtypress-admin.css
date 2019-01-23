@@ -1,0 +1,682 @@
+
+.rps-mt-40 {
+  margin-top:40px;
+}
+
+/**
+ * ----------------------------------------------------------------------------------
+ *  Text Styles
+ * ----------------------------------------------------------------------------------
+ */
+
+/* Weights*/
+.rps-text-heavy { font-weight:700; }
+
+/* Colours */
+.rps-text-red { color:#dd3d36; }
+.rps-text-green { color:#64a52e; }
+.rps-text-yellow { color:#ffba00; }
+.rps-text-muted { color:#666; }
+
+
+/**
+ * ----------------------------------------------------------------------------------
+ *  Buttons
+ * ----------------------------------------------------------------------------------
+ */
+
+/* Red Button */
+.rps-red-btn {
+  color: #fff !important;
+  border-color: #aa1317 !important;
+  background: #dd3d36 !important;
+  box-shadow: inset 0 1px 0 #ff0c10, 0 1px 0 rgba(0,0,0,.08) !important;
+}
+
+/* Green Button */
+.rps-green-btn {
+  color: #fff !important;
+  border-color: #63B51C !important;
+  background: #7ad03a !important;
+  box-shadow: inset 0 1px 0 #7ECC3B, 0 1px 0 rgba(0,0,0,.08) !important;
+}
+
+/**
+ * ----------------------------------------------------------------------------------
+ *  Admin Menu Bar
+ * ----------------------------------------------------------------------------------
+ */
+
+.admin-menu-bar-sub-item {
+  background: #464b50 !important;
+}
+
+/**
+ * ----------------------------------------------------------------------------------
+ *  Admin Forms
+ * ----------------------------------------------------------------------------------
+ */
+
+.medium-text {
+  width: 40em;
+}
+
+/**
+ * ----------------------------------------------------------------------------------
+ *  Widget Forms
+ * ----------------------------------------------------------------------------------
+ */
+
+.rps-widget-secondary-title {
+  border-bottom: 4px solid #efefef;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: -5px;
+  padding: 16px 0 1px 1px;
+  text-transform: uppercase;
+}
+
+.rps-scrollable-options {
+  max-height: 280px;
+  overflow: auto;
+  width:100%;
+  border: 1px solid #ddd;
+  /*margin-top:15px;*/
+  padding:10px;
+  background:#fafafa  ;
+}
+
+
+/**
+ * ----------------------------------------------------------------------------------
+ *  RealtyPress "Edit" Screen
+ * ----------------------------------------------------------------------------------
+ */
+
+ /* Property Details Tables */
+.rps-ddf-data {
+  /*border          : 1px solid #dfdfdf;*/
+  /*background-color: #f9f9f9;*/
+  /*padding:5px;*/
+}
+.ddf-table,
+.ddf-table.widefat {
+  margin          : 0;
+  width           : 100%;
+  max-width       : 100%;
+  border: 0;
+}
+.ddf-table thead th {
+  width: 30%;
+  padding: 5px 8px 8px;
+  background-color: #f1f1f1;
+  text-align:left;
+}
+.ddf-table thead th.left {
+  width: 30% !important;
+  vertical-align: top;
+}
+.ddf-table tbody tr {
+  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+}
+.ddf-table tbody tr:hover {
+  background: #fffdc4;
+}
+.ddf-table tbody td {
+  padding: 6px 15px;
+  word-wrap: break-word;
+}
+.ddf-table tbody td.p6-0 {
+  padding: 6px 0;
+}
+.ddf-table tbody td.left {
+  width: 30% !important;
+  vertical-align:top;
+}
+
+/* Property Thumbnails */
+.rps-ddf-data .property-thumbnails {
+  margin:0;
+}
+.rps-ddf-data .property-thumbnails li {
+  display: inline;
+  margin: 0 2px 2px 0;
+}
+
+/**
+ * ----------------------------------------------------------------------------------
+ *  Various
+ * ----------------------------------------------------------------------------------
+ */
+
+/* System Report */
+.rps-system-report {
+  font-size:0.8em;
+  background:white;
+}
+
+/* Unix Cron Command */
+.unix-cron-command-notice {
+  background: #efefef;
+  padding: 5px 10px;
+}
+
+/* License Key */
+code.rps-license-key {
+  display:block;
+  font-size:1.1em;
+  padding:10px;
+  margin:10px 0;
+}
+
+/**
+ * ----------------------------------------------------------------------------------
+ *  RealtyPress Dashboard Widget
+ * ----------------------------------------------------------------------------------
+ */
+
+.realtypress-dashboard .center {
+  text-align: center;
+}
+
+.realtypress-dashboard ul.grid {
+  margin-bottom:0;
+}
+
+.realtypress-dashboard ul.grid li {
+  width:50%;
+  display: inline-block;
+  padding: 5px 0 15px 0;
+}
+
+
+.realtypress-dashboard ul.grid li .label {
+  display: block;
+  margin-bottom:6px;
+  font-weight: 700;
+}
+
+.realtypress-dashboard ul.grid li .listing-count {
+  display: block;
+  font-size:2.4em;
+  font-weight:700;
+  color: #A41D21;
+}
+
+.realtypress-dashboard ul.grid li .last-sync {
+  display: block;
+  font-size:1.1em;
+  font-weight:700;
+  color: #A41D21;
+}
+
+.realtypress-dashboard .grid-footer {
+  padding-top: 6px;
+  border-top: 1px solid #eee;
+  color: #999;
+  margin:0;
+}
+
+.realtypress-dashboard .widefat {
+  margin-bottom: 10px;
+}
+
+.realtypress-dashboard .widefat thead tr th {
+  font-size:0.9em;
+  background: #fafafa;
+  font-weight: 700;
+}
+
+.realtypress-dashboard .widefat tbody tr td {
+  font-size:0.9em;
+}
+
+.realtypress-dashboard .dashboard-analytics {
+  padding: 2px;
+  font-size:0.9em;
+}
+
+.realtypress-dashboard .dashboard-analytics thead th {
+  padding: 4px 6px;
+}
+
+.realtypress-dashboard .dashboard-analytics tbody td {
+  padding: 4px 6px;
+}
+
+.realtypress-dashboard .dashboard-analytics tbody td.insufficent {
+  padding: 15px 0;
+  font-size:14px !important;
+  color: #ccc;
+  text-align: center;
+  background: #fcfcfc;
+}
+
+#wpcontent {
+  padding-bottom:140px;
+}
+
+/**
+ * ----------------------------------------------------------------------------------
+ *  Support Page
+ * ----------------------------------------------------------------------------------
+ */
+
+#rps-support-page .rps-admin-box {
+  text-align:center;
+}
+
+#rps-support-page .rps-admin-box .dashicons {
+  font-size:3.8em;
+  height: 50px;
+  width:50px;  
+}
+
+#rps-support-page .rps-admin-box .description {
+  min-height:76px;
+  text-align:center;
+}
+
+#rps-support-page .rps-admin-box .title {
+  font-weight: 700;
+  font-size:1.2em;
+  text-align:center;
+}
+
+/**
+ * ----------------------------------------------------------------------------------
+ *  Debug
+ * ----------------------------------------------------------------------------------
+ */
+
+.debug_option_wrap {
+  padding: 15px;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.debug_option_wrap:hover,
+.debug_option_wrap:focus {
+  background: #fffee2;
+}
+
+.debug_option_wrap h4 {
+  font-size: 1.2em;
+    padding: 10px 15px 10px 10px;
+    margin: 0 0 10px 0 !important;
+    border: 1px solid #e5e5e5;
+    background: #f3f3f3;
+}
+
+.rps_debug_sync_resize_photos_submit {
+    background: #edfaff;
+    padding: 15px;
+    border: 1px solid #8fdeff;
+}
+
+
+.rps-test-btn-description {
+  padding-top:10px;
+}
+
+
+/**
+ * ----------------------------------------------------------------------------------
+ *  Admin Boxes
+ * ----------------------------------------------------------------------------------
+ */
+
+.rps-admin-box {
+  padding:11px;
+  border: 4px solid #e5e5e5;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+  box-shadow: 0 1px 1px rgba(0,0,0,.04);
+  background: #fff;
+  margin-bottom:16px;
+}
+
+.rps-admin-box.grey {
+  padding:15px;
+  border: 1px solid #e5e5e5;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+  box-shadow: 0 1px 1px rgba(0,0,0,.04);
+  background: #fafafa;
+  margin-bottom:16px;
+}
+
+/**
+ * ----------------------------------------------------------------------------------
+ *  Admin RealtyPress Listings Table
+ * ----------------------------------------------------------------------------------
+ */
+
+/* Property Photo */
+.wp-list-table thead th.column-Photo,
+.wp-list-table tbody td.column-Photo {
+  width:14%;
+}
+.wp-list-table tbody td.column-Photo img {
+  width: 100%;
+  border: 1px solid #ddd;
+  max-width: 256px;
+}
+
+/* Address */
+.wp-list-table thead th.column-Address,
+.wp-list-table tbody td.column-Address {
+  width:23%;
+}
+
+.wp-list-table tbody td.column-Address .rps-property-address {
+  font-size:1.1em;
+  margin-bottom:5px;
+}
+
+.wp-list-table tbody td.column-Name .rps-agent-details {
+  font-size:1.05em;
+  margin-bottom:5px;
+}
+
+.wp-list-table tbody td.column-Name .rps-agent-details a strong {
+  font-size:1.1em;
+  margin-bottom:5px;
+}
+
+.wp-list-table tbody td.column-Address .rps-property-sold-listing {
+  color: #ffffff !important;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 5px;
+  background: red;
+  padding: 4px 6px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.wp-list-table tbody td.column-Address .rps-property-community-neighbourhood {
+  color: #666 !important;
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom:5px;
+}
+
+.wp-list-table tbody td.column-Address .rps-property-community-neighbourhood small {
+  color: #999;
+}
+
+.wp-list-table tbody td.column-Address .rps-property-listing-id {
+  font-size: 1em;
+  font-weight: 700;
+  color: #666;
+  margin-bottom:5px;
+}
+
+.wp-list-table tbody td.column-Address .rps-property-listing-id small {
+  color: #999;
+}
+
+/* Listing Details */
+.wp-list-table thead th.column-ListingDetails,
+.wp-list-table tbody td.column-ListingDetails {
+  width:29%;
+}
+.wp-list-table tbody td.column-ListingDetails .rps-property-price {
+  font-weight: 700;
+  font-size: 1.25em;
+  margin-bottom:6px;
+}
+.wp-list-table tbody td.column-ListingDetails .rps-property-price small {
+  font-weight: 700;
+  font-size: 0.8em;
+  color: #666;
+  margin-bottom:6px;
+}
+.wp-list-table tbody td.column-ListingDetails .rps-property-features {
+  font-size: 0.95em;
+  color: #777 !important;
+  margin-bottom:10px;
+}
+.wp-list-table tbody td.column-ListingDetails .rps-property-beds-baths-size {
+  font-size: 1em;
+  font-weight: 700;
+  color: #666 !important;
+  margin-bottom:10px;
+}
+
+.wp-list-table tbody td.column-ListingDetails .rps-property-open-house {
+  display: block;
+  padding: 4px 8px;
+  background: #fff;
+  color: #666 !important;
+  border: 1px solid #efefef;
+  font-size: 1em;
+  margin-bottom:0;
+}
+.wp-list-table tbody td.column-ListingDetails .rps-property-open-house-title {
+  padding-bottom:2px;
+  margin-bottom:6px;
+  border-bottom: 1px solid #efefef;
+  font-weight: 700;
+}
+.wp-list-table tbody td.column-ListingDetails .rps-property-open-house-item {
+  margin-bottom:6px;
+}
+
+/* Listing Agent */
+.wp-list-table thead th.column-Agents,
+.wp-list-table tbody td.column-Agents {
+  width:15%;
+}
+
+/* Listing Office */
+.wp-list-table thead th.column-Offices,
+.wp-list-table tbody td.column-Offices {
+  width:15%;
+}
+
+.wp-list-table tbody tr.type-rps_listing .row-actions {
+  display: block;
+}
+
+/**
+ * ----------------------------------------------------------------------------------
+ *  Utilities
+ * ----------------------------------------------------------------------------------
+ */
+
+.rps-btn-block {
+  display: block;
+  width:100%;
+  max-width:100%;
+}
+
+.rps-h50 {
+  height:50px !important;
+  font-size: 1.1em !important;
+  font-weight: 700;
+}
+
+.rps-h36 {
+  height:36px !important;
+  font-size: 1em !important;
+  font-weight: 700;
+  line-height:36px;
+}
+
+.rps-width100 {
+  width: 100px !important;
+}
+
+.rps-p4 {
+  padding: 4px !important;
+}
+
+.rps-mb5 {
+  margin-bottom:5px !important;
+}
+
+.rps-mb10 {
+  margin-bottom:10px !important;
+}
+
+.rps-mt0 {
+  margin-top:10px !important;
+}
+
+.rps-mt10 {
+  margin-top:0 !important;
+}
+
+.rps-mt15 {
+  margin-top:15px !important;
+}
+.rps-mt20 {
+  margin-top:20px !important;
+}
+.rps-text-center {
+  text-align: center;
+}
+
+
+.rps-carouse-widget-filters {
+  padding-top: 8px;
+}
+.rps-carouse-widget-filters p {
+  margin: 4px 0;
+}
+
+.rps-debug-output {
+  border: 2px solid #fff;
+  padding:20px;
+  margin-top:20px;
+  color: #fff;
+  background:#555b63;
+  /*text-shadow: 0 1px 0 #8c120e;*/
+  max-height:500px;
+  overflow:scroll;
+  font-size:1.1em !important  
+}
+
+.post-type-rps_listing .page-title-action {
+  /*display: none;*/
+}
+
+
+span.description {
+    font-size: 13px;
+    color: #999999 !important;
+}
+
+.rps-tag {
+  color: #999999;
+  cursor: pointer;
+  background: #eeeded;
+  padding: 0 6px;
+  display: inline-block;
+  margin: 1px;
+  border-radius: 3px;
+  font-size: 11px;
+  text-transform: capitalize;
+  /* text-transform: none; */
+  font-style: normal;
+  font-weight: bold; 
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.rps-tag:hover {
+  color: #ffffff;
+  background: #008ec2;
+}
+
+.rps-regular-text {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.rps-rotate {
+    -moz-transition: all 200ms linear;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.rps-rotate.down {
+    -ms-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+
+.rps-listing-options-title-bar {
+  font-size: 14px;
+  padding: 10px 12px;
+  margin: 2px 0 0 0;
+  line-height:1.45;
+  /*border: 1px solid #ddd;
+  border-bottom: 4px solid #0073aa;*/
+  background: #efefef;
+}
+.rps-listing-options-title-bar h3 {
+  margin: 0;
+  color: #5c656d;
+  font-size:16px;
+}
+.rps-listing-options-title-bar h3 a {
+  float:right;
+  text-decoration: none;
+  background:#0073aa;
+  border-radius:50%;
+  box-shadow:none !important;
+  width: 25px;
+  height: 25px;
+  text-align:center;
+  padding:0;
+}
+.rps-listing-options-title-bar h3 a span {
+  color: white;
+  margin-top:2px;
+}
+
+a .dashicons {
+  text-decoration:none;
+}
+
+/* Hide view and quick edit on agent admin table */
+.type-rps_agent span.view {
+  display: none
+}
+.type-rps_agent span.inline {
+  display: none
+}
+
+/* Hide view and quick edit on office admin table */
+.type-rps_agent span.view {
+  display: none
+}
+.type-rps_agent span.inline {
+  display: none
+}
+
+/* Hide quick edit on listing admin table */
+.type-rps_listing span.inline {
+  display: none
+}
+
+.property-thumbnails li img {
+    max-width: 150px;
+    border: 1px solid #ddd;
+    margin:5px;
+}
+
+#wpfooter {
+  height: 50px;
+}

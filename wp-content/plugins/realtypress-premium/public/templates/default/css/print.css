@@ -1,0 +1,56 @@
+@media only print {
+
+  .bootstrap-realtypress .no-print,
+  .bootstrap-realtypress .no-print * {
+    display: none !important;
+  }
+
+  .bootstrap-realtypress .rps-contact-form-wrap-v,
+  .bootstrap-realtypress .rps-contact-form-wrap-h,
+  .bootstrap-realtypress .bx-slider,
+  .bootstrap-realtypress .btn-print,
+  .bootstrap-realtypress .rps-listing-social,
+  .bootstrap-realtypress .breadcrumb,
+  .bootstrap-realtypress .bx-prev,
+  .bootstrap-realtypress .bx-next {
+    display:none !important;
+  }
+
+  .bootstrap-realtypress .bx-pager {
+    display: block;
+  }
+
+.bootstrap-realtypress .rps-property-photo-row .bx-pager-wrap {
+    overflow: visible;
+    max-height: 100% !important;
+    border: 0;
+}
+
+  .bootstrap-realtypress .bx-pager .slide {
+    max-width: 148px;
+    display: inline;
+    border: 0;
+  }
+
+  .bootstrap-realtypress a[href]:after {
+    content: "" !important;
+  }
+
+  .bootstrap-realtypress .bx-viewport {
+    max-height:150px !important;
+  }
+
+  .bootstrap-realtypress .bx-slider {
+    width:1000% !important;
+  }
+
+  .bootstrap-realtypress .bx-slider .slide {
+    max-height: 150px;
+    max-width:170px !important;
+  } 
+
+  .bootstrap-realtypress .bx-slider .slide img {
+    height:150px;
+  }  
+
+}
