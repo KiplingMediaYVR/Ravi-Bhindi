@@ -16,7 +16,7 @@
 
         <div id="top-header">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
 
                     <nav class="social-media">
                         <a href="#" class="sm-twitter"></a>

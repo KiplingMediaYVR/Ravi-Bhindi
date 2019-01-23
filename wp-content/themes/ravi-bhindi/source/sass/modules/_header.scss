@@ -1,6 +1,6 @@
 #header {
     position: relative;
-    height: 100vh;
+    height: 80vh;
     @include bgi("header.jpg");
     background-position: center center;
     background-size: cover;
@@ -9,8 +9,9 @@
 
 .logo {
     display: inline-block;
-    background-color: yellow;
+    background-color: $brand-yellow;
     padding: 50px 15px 15px 15px;
+    margin-left: -15px;
 
     h1 {
         margin: 0;

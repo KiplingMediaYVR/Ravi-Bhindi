@@ -7,7 +7,7 @@
 
             <div class="row">
 
-                <div class="col col-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="listing-item see-all">
                         <a href="#">See All</a>
                     </div>
@@ -19,7 +19,7 @@
                 for ($i = 0; $i < 3; $i++) {
                     ?>
 
-                    <div class="col col-3">
+                    <div class="col col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="listing-item">
                             <div class="listing-item-img">
                                 <img src="https://picsum.photos/400/401" alt="">
@@ -43,7 +43,7 @@
                 for ($i = 0; $i < 4; $i++) {
                     ?>
 
-                    <div class="col col-3">
+                    <div class="col col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="listing-item">
                             <div class="listing-item-img">
                                 <img src="https://picsum.photos/400/401" alt="">
@@ -69,21 +69,27 @@
     <!-- /.featured-listings -->
 
     <div class="my-mission">
-        <div class="row">
-            <div class="col">
-                <div class="mission-img"></div>
-            </div>
 
-            <div class="col">
-                <div class="mission-content">
-                    <h3>My Mission</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque deserunt earum harum iure modi neque quidem! Eveniet nihil, sint!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at ea eius enim eveniet exercitationem facere fugiat laudantium magnam nostrum numquam obcaecati, officiis perspiciatis quaerat quam quisquam suscipit ullam voluptate!</p>
+        <div class="container-fluid">
+
+            <div class="row row-eq-height">
+                <div class="col col-12 col-md-6 p-0">
+                    <div class="mission-img"></div>
                 </div>
-                <!-- /.mission-content -->
+
+                <div class="col col-12 col-md-6">
+                    <div class="mission-content">
+                        <h3>My Mission</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque deserunt earum harum iure modi neque quidem! Eveniet nihil, sint!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at ea eius enim eveniet exercitationem facere fugiat laudantium magnam nostrum numquam obcaecati, officiis perspiciatis quaerat quam quisquam suscipit ullam voluptate!</p>
+                    </div>
+                    <!-- /.mission-content -->
+                </div>
             </div>
+            <!-- /.row -->
+
         </div>
-        <!-- /.row -->
+        <!-- /.container-fluid -->
     </div>
     <!-- /.my-mission -->
 
@@ -94,21 +100,21 @@
 
             <div class="row">
 
-                <div class="col">
+                <div class="col col-12 col-md-4">
                     <div class="know-more-item">
                         <h4>What is <span>my home worth?</span></h4>
                     </div>
                 </div>
                 <!-- /.col -->
 
-                <div class="col">
+                <div class="col col-12 col-md-4">
                     <div class="know-more-item">
                         <h4>Are you <span>selling a home?</span></h4>
                     </div>
                 </div>
                 <!-- /.col -->
 
-                <div class="col">
+                <div class="col col-12 col-md-4">
                     <div class="know-more-item">
                         <h4>Are you <span>buying a home?</span></h4>
                     </div>
@@ -129,32 +135,35 @@
         </div>
         <!-- /.headline -->
 
-        <div class="row">
+        <div class="container-fluid">
+            <div class="row row-eq-height">
 
-            <div class="col">
+                <div class="col col-12 col-md-6">
 
-                <div class="testimonials-slider">
+                    <div class="testimonials-slider">
 
-                    <div class="testimonials-item">
-                        <h3>Karen Burrows</h3>
-                        <div class="testimonials-author-img">
-                            <img src="https://picsum.photos/200/200" alt="">
+                        <div class="testimonials-item">
+                            <h3>Karen Burrows</h3>
+                            <div class="testimonials-author-img">
+                                <img src="https://picsum.photos/200/200" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A blanditiis inventore ipsam labore libero nemo non sapiente sed similique. Tenetur.</p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A blanditiis inventore ipsam labore libero nemo non sapiente sed similique. Tenetur.</p>
+                        <!-- /.testimonials-item -->
+
                     </div>
-                    <!-- /.testimonials-item -->
+                    <!-- /.testimonials-slider -->
 
                 </div>
-                <!-- /.testimonials-slider -->
+
+                <div class="col col-12 col-md-6 p-0">
+                    <div class="testimonials-img"></div>
+                </div>
 
             </div>
-
-            <div class="col">
-                <div class="testimonials-img"></div>
-            </div>
-
+            <!-- /.row -->
         </div>
-        <!-- /.row -->
+        <!-- /.container-fluid -->
     </div>
     <!-- /.testmonials -->
 
@@ -169,10 +178,10 @@
                 for ($i = 0; $i < 3; $i++) {
                     ?>
 
-                    <div class="col">
+                    <div class="col col-12 col-md-4">
                         <div class="post-list-item">
                             <div class="post-list-img">
-                                <a href="#"><img src="https://picsum.photos/300/300" alt=""></a>
+                                <a href="#"><img src="https://picsum.photos/300/250" alt=""></a>
                             </div>
 
                             <div class="post-list-body">

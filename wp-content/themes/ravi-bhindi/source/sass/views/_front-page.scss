@@ -18,7 +18,7 @@
     overflow: hidden;
 
     &.see-all {
-        background-color: navy;
+        background-color: $brand-blue;
         text-align: center;
 
         a {
@@ -70,23 +70,29 @@
 
 .my-mission {
 
+    .col {
+        position: relative;
+    }
+
     .col + .col {
         background-color: #FFF;
     }
 }
 
 .mission-img {
-    height: 500px;
+    width: 100%;
+    height: 100%;
     @include bgi("mission.jpg");
     background-position: center center;
     background-size: cover;
 }
 
 .mission-content {
+    padding: 30px 0 30px 30px;
+    max-width: 500px;
 
     h3,
     p {
-        max-width: 500px;
     }
 
     h3 {
@@ -110,15 +116,27 @@
 }
 
 .know-more-item {
-    border: 1px solid yellow;
+    border: 1px solid $brand-yellow;
     border-bottom-width: 10px;
     padding: 50px;
     width: 100%;
+
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 20px;
+    }
 
     h4 {
         position: relative;
         font-size: em(50);
         color: #222;
+
+        @include media-breakpoint-down(lg) {
+            font-size: em(35);
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: em(25);
+        }
 
         span {
             display: block;
@@ -134,7 +152,7 @@
             width: 100px;
             height: 10px;
             margin-left: -50px;
-            background-color: yellow;
+            background-color: $brand-yellow;
         }
     }
 }
@@ -144,7 +162,7 @@
     .headline {
         padding: 25px 0;
         text-align: center;
-        background-color: navy;
+        background-color: $brand-blue;
 
         h3 {
             margin: 0;
@@ -153,20 +171,32 @@
             text-transform: uppercase;
         }
     }
+
+    .col {
+        position: relative;
+        background: #FFF;
+
+        + .col {
+            background: none;
+        }
+    }
 }
 
 .testimonials-slider {
+    display: block;
     position: relative;
     max-width: 500px;
+    margin: 0 auto;
     padding: 30px 0;
-    float: right;
     text-align: center;
 }
 
 .testimonials-item {
 
     h3 {
-        font-size: em(40);
+        margin: 0 0 20px;
+        font-size: em(50);
+        color: #d99221;
     }
 
     p {
@@ -175,15 +205,25 @@
     }
 }
 
+.testimonials-author-img {
+    margin: 0 0 20px;
+
+    img {
+        border-radius: 150px;
+        border: 15px solid #d99221;
+    }
+}
+
 .testimonials-img {
-    height: 400px;
+    width: 100%;
+    height: 100%;
     @include bgi("testimonials.jpg");
     background-position: center center;
     background-size: cover;
 
     img {
         border-radius: 150px;
-        border: 15px solid yellow;
+        border: 15px solid $brand-yellow;
     }
 }
 
@@ -200,6 +240,9 @@
 
 .post-list-item {
 
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 30px;
+    }
 }
 
 .post-list-img {
@@ -218,22 +261,26 @@
         font-weight: 700;
 
         a {
-            color: navy;
+            color: $brand-blue;
         }
     }
 
     p {
         font-size: em(18);
 
+        @include media-breakpoint-down(md) {
+            font-size: em(14);
+        }
+
         a {
-            color: navy;
+            color: $brand-blue;
         }
     }
 
     .btn-readmore {
         display: inline-block;
         padding: 5px;
-        border: 1px solid navy;
+        border: 1px solid $brand-blue;
         border-radius: 8px;
     }
 }

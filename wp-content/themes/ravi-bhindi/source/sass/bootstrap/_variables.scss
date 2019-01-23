@@ -5,6 +5,9 @@
 
 // Color system
 
+$brand-yellow: #f3bc65;
+$brand-blue: #27203f;
+
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -159,7 +162,7 @@ $sizes: map-merge(
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
+$body-bg:                   #f6f6f6 !default;
 $body-color:                $gray-900 !default;
 
 
