@@ -284,3 +284,9 @@
         border-radius: 8px;
     }
 }
+
+/* BUG FIX */
+
+#swipebox-overlay {
+    display: none !important;
+}
