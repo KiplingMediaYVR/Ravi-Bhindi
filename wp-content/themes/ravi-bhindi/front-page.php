@@ -167,6 +167,14 @@
     </div>
     <!-- /.testmonials -->
 
+    <!-- Query -->
+<?php $news = new WP_Query(array(
+    'post_type' => 'post',
+    'posts_per_page' => '3',
+)); ?>
+
+<?php if ($news->have_posts()) : ?>
+
     <div class="latest-news">
         <div class="container">
 
@@ -174,20 +182,18 @@
 
             <div class="row">
 
-                <?php
-                for ($i = 0; $i < 3; $i++) {
-                    ?>
+                <?php while ($news->have_posts()) : $news->the_post(); ?>
 
                     <div class="col col-12 col-md-4">
                         <div class="post-list-item">
                             <div class="post-list-img">
-                                <a href="#"><img src="https://picsum.photos/300/250" alt=""></a>
+                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                             </div>
 
                             <div class="post-list-body">
-                                <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, numquam.</a></h3>
-                                <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eos fugiat inventore minus nisi perferendis quo quos repellendus sequi voluptatibus!</a></p>
-                                <p><a href="#" class="btn-readmore">Read More</a></p>
+                                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                <p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
+                                <p><a href="<?php the_permalink(); ?>" class="btn-readmore">Read More</a></p>
                             </div>
                             <!-- /.post-list-body -->
                         </div>
@@ -195,9 +201,7 @@
                     </div>
                     <!-- /.col -->
 
-                    <?php
-                }
-                ?>
+                <?php endwhile; ?>
 
             </div>
             <!-- /.row -->
@@ -205,5 +209,7 @@
         <!-- /.container -->
     </div>
     <!-- /.latest-news -->
+<?php endif; ?>
+<?php wp_reset_postdata(); ?>
 
 <?php get_footer(); ?>

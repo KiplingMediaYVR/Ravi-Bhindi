@@ -43,7 +43,7 @@ add_action('wp_enqueue_scripts', 'my_init');
 add_action('init', 'register_my_menu');
 
 //reserved words: ‘thumb’, ‘thumbnail’, ‘medium’, ‘large’, ‘post-thumbnail’
-//set_post_thumbnail_size(300, 200, true);
+set_post_thumbnail_size(300, 250, true);
 //add_image_size('main-headline', 720, 420, true);
 
 // remove junk from head
