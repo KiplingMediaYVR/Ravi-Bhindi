@@ -53,5 +53,10 @@
 
         </div>
         <!-- /.container -->
+
+        <div class="search-box">
+            <h2>You will be moving soon to your new home</h2>
+        </div>
+        <!-- /.search-box -->
     </div>
     <!-- /#header -->

@@ -1,7 +1,14 @@
+.home {
+
+    #header {
+        height: 80vh;
+    }
+}
+
 #header {
     position: relative;
-    height: 80vh;
-    @include bgi("header.jpg");
+    height: 20vh;
+    @include bgi("home-header.png");
     background-position: center center;
     background-size: cover;
     z-index: 100;
@@ -40,22 +47,12 @@
     z-index: 101;
     background-color: rgba(0, 0, 0, 0.5);
 
-    .social-media {
-        a {
-            display: inline-block;
-            @include square(25px);
-            background-size: contain;
-            background-position: center center;
-            background-color: #FFF; /* PLACEHOLDER */
-        }
-    }
-
     .phone-icon {
         display: inline-block;
-        @include square(25px);
+        @include square(15px);
         background-size: contain;
         background-position: center center;
-        background-color: #FFF; /* PLACEHOLDER */
+        @include bgi("svg/icon-phone.svg");
     }
 
     .phone {
@@ -68,5 +65,24 @@
                 color: #FFF;
             }
         }
+    }
+}
+
+.search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    max-width: 700px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -350px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    h2 {
+        font-size: em(50);
+        font-weight: 700;
+        color: #FFF;
     }
 }

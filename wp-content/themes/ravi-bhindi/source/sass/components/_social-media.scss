@@ -1,0 +1,20 @@
+.social-media {
+    a {
+        display: inline-block;
+        @include square(30px);
+        background-size: contain;
+        background-position: center center;
+
+        &.sm-facebook {
+            @include bgi("svg/facebook.svg");
+        }
+
+        &.sm-twitter {
+            @include bgi("svg/twitter.svg");
+        }
+
+        &.sm-linkedin {
+            @include bgi("svg/linkedin.svg");
+        }
+    }
+}
