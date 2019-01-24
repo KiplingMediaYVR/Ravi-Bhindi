@@ -40,11 +40,11 @@
         <div class="container">
 
             <div class="logo">
-                <h1>Ravi Bhindi</h1>
+                <h1><a href="<?php echo site_url(); ?>">Ravi Bhindi</a></h1>
             </div>
 
             <nav class="main-menu">
-                <a href="#">Properties</a>
+                <a href="<?php echo site_url(); ?>/listing">Properties</a>
                 <a href="#">About</a>
                 <a href="#">More</a>
                 <a href="#">News</a>
@@ -56,6 +56,8 @@
 
         <div class="search-box">
             <h2>You will be moving soon to your new home</h2>
+
+            <?php echo do_shortcode('[rps-listing-search-box btn_text=Search]'); ?>
         </div>
         <!-- /.search-box -->
     </div>

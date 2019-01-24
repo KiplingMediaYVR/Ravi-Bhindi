@@ -5,33 +5,31 @@
 
             <h2>Featured Listings</h2>
 
+            <?php echo do_shortcode('[rps-listing-carousel max_slides=7 slide_width=200 class="featured-home-carousel"]'); ?>
+
             <div class="row">
 
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="listing-item see-all">
-                        <a href="#">See All</a>
-                    </div>
-                    <!-- /.listing-item -->
-                </div>
-                <!-- /.col -->
+<!--                <div class="col col-12 col-sm-6 col-md-6 col-lg-3">-->
+<!--                    <div class="listing-item see-all">-->
+<!--                        <a href="#">See All</a>-->
+<!--                    </div>-->
+<!--                </div>-->
 
                 <?php
                 for ($i = 0; $i < 3; $i++) {
                     ?>
 
-                    <div class="col col-12 col-sm-6 col-md-6 col-lg-3">
-                        <div class="listing-item">
-                            <div class="listing-item-img">
-                                <img src="https://picsum.photos/400/401" alt="">
-                            </div>
-
-                            <div class="listing-item-info">
-                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                            </div>
-                        </div>
-                        <!-- /.listing-item -->
-                    </div>
-                    <!-- /.col -->
+<!--                    <div class="col col-12 col-sm-6 col-md-6 col-lg-3">-->
+<!--                        <div class="listing-item">-->
+<!--                            <div class="listing-item-img">-->
+<!--                                <img src="https://picsum.photos/400/401" alt="">-->
+<!--                            </div>-->
+<!---->
+<!--                            <div class="listing-item-info">-->
+<!--                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
                     <?php
                 }
@@ -43,19 +41,17 @@
                 for ($i = 0; $i < 4; $i++) {
                     ?>
 
-                    <div class="col col-12 col-sm-6 col-md-6 col-lg-3">
-                        <div class="listing-item">
-                            <div class="listing-item-img">
-                                <img src="https://picsum.photos/400/401" alt="">
-                            </div>
-
-                            <div class="listing-item-info">
-                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                            </div>
-                        </div>
-                        <!-- /.listing-item -->
-                    </div>
-                    <!-- /.col -->
+<!--                    <div class="col col-12 col-sm-6 col-md-6 col-lg-3">-->
+<!--                        <div class="listing-item">-->
+<!--                            <div class="listing-item-img">-->
+<!--                                <img src="https://picsum.photos/400/401" alt="">-->
+<!--                            </div>-->
+<!---->
+<!--                            <div class="listing-item-info">-->
+<!--                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
                     <?php
                 }

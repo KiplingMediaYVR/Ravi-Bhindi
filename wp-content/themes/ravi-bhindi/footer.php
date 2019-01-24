@@ -55,6 +55,8 @@
             <div class="col col-12 col-md-4">
                 <h3>Feedback</h3>
 
+<!--                --><?php //echo do_shortcode('[rps-contact style="vertical"]'); ?>
+
                 <form action="">
                     <div class="form-group">
                         <label for="exampleInputEmail1" class="sr-only">Email address</label>

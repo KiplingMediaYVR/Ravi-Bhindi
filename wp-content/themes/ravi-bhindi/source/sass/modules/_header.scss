@@ -24,7 +24,11 @@
         margin: 0;
         font-size: em(40);
         text-transform: uppercase;
-        color: #FFF;
+
+        a {
+            text-decoration: none;
+            color: #FFF;
+        }
     }
 }
 
@@ -68,20 +72,28 @@
     }
 }
 
+.home {
+    .search-box {
+        display: block;
+    }
+}
+
 .search-box {
+    display: none; /* TEMP */
+
     position: absolute;
     top: 50%;
     left: 50%;
     padding: 30px;
-    max-width: 700px;
-    height: 300px;
-    margin-top: -150px;
-    margin-left: -350px;
+    max-width: 550px;
+    margin-top: -125px;
+    margin-left: -280px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, .5);
 
     h2 {
-        font-size: em(50);
+        margin: 0 0 20px;
+        font-size: em(40);
         font-weight: 700;
         color: #FFF;
     }
