@@ -6,6 +6,45 @@ Author URI: http://kiplingmedia.com/
 
 /* HOME FEATURED CAROUSEL */
 
-.featured-home-carousel {
+.home .bootstrap-realtypress .featured-home-carousel .bx-slider li img {
+    min-height: 155px;
+}
 
+.post-type-archive-rps_listing .bootstrap-realtypress .image-holder {
+    height: 120px;
+}
+
+.post-type-archive-rps_listing .bootstrap-realtypress .rps-list-result .image-holder {
+    height: 200px;
+}
+
+.single .bootstrap-realtypress .rps-single-listing .rps-pricing {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    margin: 0;
+}
+
+.single .bootstrap-realtypress .rps-single-listing .rps-single-features + .rps-single-features {
+    display: none;
+}
+
+.single .bootstrap-realtypress .rps-single-listing .rps-single-features {
+    margin-bottom: 20px;
+}
+
+.single .container-fluid {
+    padding: 0 30px;
+}
+
+.single .bootstrap-realtypress .rps-single-listing .rps-property-photo-row > .col-md-9,
+.single .bootstrap-realtypress .rps-single-listing .rps-property-photo-row > .col-md-3 {
+    float: none !important;
+    width: 100% !important;
+    flex: 100% !important;
+    max-width: 100%;
+}
+
+.single .bootstrap-realtypress .rps-single-listing .rps-property-photo-row .bx-pager-wrap {
+    display: none;
 }
