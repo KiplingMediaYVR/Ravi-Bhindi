@@ -7,7 +7,7 @@ Author URI: http://kiplingmedia.com/
 /* HOME FEATURED CAROUSEL */
 
 .home .bootstrap-realtypress .featured-home-carousel .bx-slider li img {
-    min-height: 155px;
+    height: 155px;
 }
 
 .post-type-archive-rps_listing .bootstrap-realtypress .image-holder {
