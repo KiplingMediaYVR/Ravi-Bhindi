@@ -16,7 +16,8 @@ $a['btn_text'] = ( !empty( $a['btn_text'] ) ) ? $a['btn_text'] . ' ' : '' ;
 
         <input type="hidden" name="look" id="look" value="1">
         <input type="hidden" name="post_type" id="post_type" value="rps_listing">
-        <input type="hidden" name="view" id="view" value="map">
+        <input type="hidden" name="view" id="view" value="list">
+          <!--        <input type="hidden" name="input_city" id="input_city" value="Vancouver">-->
 
         <!-- Search Input -->
         <div class="tester">
@@ -32,7 +33,7 @@ $a['btn_text'] = ( !empty( $a['btn_text'] ) ) ? $a['btn_text'] . ' ' : '' ;
     </form>
 
     <div class="look-search-blurb">
-      <small>Try a City, Province, Postal Code MLS&reg; or RP Number</small>
+<!--      <small>Try a City, Province, Postal Code MLS&reg; or RP Number</small>-->
     </div>  
 
   </div><!-- /.sc-rps-search-location-form-<?php echo $a['class'] ?> -->
