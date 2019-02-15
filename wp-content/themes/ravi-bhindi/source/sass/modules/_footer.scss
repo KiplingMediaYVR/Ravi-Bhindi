@@ -66,16 +66,16 @@
         border-color: #FFF;
         color: #FFF;
     }
+}
 
-    .btn-submit {
-        padding: 3px 15px;
-        background-color: $brand-yellow;
-        border: none;
-        border-bottom: 5px solid #d99221;
-        border-radius: 0;
-        font-size: em(14);
-        color: $brand-blue;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
+.btn-submit {
+    padding: 3px 15px;
+    background-color: $brand-yellow;
+    border: none;
+    border-bottom: 5px solid #d99221;
+    border-radius: 0;
+    font-size: em(14);
+    color: $brand-blue;
+    font-weight: 700;
+    text-transform: uppercase;
 }

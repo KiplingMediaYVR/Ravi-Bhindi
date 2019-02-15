@@ -7,87 +7,10 @@
 
             <?php echo do_shortcode('[rps-listing-carousel max_slides=7 slide_width=200 class="featured-home-carousel"]'); ?>
 
-            <div class="row">
-
-<!--                <div class="col col-12 col-sm-6 col-md-6 col-lg-3">-->
-<!--                    <div class="listing-item see-all">-->
-<!--                        <a href="#">See All</a>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-                <?php
-                for ($i = 0; $i < 3; $i++) {
-                    ?>
-
-<!--                    <div class="col col-12 col-sm-6 col-md-6 col-lg-3">-->
-<!--                        <div class="listing-item">-->
-<!--                            <div class="listing-item-img">-->
-<!--                                <img src="https://picsum.photos/400/401" alt="">-->
-<!--                            </div>-->
-<!---->
-<!--                            <div class="listing-item-info">-->
-<!--                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-                    <?php
-                }
-                ?>
-
-                <div class="w-100"></div>
-
-                <?php
-                for ($i = 0; $i < 4; $i++) {
-                    ?>
-
-<!--                    <div class="col col-12 col-sm-6 col-md-6 col-lg-3">-->
-<!--                        <div class="listing-item">-->
-<!--                            <div class="listing-item-img">-->
-<!--                                <img src="https://picsum.photos/400/401" alt="">-->
-<!--                            </div>-->
-<!---->
-<!--                            <div class="listing-item-info">-->
-<!--                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-                    <?php
-                }
-                ?>
-
-            </div>
-            <!-- /.row -->
         </div>
         <!-- /.container -->
     </div>
     <!-- /.featured-listings -->
-
-    <div class="my-mission">
-
-        <div class="container-fluid">
-
-            <div class="row row-eq-height">
-                <div class="col col-12 col-md-6 p-0">
-                    <div class="mission-img"></div>
-                </div>
-
-                <div class="col col-12 col-md-6">
-                    <div class="mission-content">
-                        <h3>My Mission</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque deserunt earum harum iure modi neque quidem! Eveniet nihil, sint!</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at ea eius enim eveniet exercitationem facere fugiat laudantium magnam nostrum numquam obcaecati, officiis perspiciatis quaerat quam quisquam suscipit ullam voluptate!</p>
-                    </div>
-                    <!-- /.mission-content -->
-                </div>
-            </div>
-            <!-- /.row -->
-
-        </div>
-        <!-- /.container-fluid -->
-    </div>
-    <!-- /.my-mission -->
 
     <div class="know-more">
         <div class="container">

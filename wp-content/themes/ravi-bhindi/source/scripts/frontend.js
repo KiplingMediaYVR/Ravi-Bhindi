@@ -4,13 +4,17 @@
         this.body = $('body');
 
         //CREATE FUNCTIONS FOR THE SITE
-        var functionName = function () {
-            console.log('Worked!');
+        var hashSelect = function () {
+            var parts = window.location.href.split('/');
+
+            if (parts.length > 0) {
+                $('#location').val(parts[parts.length - 1].split('?')[0]);
+            }
         };
 
         //THEN ADD THEM TO THE RUN FUNCTION
         var run = function () {
-            functionName();
+            hashSelect();
         };
 
         run();

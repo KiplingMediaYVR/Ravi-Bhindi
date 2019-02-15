@@ -36,10 +36,57 @@
     float: right;
     padding-top: 80px;
 
+    ul {
+        @include list-reset();
+        @include list-float();
+
+        li {
+
+            /* SUBMENU */
+            &.with-submenu {
+                position: relative;
+
+                &:hover {
+
+                    .submenu {
+                        display: block;
+                    }
+                }
+            }
+
+            a {
+                color: #FFF;
+                margin: 0 10px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 160px;
+    background-color: $brand-yellow;
+
+    &:hover {
+        display: block;
+    }
+
     a {
+        display: block;
+        padding: 10px 5px;
+        margin: 0 !important;
+        font-size: em(13);
         color: #FFF;
-        margin: 0 10px;
-        text-transform: uppercase;
+        text-decoration: none;
+        @include transition(all 200ms ease);
+
+        &:hover {
+            background-color: darken($brand-yellow, 10%);
+        }
     }
 }
 

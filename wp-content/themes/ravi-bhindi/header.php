@@ -43,12 +43,34 @@
                 <h1><a href="<?php echo site_url(); ?>">Ravi Bhindi</a></h1>
             </div>
 
-            <nav class="main-menu">
-                <a href="<?php echo site_url(); ?>/listing">Properties</a>
-                <a href="#">About</a>
-                <a href="#">More</a>
-                <a href="#">News</a>
-            </nav>
+            <div class="main-menu">
+                <ul>
+                    <li><a href="<?php echo site_url(); ?>/listing">Properties</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">More</a></li>
+                    <li><a href="#">News</a></li>
+                    <li class="with-submenu">
+
+                        <a href="#">Find an Agent</a>
+
+                        <div class="submenu">
+                            <a href="<?php echo site_url(); ?>/find-an-agent#Vancouver">Vancouver</a>
+                            <a href="<?php echo site_url(); ?>/find-an-agent#Burnaby">Burnaby</a>
+                            <a href="<?php echo site_url(); ?>/find-an-agent#Richmond">Richmond</a>
+                            <a href="<?php echo site_url(); ?>/find-an-agent#NewWest">New West</a>
+                            <a href="<?php echo site_url(); ?>/find-an-agent#Surrey">Surrey</a>
+                            <a href="<?php echo site_url(); ?>/find-an-agent#WhiteRock">White Rock</a>
+                            <a href="<?php echo site_url(); ?>/find-an-agent#Abbotsford">Abbotsford</a>
+                            <a href="<?php echo site_url(); ?>/find-an-agent#MapleRidge">Maple Ridge</a>
+                            <a href="<?php echo site_url(); ?>/find-an-agent#PittMeadows">Pitt Meadows</a>
+                            <a href="<?php echo site_url(); ?>/find-an-agent#NorthVancouver">North Vancouver</a>
+                            <a href="<?php echo site_url(); ?>/find-an-agent#PortCoquitlam">Port Coquitlam</a>
+                            <a href="<?php echo site_url(); ?>/find-an-agent#Coquitlam">Coquitlam</a>
+                            <a href="<?php echo site_url(); ?>/find-an-agent#PortMoody">Port Moody</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
             <!-- /.main-menu -->
 
         </div>
