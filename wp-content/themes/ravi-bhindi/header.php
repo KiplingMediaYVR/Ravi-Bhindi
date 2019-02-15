@@ -40,7 +40,7 @@
         <div class="container">
 
             <div class="logo">
-                <h1><a href="<?php echo site_url(); ?>">Ravi Bhindi</a></h1>
+                <h1><a href="<?php echo site_url(); ?>"><span></span></a></h1>
             </div>
 
             <div class="main-menu">

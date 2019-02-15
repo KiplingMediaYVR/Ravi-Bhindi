@@ -17,7 +17,7 @@
 .logo {
     display: inline-block;
     background-color: $brand-yellow;
-    padding: 50px 15px 15px 15px;
+    padding: 40px 0 0 0;
     margin-left: -15px;
 
     h1 {
@@ -28,6 +28,15 @@
         a {
             text-decoration: none;
             color: #FFF;
+
+            span {
+                display: inline-block;
+                width: 200px;
+                height: 140px;
+                @include bgi("svg/logo-01.svg");
+                background-position: center center;
+                background-size: contain;
+            }
         }
     }
 }
