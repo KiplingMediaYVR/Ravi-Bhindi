@@ -1,3 +1,5 @@
+<?php /* Template Name: Front Page */ ?>
+
 <?php get_header(); ?>
 
     <div class="featured-listings">
@@ -59,19 +61,32 @@
 
                 <div class="col col-12 col-md-6">
 
-                    <div class="testimonials-slider">
+                    <?php if (have_rows('testimonial')): ?>
 
-                        <div class="testimonials-item">
-                            <h3>Karen Burrows</h3>
-                            <div class="testimonials-author-img">
-                                <img src="https://picsum.photos/200/200" alt="">
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A blanditiis inventore ipsam labore libero nemo non sapiente sed similique. Tenetur.</p>
+                        <div class="testimonials-slider">
+
+                            <?php while (have_rows('testimonial')): the_row();
+
+                                // vars
+                                $name = get_sub_field('name');
+                                $image = get_sub_field('image');
+                                $message = get_sub_field('message');
+
+                                ?>
+
+                                <div class="testimonials-item">
+                                    <h3><?php echo $name; ?></h3>
+                                    <div class="testimonials-author-img">
+                                    </div>
+                                    <p><?php echo $message; ?></p>
+                                </div>
+                                <!-- /.testimonials-item -->
+
+                            <?php endwhile; ?>
+
                         </div>
-                        <!-- /.testimonials-item -->
 
-                    </div>
-                    <!-- /.testimonials-slider -->
+                    <?php endif; ?>
 
                 </div>
 

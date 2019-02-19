@@ -42,6 +42,7 @@ module.exports = function (grunt) {
                 files: {
                     '<%= config.assets %>/scripts/frontend.min.js': [
                         '<%= config.source%>/vendor/bootstrap.min.js',
+                        '<%= config.source%>/vendor/slick.js',
                         '<%= config.source%>/scripts/frontend.js'
                     ]
                 }
@@ -101,7 +102,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         cwd: '<%= config.source%>/images',
-                        src: ['**/*.{jpg,jpeg}'],
+                        src: ['**/*.{jpg,jpeg,gif}'],
                         dest: '<%= config.assets%>/images'
                     }
                 ]

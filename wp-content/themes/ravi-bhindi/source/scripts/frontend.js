@@ -12,9 +12,18 @@
             }
         };
 
+        var testimonialsSlider = function () {
+            var $slickContainer = $('.testimonials-slider');
+
+            $slickContainer.slick({
+                arrows: true
+            });
+        };
+
         //THEN ADD THEM TO THE RUN FUNCTION
         var run = function () {
             hashSelect();
+            testimonialsSlider();
         };
 
         run();
