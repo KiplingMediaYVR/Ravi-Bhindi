@@ -91,8 +91,6 @@
     jQuery(".result-search-form-h").hide(); 
 
   }
-    
-
 
   // Math Captcha
   function load_math_captcha( target ) {
@@ -117,7 +115,6 @@
     });
 
   }  
-
 
   function refresh_math_captcha() {
 

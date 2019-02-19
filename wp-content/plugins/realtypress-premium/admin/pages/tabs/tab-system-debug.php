@@ -43,9 +43,9 @@ isset( $_POST["rps_debug_geocoding_test"] ) ) { ?>
 
         // Sync All
         if( isset( $_POST["rps_debug_sync_all"] ) ) {
-
+    
             wp_suspend_cache_addition( true );
-
+    
             $ddf->set_max_execution();
             $connect = $ddf->connect();
             if( $connect ) {
@@ -55,7 +55,7 @@ isset( $_POST["rps_debug_geocoding_test"] ) ) { ?>
                 $ddf->sync_listing_additions( $master_list );
                 $ddf->disconnect();
             }
-
+    
             wp_suspend_cache_addition( false );
         }
 
@@ -370,12 +370,16 @@ isset( $_POST["rps_debug_geocoding_test"] ) ) { ?>
             $address['PostalCode']    = 'M5V 2T6';
 
             $geo_url          = $crud->rps_get_geo_coding_url( $address );
+            $geo_service = get_option( 'rps-geocoding-api-service', 'google' );
+            if( $geo_url === false ) {
+                $geo_url = 'You must enter an API key for '.strtoupper($geo_service).'<br>';
+            }
+    
+            echo 'Geocoding Service - <strong>' . strtoupper( $geo_service ) . '</strong><br>';
+            
             $geocoding_result = $crud->get_geo_coding_data( $address );
 
             // Geo Services
-            $geo_service = get_option( 'rps-geocoding-api-service', 'google' );
-            echo 'Geocoding Service - <strong>' . strtoupper( $geo_service ) . '</strong><br>';
-
             if( $geo_service == 'opencage' ) {
                 $api_key = get_option( 'rps-opencage-api-key', '' );
             }

@@ -35,11 +35,12 @@
 									$id          = $values['id'];
 									$filename    = $values['filename'];
 									$sequence_id = $values['sequence_id'] - 1;
+									$alt =       rps_fix_case( $property['address']['StreetAddress'] ) . rps_fix_case ( $property['address']['City'] . ', ' . $property['address']['Province'] ) . '  ' . rps_format_postal_code( $property['address']['PostalCode'] ).' - MLS&reg; '.$property['common']['DdfListingID'] ;
 
 									echo '<li class="slide">';
 										// echo '<a data-slide-index="' . $sequence_id . '" href="" rel="nofollow">';
 										echo '<a data-slide-index="' . $i . '" href="" rel="nofollow">';
-											echo '<img src="' . REALTYPRESS_LISTING_PHOTO_URL . '/' . $id . '/' . $filename.'" onerror="if (this.src != \'' . $missing_image . '\') this.src = \'' . $missing_image . '\';">';
+											echo '<img src="' . REALTYPRESS_LISTING_PHOTO_URL . '/' . $id . '/' . $filename.'" alt="'.$alt.'" onerror="if (this.src != \'' . $missing_image . '\') this.src = \'' . $missing_image . '\';">';
 										echo '</a>';
 									echo '</li>';
 
@@ -88,7 +89,10 @@
 								$filename = $values['filename'];
 
 								echo '<li class="slide">';
-									echo '<a href="' . REALTYPRESS_LISTING_PHOTO_URL . '/' . $id . '/' . $filename.'" rel="gallery-' . $id . '" class="swipebox">';
+									// echo '<a href="' . REALTYPRESS_LISTING_PHOTO_URL . '/' . $id . '/' . $filename.'" rel="gallery-' . $id . '" class="swipebox">';
+
+									// Jquery 3 Swipebox fix (no rel tag)
+									echo '<a href="' . REALTYPRESS_LISTING_PHOTO_URL . '/' . $id . '/' . $filename.'" class="swipebox">';
 										echo '<img src="' . REALTYPRESS_LISTING_PHOTO_URL . '/' . $id . '/' . $filename.'" onerror="if (this.src != \'' . $missing_image . '\') this.src = \'' . $missing_image . '\';">';
 									echo '</a>';
 								echo '</li>';

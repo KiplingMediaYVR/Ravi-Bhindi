@@ -868,13 +868,21 @@ if( ! class_exists( 'RealtyPress_DDF_PHRets' ) ) {
 
                 }
                 else {
+    
+                    if( $geo_data == false ) {
+                        echo "Halting sync process until geocoding issues are resolved [ Missing Geocoding API Key ]";
+                        if( $this->debug_logging ) $this->log->w( $this->log_tag, "############################################################################" );
+                        if( $this->debug_logging ) $this->log->w( $this->log_tag, "### Halting sync process until geocoding issues are resolved [Missing Geocoding API Key] ###" );
+                        if( $this->debug_logging ) $this->log->w( $this->log_tag, "############################################################################" );
+                        die();
+                    }
 
                     if( $geo_data['status'] == 'ZERO_RESULTS' ) {
                         $this->log->i( $this->log_tag, " => Unable to retrieve geo data for listing, skipping import." );
                     }
 
                     if( $geo_data['status'] == 'OVER_QUERY_LIMIT' || $geo_data['status'] == 'REQUEST_DENIED' ) {
-
+                        echo "Halting sync process until geocoding issues are resolved [" . $geo_data['status'] . "]";
                         if( $this->debug_logging ) $this->log->w( $this->log_tag, "############################################################################" );
                         if( $this->debug_logging ) $this->log->w( $this->log_tag, "### Halting sync process until geocoding issues are resolved [" . $geo_data['status'] . "] ###" );
                         if( $this->debug_logging ) $this->log->w( $this->log_tag, "############################################################################" );
@@ -913,16 +921,15 @@ if( ! class_exists( 'RealtyPress_DDF_PHRets' ) ) {
             $agent_ids = $this->crud->insert_agent_data( $listing );
 
             // Foreach agent id (there can be more than one agent on a single listing)
-            //
             $disable_agent_photos = get_option( 'rps-system-options-download-agent-photos', 0 );
-            if( $disable_agent_photos == 1 ) {
-                if( $this->debug_logging ) $this->log->i( $this->log_tag, $id . " :: Agent Photo Downloads Disabled" );
 
-            }
-            else {
+            foreach( $agent_ids as $id ) {
 
-                foreach( $agent_ids as $id ) {
+                if( $disable_agent_photos == 1 ) {
+                    if( $this->debug_logging ) $this->log->i( $this->log_tag, $id . " :: Agent Photo Downloads Disabled" );
 
+                }
+                else {
                     // Download listing agents photos
                     if( $this->debug_logging ) $this->log->i( $this->log_tag, $id . " :: Downloading Agent Photos:" );
                     $agent_photos = $this->download_agent_photos( $id );
@@ -935,9 +942,7 @@ if( ! class_exists( 'RealtyPress_DDF_PHRets' ) ) {
                         $agent_update['Photos'] = json_encode( $agent_photos );
                         $this->crud->update_agent_photo_data( $id, $agent_update );
                     }
-
                 }
-
             }
 
 
@@ -953,7 +958,6 @@ if( ! class_exists( 'RealtyPress_DDF_PHRets' ) ) {
          */
         public function import_listing_office( $listing )
         {
-
             global $wpdb;
 
             if( $this->debug_logging ) $this->log->i( $this->log_tag, "--- START OFFICE IMPORT ---" );
@@ -962,14 +966,16 @@ if( ! class_exists( 'RealtyPress_DDF_PHRets' ) ) {
             $office_id = $this->crud->insert_office_data( $listing );
 
             $disable_office_photos = get_option( 'rps-system-options-download-office-photos', 0 );
-            if( $disable_office_photos == 1 ) {
 
-                if( $this->debug_logging ) $this->log->i( $this->log_tag, $id . " :: Office Photo Downloads Disabled" );
-            }
-            else {
+            // Foreach office id (there can be more than one office on a single listing)
+            foreach( $office_id as $id ) {
 
-                // Foreach office id (there can be more than one office on a single listing)
-                foreach( $office_id as $id ) {
+                if( $disable_office_photos == 1 ) {
+
+                    if( $this->debug_logging ) $this->log->i( $this->log_tag, $id . " :: Office Photo Downloads Disabled" );
+                }
+                else {
+
 
                     // Download listing office photos
                     if( $this->debug_logging ) $this->log->i( $this->log_tag, $id . " :: Downloading Office Photos:" );
@@ -985,8 +991,8 @@ if( ! class_exists( 'RealtyPress_DDF_PHRets' ) ) {
                     }
 
                 }
+                if( $this->debug_logging ) $this->log->i( $this->log_tag, "--- END OFFICE IMPORT ---" );
             }
-            if( $this->debug_logging ) $this->log->i( $this->log_tag, "--- END OFFICE IMPORT ---" );
         }
 
 

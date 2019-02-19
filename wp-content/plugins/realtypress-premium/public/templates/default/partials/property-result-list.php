@@ -130,8 +130,6 @@
               </a>
             </figure>
 
-
-
           </div><!-- .image-holder -->
         </div><!-- /.col-sm-4 -->
         <div class="col-md-6 col-sm-7 col-xs-12 pl-20 pr-20">

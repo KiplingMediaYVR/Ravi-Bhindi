@@ -5,6 +5,17 @@
 ### See our blog post at https://realtypress.ca/v1-5-0-template-updates/ for more information.
 ### --------------------------------------------------------------------------------------------
 
+## 1.7.0 (2018-02-11)
+---------------------------------------------------------
+Added:       Disabling of Swipebox arrows and close button hiding.
+Added:       WP cron scheduled event check to handle lost scheduled cron job.
+Added:       Alt tag values to single listing images.
+Added:       Halting of sync when required Geocoding API Key is not set.
+Updated:     Office table 'province' column length to accommodate long name replacing short name.
+Updated:     Swipebox enqueue script to exclude if library is disabled.
+Updated:     Database province column length.
+Removed:     Admin notices from on page new and page edit for Gutenberg compatiblity.
+
 ## 1.6.9 (2018-10-17)
 ---------------------------------------------------------
 Added:       RealtyPress color styles to the customizer.
@@ -17,7 +28,6 @@ Added:       Import filters for city names to include or exclude during import..
 Added:       Button to delete repair cache.
 Updated:     UI to flat vs gradients.
 Optimized:   Listing Photo repair script.
-
 
 ## 1.6.8 (2018-10-01)
 ---------------------------------------------------------

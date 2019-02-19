@@ -16,9 +16,12 @@ if( defined( 'ABSPATH' ) ) {
 
     $ddf  = new RealtyPress_DDF_PHRets( date( 'Y-m-d' ) );
     $cron = new RealtyPress_CRON();
-
-    $cron->run_cron();
-
+    
+    $cron_type = get_option( 'rps-ddf-cron-type' );
+    if( $cron_type == 'unix' || $cron_type == 'unix-cron' ) {
+        $cron->run_cron();
+    }
+    
 }
 else {
     echo 'Cannot run cron, wordpress was not successfully loaded.';

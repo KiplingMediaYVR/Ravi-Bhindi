@@ -368,7 +368,11 @@ jQuery(window).load(function($) {
 
     // Swipebox
     if( data.rps_library_swipebox == 1 ) {
-      jQuery( '.swipebox' ).swipebox();
+      // jQuery( '.swipebox' ).swipebox();
+      jQuery( 'body' ).swipebox({ 
+        selector: '.swipebox',
+        hideBarsDelay : 0
+      });
     }
 
     // Loading Overlay

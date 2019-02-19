@@ -565,6 +565,7 @@ if( ! class_exists( 'RealtyPress_Listings' ) ) {
 
             // Province
             if( ! empty( $input['input_province'] ) ) {
+                
                 $exp_province   = explode( ',', $input['input_province'] );
                 $province_count = count( $exp_province );
 
@@ -777,10 +778,12 @@ if( ! class_exists( 'RealtyPress_Listings' ) ) {
                 // Prepare sql statement if required
                 if( ! empty( $query['search_prepare'] ) ) {
                     if( $get['view'] == 'map' ) {
+                        
                         // Prepare map sql statement
                         $result_query = $wpdb->prepare( $result_query, $query['search_prepare'] );
                     }
                     else {
+                        
                         // Prepare grid/list sql statement
                         $result_query = $wpdb->prepare( $result_query, $query['search_prepare'] );
                     }
@@ -903,42 +906,30 @@ if( ! class_exists( 'RealtyPress_Listings' ) ) {
                     $geo_data                   = $this->crud->get_geo_coding_data( $variation );
                 }
 
-                // Address without City
-                // if($this->crud->rps_is_geo_coding_response_default($geo_data) == true || $geo_data['status'] == 'ZERO_RESULTS') {
-                //   $output .= "GeoCall - Default response, attempting address variation 4!<br>";
-                //   $variation = $address;
-                //   $variation['City'] = '';
-                //   $geo_data = $this->crud->get_geo_coding_data( $variation );
-                // }
-
-                // Address without City and PostalCode
-                // if($this->crud->rps_is_geo_coding_response_default($geo_data) == true || $geo_data['status'] == 'ZERO_RESULTS') {
-                //   $output .= "GeoCall - Default response, attempting address variation 5!<br>";
-                //   $variation = $address;
-                //   $variation['City'] = '';
-                //   $variation['PostalCode'] = '';
-                //   $geo_data = $this->crud->get_geo_coding_data( $variation );
-                // }
-
                 if( ! empty( $geo_data['Latitude'] ) && ! empty( $geo_data['Longitude'] ) ) {
                     $update = $wpdb->query( " UPDATE " . REALTYPRESS_TBL_PROPERTY . " SET Latitude = " . $geo_data['Latitude'] . ",Longitude = " . $geo_data['Longitude'] . "  WHERE property_id = '" . $value['property_id'] . "'" );
-                }
-                else {
-                    $update = false;
-                }
-
-                if( $update == true ) {
-                    $echo_address = array_filter( $address );
-                    $output       .= 'Fixed! ' . $value['ListingID'] . ' | ' . implode( ', ', $echo_address ) . '<br>';
-                    $count        = $count + 1;
-                }
-                else {
-                    $output .= 'Variation attempts failed! Unable to GeoCode address<br>';
+    
+                    if( $update == true ) {
+                        $echo_address = array_filter( $address );
+                        $output       .= 'Fixed! ' . $value['ListingID'] . ' | ' . implode( ', ', $echo_address ) . '<br>';
+                        $count        = $count + 1;
+                    }
+                    else {
+                        $output .= 'Variation attempts failed! Unable to GeoCode address<br>';
+                    }
+                    
                 }
 
                 if( $geo_data == 'OVER_QUERY_LIMIT' ) {
                     $output .= "***********************************<br>";
                     $output .= "  Over GeoCoding Query Limit !<br>";
+                    $output .= "***********************************<br>";
+                    break 1;
+                }
+    
+                if( $geo_data === false ) {
+                    $output .= "***********************************<br>";
+                    $output .= "  No API key has been entered !<br>";
                     $output .= "***********************************<br>";
                     break 1;
                 }

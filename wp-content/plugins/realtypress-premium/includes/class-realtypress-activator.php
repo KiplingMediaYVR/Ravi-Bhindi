@@ -24,7 +24,7 @@ class Realtypress_Activator {
 
         global $wpdb;
 
-        $list = new RealtyPress_Listings();
+//        $list = new RealtyPress_Listings();
 
         /*
         -------------------------------------------------
@@ -116,6 +116,10 @@ class Realtypress_Activator {
 
             update_option( 'rps-database-update-status', 'update-required' );
         }
+        else {
+    
+            update_option( 'rps-database-version', REALTYPRESS_DB_VERSION );
+        }
 
         /*
         -------------------------------------------------
@@ -149,18 +153,18 @@ class Realtypress_Activator {
           CREATE FAVORITES PAGE
         -------------------------------------------------
         */
-
+    
         function get_page_by_slug( $slug )
         {
             if( $pages = get_pages() )
                 foreach( $pages as $page )
                     if( $slug === $page->post_name ) return $page;
-
+        
             return false;
         } // function get_page_by_slug
-
+    
         if( ! get_page_by_slug( 'property-favorites' ) && ! get_page_by_slug( 'property-favourites' ) ) {
-
+        
             $favorites_page = array(
                 'post_type'      => 'page',
                 'post_content'   => '[rps-listing-favorites]',
@@ -170,7 +174,7 @@ class Realtypress_Activator {
                 'comment_status' => 'closed'
             );
             wp_insert_post( $favorites_page );
-
+        
         }
 
         /*

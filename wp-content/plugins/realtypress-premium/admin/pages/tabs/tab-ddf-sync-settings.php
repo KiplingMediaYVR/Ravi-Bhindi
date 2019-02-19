@@ -17,7 +17,6 @@
 if( ( ! empty( $_GET['settings-updated'] ) && $_GET['settings-updated'] == true && get_option( 'rps-ddf-cron-type' ) == 'wordpress' ) ||
     ( ! empty( $_GET['settings-updated'] ) && $_GET['settings-updated'] == true && get_option( 'rps-ddf-cron-type' ) == 'unix' ) ) {
 
-
     $schedule = get_option( 'rps-ddf-cron-schedule', 'daily' );
 
     // WordPress Cron
@@ -51,7 +50,7 @@ if( ( ! empty( $_GET['settings-updated'] ) && $_GET['settings-updated'] == true 
         $set_schedule = 'daily';
     }
 
-    wp_schedule_event( current_time( 'timestamp' ) + 3600, $set_schedule, 'realtypress_ddf_cron' );
+    wp_schedule_event( time() + 600, $set_schedule, 'realtypress_ddf_cron' );
 }
 elseif( ! empty( $_GET['settings-updated'] ) && $_GET['settings-updated'] == true && get_option( 'rps-ddf-cron-type' ) == 'unix-cron' ) {
 
@@ -137,7 +136,7 @@ elseif( get_option( 'rps-ddf-cron-type' ) == 'unix-cron' ) { ?>
 
 <p><?php _e( 'Every time a page is loaded in the wordpress admin or on the front-end of your site, WordPress triggers the CRON function. This function checks for any RealtyPress scheduled tasks and runs them if they are due to be run.  The possible issue here is that if your site is not visited within a 24 hours period than wordpress cannot trigger the CRON function and will not check is scheduled tasks need to be run.  This is why we only recommend WordPress CRON if you have more than one visitor per day.', 'realtypress-premium' ) ?></p>
 
-<p class="rps-text-red"><strong>Current Date Time: <?php echo current_time( 'Y-m-d H:i:s' ); ?></strong></p>
+<p class="rps-text-red"><strong>Current Date Time: <?php echo date( 'Y-m-d H:i:s' ); ?></strong></p>
 
 <table class="wp-list-table widefat" cellspacing="0">
     <thead>

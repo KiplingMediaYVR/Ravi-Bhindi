@@ -333,14 +333,9 @@ class Realtypress_Public {
 		}
 
 		// Swipebox
-		// if( get_option( 'rps-library-swipebox', 1) == 1 ) {
-		//	if( get_option( 'rps-library-minification', 1 ) == 1 ) {
-				wp_enqueue_script( $this->plugin_name . '-swipebox-min', $this->public_url . '/third-party/swipebox/js/jquery.swipebox.min.js' , array( 'jquery' ), $this->version, true );
-		//	}
-		// 	else {
-		// 		wp_enqueue_script( $this->plugin_name . '-swipebox', $this->public_url . '/third-party/swipebox/js/jquery.swipebox.js' , array( 'jquery' ), $this->version, true );
-		// 	}
-		// }
+		 if( get_option( 'rps-library-swipebox', 1) == 1 ) {
+		    wp_enqueue_script( $this->plugin_name . '-swipebox-min', $this->public_url . '/third-party/swipebox/js/jquery.swipebox.min.js' , array( 'jquery' ), $this->version, true );
+		 }
 
 		wp_enqueue_script( $this->plugin_name . '-common', $this->tpl->get_template_path( 'js/common.js' ), array( 'jquery' ), $this->version, true );
 

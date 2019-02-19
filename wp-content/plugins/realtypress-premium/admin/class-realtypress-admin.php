@@ -714,14 +714,18 @@ class Realtypress_Admin {
 
         global $wp_version;
 
+        $screen = get_current_screen();
+        if( !empty($screen) && $screen->id != 'post' && $screen->id != 'page') {
+
         $key                 = get_option( 'rps-license-key' );
         $status              = get_option( 'rps-license-status' );
         $expiry_license_date = get_option( 'rps-license-expiry' );
         $expiry_days_date    = strtotime( $expiry_license_date . ' -30 day' );
         $expiry_license_date = strtotime( $expiry_license_date );
         $date                = time();
-
+        
         $db_version = get_option( 'rps-database-version', '1.0.0' );
+//        pp($db_version);
 
         if( REALTYPRESS_DB_VERSION > $db_version ) {
             update_option( 'rps-database-update-status', 'update-required' );
@@ -808,8 +812,8 @@ class Realtypress_Admin {
             $output = '<div class="error notice">';
             $output .= '<h3 class="rps-text-red">' . __( 'RealtyPress Premium - Database Update from v' . $db_version . ' to v' . REALTYPRESS_DB_VERSION, 'realtypress-premium' ) . '</h3>';
             $output .= '<p>';
-            $output .= '<strong>' . __( 'This update may take a while and time is directly affected by number of listings in the database.<br>
-            <span class="rps-text-red">If you receive a timeout error continue to run the update you receive a success notice.</span>', 'realtypress-premium' ) . '</strong>';
+            $output .= '<strong>' . __( 'THIS UPDATE MAY TAKE A FEW MINUTES TO COMPLETE.<br>Upgrade time is directly affected by number of listings in the database.<br>
+            <span class="rps-text-red">If this pages times out please run the update again until you receive a success notice.</span>', 'realtypress-premium' ) . '</strong>';
             $output .= '</p>';
             $output .= '<p><a href="' . admin_url() . '?rpdb=update" class="button rps-red-btn"><strong>' . __( 'Update Database', 'realtypress-premium' ) . '</strong></a></p>';
             $output .= '</div>';
@@ -853,7 +857,6 @@ class Realtypress_Admin {
                 }
                 $output .= '<br>';
                 $output .= __( 'You should create the keys listed above and add them to <a href="' . admin_url() . '?page=rps_admin_page_slug&tab=apipage=rps_admin_page_slug&tab=api">RealtyPress=>General Option=>API Keys</a>.<br>', 'realtypress-premium' );
-                /** @noinspection SpellCheckingInspection */
                 $output .= __( '<strong>As of June 11, 2018 Google does not the use of Google Geocoding API without configuring a Google Geocoding API key.</strong><br>' );
                 $output .= '</p>';
                 $output .= '</div>';
@@ -922,11 +925,13 @@ class Realtypress_Admin {
         if( $status == 'expired' ) {
             if( ! isset( $_POST['rps-license-activate'] ) && ! isset( $_POST['rps-license-deactivate'] ) ) {
 
+
                 // Notice of expired license
                 $output = '<div class="error notice">';
                 $output .= '<p><strong class="rps-text-red">' . __( 'Your RealtyPress Premium license has expired!', 'realtypress-premium' ) . '</strong><br>';
                 $output .= __( 'Click the button below to visit our site and renew your RealtyPress Premium license before it expires.', 'realtypress-premium' ) . '</p>';
                 $output .= '<p><a href="' . REALTYPRESS_RENEWAL_URL . '" target="_blank" class="button button-primary"><strong> ' . __( 'Renew License', 'realtypress-premium' ) . ' &raquo;</strong></a></p>';
+
                 $output .= '</div>';
 
                 echo $output;
@@ -970,6 +975,7 @@ class Realtypress_Admin {
             // }
 
         }
+    }
 
     }
 
@@ -7130,6 +7136,7 @@ class Realtypress_Admin {
             echo RealtyPress_Admin_Tools::label( 'rps-library-bxslider', $checkbox . '<span>BX Slider </span><a href="http://bxslider.com" target="_blank">' . rps_help_icon() . '</a>' ) . '<br>';
 
             // Swipebox
+            $value    = get_option( 'rps-library-swipebox', 1 );
             $checked  = ( ! empty( $value ) ) ? true : false;
             $checkbox = RealtyPress_Admin_Tools::checkbox( 'rps-library-swipebox', 'rps-library-swipebox', 1, $checked );
             echo RealtyPress_Admin_Tools::label( 'rps-library-swipebox', $checkbox . '<span>Swipebox </span><a href="http://brutaldesign.github.io/swipebox/" target="_blank">' . rps_help_icon() . '</a>' ) . '<br>';
@@ -8011,6 +8018,44 @@ class Realtypress_Admin {
         }
 
     }
+    
+    /**
+     * RealtyPress geocoding migration update.
+     *
+     * @since    1.0.0
+     */
+    public function rps_check_wp_sync_schedule()
+    {
+        $cron_type    = get_option('rps-ddf-cron-type');
+        $sync_enabled = get_option('rps-ddf-sync-enabled', false);
+        
+        if( ( $sync_enabled == true && $cron_type == 'wordpress' ) ||
+            ( $sync_enabled == true && $cron_type == 'unix' )) {
+    
+            // Wordpress or wordpress unix cron.
+            $timestamp = wp_next_scheduled('realtypress_ddf_cron');
+            if ( ! is_int($timestamp)) {
+            
+                $schedule = get_option('rps-ddf-cron-schedule', 'daily');
+                wp_schedule_event(current_time('timestamp') + 3600, $schedule, 'realtypress_ddf_cron');
+            }
+            else {
+                // Cron job is already scheduled do nothing.
+            }
+        }
+        elseif( $sync_enabled == true && $cron_type == 'unix-cron' ) {
+            
+            // unix cron
+            wp_clear_scheduled_hook( 'realtypress_ddf_cron' );
+            
+        }
+        else {
+            
+            // cron not enabled
+            wp_clear_scheduled_hook( 'realtypress_ddf_cron' );
+        }
+        
+    }
 
     /**
      * RealtyPress plugin db updates.
@@ -8033,7 +8078,7 @@ class Realtypress_Admin {
             rps_create_photos_table();
             rps_create_rooms_table();
 
-            update_option( 'rps-database-version', '1.5.0' );
+            update_option( 'rps-database-version', '1.7.0' );
             update_option( 'rps-database-update-status', 'update-success' );
 
         }
@@ -8045,33 +8090,34 @@ class Realtypress_Admin {
 
             $database_version = get_option( 'rps-database-version', '1.0.0' );
 
-            if( $database_version < '1.1.0' ) {
+//            if( $database_version < '1.1.0' ) {
+//
+//                // v1.1.0 DB update
+//                // ================
+//
+//                $wpdb->query( "SHOW COLUMNS FROM " . REALTYPRESS_TBL_PROPERTY . " LIKE 'ListingContractDate'" );
+//                if( $wpdb->num_rows == 0 ) {
+//                    $wpdb->query( "ALTER TABLE " . REALTYPRESS_TBL_PROPERTY . " ADD ListingContractDate VARCHAR( 15 ) AFTER LeaseType" );
+//                }
+//                $wpdb->query( "SHOW COLUMNS FROM " . REALTYPRESS_TBL_PROPERTY_PHOTOS . " LIKE 'PhotoLastUpdated'" );
+//                if( $wpdb->num_rows == 0 ) {
+//                    $wpdb->query( "ALTER TABLE " . REALTYPRESS_TBL_PROPERTY_PHOTOS . " ADD PhotoLastUpdated VARCHAR( 128 ) AFTER LastUpdated" );
+//                }
+//                $prefix_check = $wpdb->query( " SHOW COLUMNS FROM " . REALTYPRESS_TBL_PROPERTY . " LIKE '%AlternateURL%' " );
+//                if( $prefix_check != 1 ) {
+//                    $wpdb->query( " ALTER TABLE " . REALTYPRESS_TBL_PROPERTY . " ADD AlternateURL BLOB; " );
+//                }
+//
+//                $wpdb->query( " ALTER TABLE " . REALTYPRESS_TBL_PROPERTY . " CHANGE COLUMN Appliances Appliances TEXT; " );
+//                $wpdb->query( " ALTER TABLE " . REALTYPRESS_TBL_PROPERTY . " CHANGE COLUMN Features Features TEXT; " );
+//
+//                update_option( 'rps-database-version', '1.1.0' );
+//
+//            }
+            
+            if( $database_version < '1.7.0' ) {
 
-                // v1.1.0 DB update
-                // ================
-
-                $wpdb->query( "SHOW COLUMNS FROM " . REALTYPRESS_TBL_PROPERTY . " LIKE 'ListingContractDate'" );
-                if( $wpdb->num_rows == 0 ) {
-                    $wpdb->query( "ALTER TABLE " . REALTYPRESS_TBL_PROPERTY . " ADD ListingContractDate VARCHAR( 15 ) AFTER LeaseType" );
-                }
-                $wpdb->query( "SHOW COLUMNS FROM " . REALTYPRESS_TBL_PROPERTY_PHOTOS . " LIKE 'PhotoLastUpdated'" );
-                if( $wpdb->num_rows == 0 ) {
-                    $wpdb->query( "ALTER TABLE " . REALTYPRESS_TBL_PROPERTY_PHOTOS . " ADD PhotoLastUpdated VARCHAR( 128 ) AFTER LastUpdated" );
-                }
-                $prefix_check = $wpdb->query( " SHOW COLUMNS FROM " . REALTYPRESS_TBL_PROPERTY . " LIKE '%AlternateURL%' " );
-                if( $prefix_check != 1 ) {
-                    $wpdb->query( " ALTER TABLE " . REALTYPRESS_TBL_PROPERTY . " ADD AlternateURL BLOB; " );
-                }
-
-                $wpdb->query( " ALTER TABLE " . REALTYPRESS_TBL_PROPERTY . " CHANGE COLUMN Appliances Appliances TEXT; " );
-                $wpdb->query( " ALTER TABLE " . REALTYPRESS_TBL_PROPERTY . " CHANGE COLUMN Features Features TEXT; " );
-
-                update_option( 'rps-database-version', '1.1.0' );
-
-            }
-            elseif( $database_version < '1.5.0' ) {
-
-                // v1.5.0 DB update
+                // v1.7.0 DB update
                 // ================
 
                 $db_update = array();
@@ -8109,7 +8155,7 @@ class Realtypress_Admin {
                 else {
 
                     // Database is current
-                    update_option( 'rps-database-version', '1.5.0' );
+                    update_option( 'rps-database-version', '1.7.0' );
 
                 }
 

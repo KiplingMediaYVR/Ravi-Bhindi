@@ -121,8 +121,8 @@ class RealtyPress_DDF_CRUD {
      * ---------------------
      * Create array of listings found in DDF master list but not found in local data set, which indicates this is a new listing.
      *
-     * @param  [array]  $master_list  []
-     * @return [array]  $deletions    [Array of listing id's to delete.]
+     * @param  [array]  $master_list  [  ]
+     * @return [array]  $deletions    [ Array of listing id's to delete. ]
      */
     public function create_addition_list( $master_list )
     {
@@ -1973,10 +1973,12 @@ class RealtyPress_DDF_CRUD {
      */
     public function get_geo_coding_data( $listing )
     {
-
         $geocode_api = $this->rps_get_geo_coding_url( $listing );
+        if( $geocode_api === false ) {
+            return false;
+        }
+        
         $json        = $this->rps_geocoding_call( $geocode_api );
-
 
         $geo_data    = array();
         $geo_service = get_option( 'rps-geocoding-api-service' );
@@ -2060,7 +2062,6 @@ class RealtyPress_DDF_CRUD {
             $geo_data = $json;
         }
 
-
         return $geo_data;
     }
 
@@ -2116,7 +2117,13 @@ class RealtyPress_DDF_CRUD {
             $address          = array_filter( $address );
             $address          = implode( ', ', $address );
             $address          = urlencode( $address );
+            
             $opencage_api_key = get_option( 'rps-opencage-api-key', '' );
+            if( !$opencage_api_key ) {
+                $this->log->i( $this->log_tag, "******** :: Geo URL :: URL does not contain an API key" );
+                return false;
+            }
+    
             $geo_url          = 'https://api.opencagedata.com/geocode/v1/json?q=' . $address . '&countrycode=CA&key=' . $opencage_api_key;
             $geo_url_no_key   = 'https://api.opencagedata.com/geocode/v1/json?q=' . $address . '&countrycode=CA&key=xxxxxxxxxxxxxxxxxxxxxxxxx';
         }
@@ -2125,6 +2132,11 @@ class RealtyPress_DDF_CRUD {
             // GeoCodio URL
             // ------------
             $geocodio_api_key = get_option( 'rps-geocodio-api-key', '' );
+            if( !$geocoding_api_key ) {
+                $this->log->i( $this->log_tag, "******** :: Geo URL :: URL does not contain an API key" );
+                return false;
+            }
+            
             $provinces        = array(
                 "Ontario"               => "ON",
                 "Manitoba"              => "MB",
@@ -2157,6 +2169,11 @@ class RealtyPress_DDF_CRUD {
             // Google GeoCoding URL
             // --------------------
             $google_api_key = get_option( 'rps-google-geo-api-key', '' );
+            if( !$google_api_key ) {
+                $this->log->i( $this->log_tag, "******** :: Geo URL :: URL does not contain an API key" );
+                return false;
+            }
+            
             $api_key        = ( ! empty( $google_api_key ) ) ? '&key=' . $google_api_key : '';
             $geo_url        = "https://maps.googleapis.com/maps/api/geocode/json?address=" . $address . "&components=country:CA" . $api_key;
             $geo_url_no_key = "https://maps.googleapis.com/maps/api/geocode/json?address=" . $address . "&components=country:CA&key=xxxxxxxxxxxxxxxxxxxxxxxxx";

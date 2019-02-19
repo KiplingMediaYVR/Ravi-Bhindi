@@ -1,11 +1,12 @@
 <?php
+
 /**
  * RealtyPress Unix Cron
  *
  * @since      1.3.0
  */
 
-// Load wordpress.
+// Load wordpress
 define( 'SAVEQUERIES', false );
 define( 'WP_USE_THEMES', true );
 require_once( '../../../../../wp-load.php' );
@@ -69,7 +70,7 @@ if( defined( 'ABSPATH' ) ) {
       AddressLine1 varchar(60) DEFAULT NULL,
       AddressLine2 varchar(60) DEFAULT NULL,
       City varchar(50) DEFAULT NULL,
-      Province varchar(15) DEFAULT NULL,
+      Province varchar(35) DEFAULT NULL,
       PostalCode varchar(6) DEFAULT NULL,
       Country varchar(20) DEFAULT NULL,
       AdditionalStreetInfo varchar(30) DEFAULT NULL,

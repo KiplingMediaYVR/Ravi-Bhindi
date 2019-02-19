@@ -1496,7 +1496,7 @@ function rps_create_office_table( $execute = true )
     AddressLine1 varchar(60) DEFAULT NULL,
     AddressLine2 varchar(60) DEFAULT NULL,
     City varchar(50) DEFAULT NULL,
-    Province varchar(15) DEFAULT NULL,
+    Province varchar(35) DEFAULT NULL,
     PostalCode varchar(6) DEFAULT NULL,
     Country varchar(20) DEFAULT NULL,
     AdditionalStreetInfo varchar(30) DEFAULT NULL,

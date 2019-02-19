@@ -155,6 +155,7 @@ class Realtypress {
         $this->loader->add_action( 'admin_init', $plugin_admin, 'rps_plugin_geo_migration' );
         $this->loader->add_action( 'admin_init', $plugin_admin, 'rps_plugin_geo_services_migration' );
         $this->loader->add_action( 'admin_init', $plugin_admin, 'rps_plugin_ddf_https' );
+        $this->loader->add_action( 'admin_init', $plugin_admin, 'rps_check_wp_sync_schedule' );
 
         // Scripts & Styles
         $this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles', 25 );
