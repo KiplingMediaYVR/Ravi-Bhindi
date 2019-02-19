@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
 
-            <div class="col col-6 col-md-4">
+            <div class="col col-6 col-md-3">
                 <h3>Menu</h3>
 
                 <nav class="footer-nav">
@@ -20,7 +20,7 @@
             </div>
             <!-- /.col -->
 
-            <div class="col col-6 col-md-4">
+            <div class="col col-6 col-md-5">
                 <h3>Contact</h3>
 
                 <div class="contact-info">
