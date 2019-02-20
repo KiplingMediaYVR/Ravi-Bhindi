@@ -16,7 +16,16 @@
             var $slickContainer = $('.testimonials-slider');
 
             $slickContainer.slick({
-                arrows: true
+                arrows: true,
+
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            arrows: false
+                        }
+                    }
+                ]
             });
         };
 

@@ -1,0 +1,79 @@
+.search-box {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    margin-top: -130px;
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(39, 32, 63, .80);
+
+    @include media-breakpoint-down(sm) {
+        position: relative;
+        top: 56px;
+        margin-top: 0;
+        background-color: rgba(39, 32, 63, 1);
+    }
+
+    h2 {
+        margin: 0 0 20px;
+        font-size: em(40);
+        font-weight: 700;
+        color: #FFF;
+    }
+
+    /* OVERRIDE STYLES */
+
+    .bootstrap-realtypress {
+
+        .row {
+
+            margin-bottom: 20px;
+        }
+
+        .panel {
+            background: none;
+            border: none;
+            margin: 0;
+        }
+
+        .panel-body {
+            padding: 0;
+        }
+
+        small,
+        .small {
+            color: #FFF;
+            position: relative;
+            top: 19px;
+        }
+
+        .btn {
+            padding: 0;
+        }
+
+        .slider-container .back-bar .pointer-label {
+            background: none;
+            color: #FFF;
+        }
+
+        .panel-default > .panel-heading {
+            display: none;
+        }
+
+        .btn {
+            height: 38px;
+            background: $brand-yellow;
+            border: none;
+            color: $brand-blue;
+            font-weight: 700;
+
+            &:hover {
+                background-color: darken($brand-yellow, 10%);
+            }
+        }
+
+        .back-bar .selected-bar {
+            background: $brand-yellow !important;
+        }
+    }
+}

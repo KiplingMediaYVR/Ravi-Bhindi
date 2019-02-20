@@ -26,7 +26,7 @@
 
                     <div class="phone">
                         <span class="phone-icon"></span>
-                        <span>+1 (666) 666-6666</span>
+                        <span>+1 (604) 825-8881</span>
                     </div>
                     <!-- /.phone -->
 
@@ -73,14 +73,24 @@
             </div>
             <!-- /.main-menu -->
 
+            <div class="row">
+
+                <?php if (is_front_page()) : ?>
+
+                    <div class="search-box">
+                        <h2>You will be moving soon to your new home</h2>
+
+                        <!--            --><?php //echo do_shortcode('[rps-listing-search-box btn_text=Search]'); ?>
+                        <?php echo do_shortcode('[rps-listing-search-form hide="type,business,transaction,street_address,community,neighbourhood,province,postal_code,mls,open_house,condominium,pool,waterfront"]'); ?>
+                    </div>
+                    <!-- /.search-box -->
+
+                <?php endif; ?>
+
+            </div>
+            <!-- /.row -->
+
         </div>
         <!-- /.container -->
-
-        <div class="search-box">
-            <h2>You will be moving soon to your new home</h2>
-
-            <?php echo do_shortcode('[rps-listing-search-box btn_text=Search]'); ?>
-        </div>
-        <!-- /.search-box -->
     </div>
     <!-- /#header -->

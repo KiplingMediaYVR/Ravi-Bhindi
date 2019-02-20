@@ -41,7 +41,7 @@
                         </div>
 
                         <div class="col col-12 col-md-6">
-                            <p>+1 604-825-881</p>
+                            <p>+1 (604) 825-8881</p>
                             <p><a href="mailto:ravi@ravibhindi.ca">ravi@ravibhindi.ca</a></p>
                         </div>
                     </div>
