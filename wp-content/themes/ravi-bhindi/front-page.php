@@ -7,7 +7,7 @@
 
             <h2>Featured Listings</h2>
 
-            <?php echo do_shortcode('[rps-listing-carousel max_slides=7 slide_width=200 class="featured-home-carousel"]'); ?>
+            <?php echo do_shortcode('[rps-listing-carousel city="Vancouver" max_slides=7 slide_width=200 class="featured-home-carousel"]'); ?>
 
         </div>
         <!-- /.container -->
