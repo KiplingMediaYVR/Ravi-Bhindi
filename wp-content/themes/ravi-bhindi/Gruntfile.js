@@ -63,6 +63,21 @@ module.exports = function (grunt) {
             }
         },
 
+        postcss: {
+            options: {
+                map: true,
+
+                processors: [
+                    require('pixrem')(),
+                    require('autoprefixer')({browsers: 'last 2 versions'}),
+                    // require('cssnano')()
+                ]
+            },
+            dist: {
+                src: '<%= config.assets%>/css/main.css'
+            }
+        },
+
         sass: {
             options: {
                 implementation: sass,
@@ -222,6 +237,7 @@ module.exports = function (grunt) {
         'jshint:frontend',
         'concurrent:first',
         'sass',
+        'postcss',
         'concurrent:second',
         'concurrent:imagesDist',
         'copy:dist'
