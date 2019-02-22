@@ -12,7 +12,7 @@
 
 #header {
     position: relative;
-    height: 23vh;
+    height: 30vh;
     @include bgi("home-header.png");
     background-position: center center;
     background-size: cover;
@@ -21,6 +21,10 @@
     .container {
         position: relative;
         height: inherit;
+    }
+
+    @include media-breakpoint-down(sm) {
+        height: 300px;
     }
 }
 
