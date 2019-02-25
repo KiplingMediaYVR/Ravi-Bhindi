@@ -9,13 +9,9 @@
                 <h3>Menu</h3>
 
                 <nav class="footer-nav">
-                    <a href="#">Home</a>
-                    <a href="#">Properties</a>
-                    <a href="#">Buying</a>
-                    <a href="#">Selling</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
-                    <a href="#">About</a>
+                    <a href="<?php echo site_url(); ?>">Home</a>
+                    <a href="<?php echo site_url(); ?>/listing/">Properties</a>
+                    <a href="<?php echo site_url(); ?>/find-an-agent/">Find an Agent</a>
                 </nav>
             </div>
             <!-- /.col -->
@@ -55,7 +51,7 @@
             <div class="col col-12 col-md-4">
                 <h3>Feedback</h3>
 
-<!--                --><?php //echo do_shortcode('[rps-contact style="vertical"]'); ?>
+                <!--                --><?php //echo do_shortcode('[rps-contact style="vertical"]'); ?>
 
                 <form action="">
                     <div class="form-group">

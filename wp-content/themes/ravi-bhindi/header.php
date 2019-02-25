@@ -45,7 +45,7 @@
 
             <div class="main-menu">
                 <ul>
-                    <li><a href="<?php echo site_url(); ?>/listing">Properties</a></li>
+                    <li><a href="<?php echo site_url(); ?>/listing/">Properties</a></li>
                     <!--                    <li><a href="#">About</a></li>-->
                     <!--                    <li><a href="#">More</a></li>-->
                     <!--                    <li><a href="#">News</a></li>-->

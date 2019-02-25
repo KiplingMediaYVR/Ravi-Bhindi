@@ -199,13 +199,15 @@
 
     h3 {
         margin: 0 0 20px;
-        font-size: em(50);
+        font-size: em(20);
         color: #d99221;
     }
 
     p {
         font-size: em(18);
         font-style: italic;
+        border-bottom: 1px solid #DEDEDE;
+        padding-bottom: 20px;
     }
 }
 

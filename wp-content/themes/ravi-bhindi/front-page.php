@@ -75,10 +75,9 @@
                                 ?>
 
                                 <div class="testimonials-item">
-                                    <h3><?php echo $name; ?></h3>
-                                    <div class="testimonials-author-img">
-                                    </div>
+                                    <div class="testimonials-author-img"></div>
                                     <p><?php echo $message; ?></p>
+                                    <h3><?php echo $name; ?></h3>
                                 </div>
                                 <!-- /.testimonials-item -->
 
