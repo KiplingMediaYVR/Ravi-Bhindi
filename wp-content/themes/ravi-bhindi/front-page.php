@@ -22,7 +22,7 @@
             <div class="row">
 
                 <div class="col col-12 col-md-4">
-                    <a href="#">
+                    <a href="<?php the_field('know_more_link_1', $front_page_id); ?>">
                         <div class="know-more-item">
                             <h4>What is <span>my home worth?</span></h4>
                         </div>
@@ -31,7 +31,7 @@
                 <!-- /.col -->
 
                 <div class="col col-12 col-md-4">
-                    <a href="#">
+                    <a href="<?php the_field('know_more_link_2', $front_page_id); ?>">
                         <div class="know-more-item">
                             <h4>Are you <span>selling a home?</span></h4>
                         </div>
@@ -40,7 +40,7 @@
                 <!-- /.col -->
 
                 <div class="col col-12 col-md-4">
-                    <a href="#">
+                    <a href="<?php the_field('know_more_link_3', $front_page_id); ?>">
                         <div class="know-more-item">
                             <h4>Are you <span>buying a home?</span></h4>
                         </div>

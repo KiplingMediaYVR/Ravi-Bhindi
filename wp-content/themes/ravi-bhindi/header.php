@@ -16,6 +16,10 @@
         #header {
             background-image: url("<?php the_field('hero_background', $front_page_id); ?>");
         }
+
+        .logo h1 a span {
+            background-image: url("<?php the_field('logo', $front_page_id); ?>");
+        }
     </style>
 
 </head>
@@ -31,14 +35,20 @@
                 <div class="row align-items-center">
 
                     <nav class="social-media">
-                        <a href="#" class="sm-twitter"></a>
-                        <a href="#" class="sm-facebook"></a>
-                        <a href="#" class="sm-linkedin"></a>
+                        <?php if (get_field('facebook', $front_page_id)) : ?>
+                            <a href="<?php the_field('facebook', $front_page_id); ?>" class="sm-facebook"></a>
+                        <?php endif; ?>
+                        <?php if (get_field('twitter', $front_page_id)) : ?>
+                            <a href="<?php the_field('twitter', $front_page_id); ?>" class="sm-twitter"></a>
+                        <?php endif; ?>
+                        <?php if (get_field('linkedin', $front_page_id)) : ?>
+                            <a href="<?php the_field('linkedin', $front_page_id); ?>" class="sm-linkedin"></a>
+                        <?php endif; ?>
                     </nav>
 
                     <div class="phone">
                         <span class="phone-icon"></span>
-                        <span>+1 (604) 825-8881</span>
+                        <span><?php the_field('phone', $front_page_id); ?></span>
                     </div>
                     <!-- /.phone -->
 
@@ -59,9 +69,7 @@
                 <ul>
                     <li><a href="<?php echo site_url(); ?>/about-us/">About us</a></li>
                     <li><a href="<?php echo site_url(); ?>/listing/">Properties</a></li>
-                    <!--                    <li><a href="#">About</a></li>-->
-                    <!--                    <li><a href="#">More</a></li>-->
-                    <!--                    <li><a href="#">News</a></li>-->
+
                     <li class="with-submenu">
 
                         <a href="#">Find an Agent</a>
