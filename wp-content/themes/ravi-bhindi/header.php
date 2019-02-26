@@ -7,7 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <?php wp_head(); ?>
+
+    <?php
+    $front_page_id = get_option('page_on_front');
+    ?>
+
+    <style>
+        #header {
+            background-image: url("<?php the_field('hero_background', $front_page_id); ?>");
+        }
+    </style>
+
 </head>
+
 <body <?php body_class(); ?>>
 
 <div id="wrap">
@@ -45,6 +57,7 @@
 
             <div class="main-menu">
                 <ul>
+                    <li><a href="<?php echo site_url(); ?>/about-us/">About us</a></li>
                     <li><a href="<?php echo site_url(); ?>/listing/">Properties</a></li>
                     <!--                    <li><a href="#">About</a></li>-->
                     <!--                    <li><a href="#">More</a></li>-->
@@ -92,5 +105,6 @@
 
         </div>
         <!-- /.container -->
+
     </div>
     <!-- /#header -->

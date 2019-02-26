@@ -10,6 +10,7 @@
 
                 <nav class="footer-nav">
                     <a href="<?php echo site_url(); ?>">Home</a>
+                    <a href="<?php echo site_url(); ?>/about-us/">About us</a>
                     <a href="<?php echo site_url(); ?>/listing/">Properties</a>
                     <a href="<?php echo site_url(); ?>/find-an-agent/">Find an Agent</a>
                 </nav>

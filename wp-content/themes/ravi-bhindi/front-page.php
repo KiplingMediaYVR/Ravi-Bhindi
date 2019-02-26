@@ -22,23 +22,29 @@
             <div class="row">
 
                 <div class="col col-12 col-md-4">
-                    <div class="know-more-item">
-                        <h4>What is <span>my home worth?</span></h4>
-                    </div>
+                    <a href="#">
+                        <div class="know-more-item">
+                            <h4>What is <span>my home worth?</span></h4>
+                        </div>
+                    </a>
                 </div>
                 <!-- /.col -->
 
                 <div class="col col-12 col-md-4">
-                    <div class="know-more-item">
-                        <h4>Are you <span>selling a home?</span></h4>
-                    </div>
+                    <a href="#">
+                        <div class="know-more-item">
+                            <h4>Are you <span>selling a home?</span></h4>
+                        </div>
+                    </a>
                 </div>
                 <!-- /.col -->
 
                 <div class="col col-12 col-md-4">
-                    <div class="know-more-item">
-                        <h4>Are you <span>buying a home?</span></h4>
-                    </div>
+                    <a href="#">
+                        <div class="know-more-item">
+                            <h4>Are you <span>buying a home?</span></h4>
+                        </div>
+                    </a>
                 </div>
                 <!-- /.col -->
 

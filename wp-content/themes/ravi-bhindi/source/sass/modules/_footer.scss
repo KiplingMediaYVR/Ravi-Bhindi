@@ -20,6 +20,10 @@
         color: #fff;
         margin-bottom: 15px;
 
+        &:hover {
+            color: $brand-yellow;
+        }
+
         @include media-breakpoint-down(sm) {
             width: 45%;
         }

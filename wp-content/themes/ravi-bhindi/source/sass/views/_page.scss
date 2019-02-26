@@ -8,3 +8,14 @@
         padding: 60px 0;
     }
 }
+
+.page-title {
+    margin-bottom: 30px;
+    text-align: center;
+
+    h1,h2 {
+        margin: 0;
+        font-size: em(52);
+        text-transform: uppercase;
+    }
+}
