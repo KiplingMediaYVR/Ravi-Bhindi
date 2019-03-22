@@ -32,6 +32,7 @@ wp-content/themes/*
 !wp-content/plugins/contact-form-7/
 !wp-content/plugins/cc-canadian-mortgage-calculator/
 !wp-content/plugins/realtypress-premium/
+!wp-content/plugins/custom-post-type-ui/
 
 !wp-content/themes/ravi-bhindi/
 !wp-content/themes/ravi-bhindi-child/
