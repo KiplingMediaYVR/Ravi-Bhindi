@@ -30,6 +30,7 @@ wp-content/themes/*
 !wp-content/plugins/acf-repeater/
 !wp-content/plugins/advanced-custom-fields/
 !wp-content/plugins/contact-form-7/
+!wp-content/plugins/cc-canadian-mortgage-calculator/
 !wp-content/plugins/realtypress-premium/
 
 !wp-content/themes/ravi-bhindi/
