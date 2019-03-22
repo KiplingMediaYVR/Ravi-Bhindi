@@ -182,6 +182,23 @@
     }
 }
 
+#mortgage-calculator {
+    margin: 50px 0;
+
+    @include media-breakpoint-down(sm) {
+        margin: 20px 0;
+    }
+
+    form {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+.lidd_mc_results {
+    text-align: center;
+}
+
 .testimonials {
 
     .headline {

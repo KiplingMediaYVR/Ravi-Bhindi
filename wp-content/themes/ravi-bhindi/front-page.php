@@ -55,6 +55,14 @@
     </div>
     <!-- /.know-more -->
 
+    <div id="mortgage-calculator">
+        <div class="container">
+            <?php echo do_shortcode('[cc-mortgage-canada]'); ?>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#mortgage-calculator -->
+
     <div class="testimonials">
 
         <div class="headline">
