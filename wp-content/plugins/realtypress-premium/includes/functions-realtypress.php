@@ -1558,9 +1558,8 @@ function rps_create_property_table( $execute = true )
 
     $charset_collate = $wpdb->get_charset_collate();
     $tbl_name        = $wpdb->prefix . 'rps_property';
-
+    
     // Lease varchar(20) DEFAULT NULL,
-
     $sql = "CREATE TABLE " . $tbl_name . " (
     property_id bigint(12) NOT NULL AUTO_INCREMENT,
     PostID bigint(12) NOT NULL,
@@ -1572,6 +1571,8 @@ function rps_create_property_table( $execute = true )
     LastUpdated varchar(25) DEFAULT NULL,
     Latitude varchar(16) DEFAULT NULL,
     Longitude varchar(16) DEFAULT NULL,
+    GeoLastUpdated varchar(25) DEFAULT NULL,
+    GeoSource varchar(16) DEFAULT NULL,
     AmmenitiesNearBy varchar(120) DEFAULT NULL,
     CommunicationType varchar(80) DEFAULT NULL,
     CommunityFeatures varchar(100) DEFAULT NULL,

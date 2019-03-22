@@ -598,7 +598,6 @@ if( ! class_exists( 'RealtyPress_DDF_PHRets' ) ) {
          */
         public function download_agent_photos( $agent_id )
         {
-
             $sizes  = array( 'ThumbnailPhoto', 'LargePhoto' );
             $photos = $this->rets_download_photos( $agent_id, 'Agent', $sizes, REALTYPRESS_AGENT_PHOTO_PATH );
 
@@ -738,6 +737,7 @@ if( ! class_exists( 'RealtyPress_DDF_PHRets' ) ) {
                     // Add DDF coordinates to geo_data array
                     $geo_data              = array();
                     $geo_data['status']    = 'OK';
+                    $geo_data['GeoSource']    = 'ddf';
                     $geo_data['Latitude']  = $listing['Address']['Latitude'];
                     $geo_data['Longitude'] = $listing['Address']['Longitude'];
                     $this->log->i( $this->log_tag, "******** :: Geo Service :: DDF" );
@@ -747,6 +747,7 @@ if( ! class_exists( 'RealtyPress_DDF_PHRets' ) ) {
 
                     if( $listing['Address']['StreetAddress'] == 'Unknown Address' ) {
                         $geo_data['status']    = 'OK';
+                        $geo_data['GeoSource']    = '';
                         $geo_data['Latitude']  = '';
                         $geo_data['Longitude'] = '';
                     }
@@ -772,13 +773,13 @@ if( ! class_exists( 'RealtyPress_DDF_PHRets' ) ) {
                         }
 
                         // Variation 3 - Address without StreetAddress and PostalCode
-                        if( $this->crud->rps_is_geo_coding_response_default( $geo_data ) == true || $geo_data['status'] == 'ZERO_RESULTS' ) {
-                            $this->log->i( $this->log_tag, "******** :: Geo !!! :: Default response, attempting address variation 3!" );
-                            $variation                  = $listing['Address'];
-                            $variation['PostalCode']    = '';
-                            $variation['StreetAddress'] = '';
-                            $geo_data                   = $this->crud->get_geo_coding_data( $variation );
-                        }
+//                        if( $this->crud->rps_is_geo_coding_response_default( $geo_data ) == true || $geo_data['status'] == 'ZERO_RESULTS' ) {
+//                            $this->log->i( $this->log_tag, "******** :: Geo !!! :: Default response, attempting address variation 3!" );
+//                            $variation                  = $listing['Address'];
+//                            $variation['PostalCode']    = '';
+//                            $variation['StreetAddress'] = '';
+//                            $geo_data                   = $this->crud->get_geo_coding_data( $variation );
+//                        }
 
                     }
 

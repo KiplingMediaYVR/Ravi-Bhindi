@@ -369,7 +369,7 @@ jQuery(window).load(function($) {
     // Swipebox
     if( data.rps_library_swipebox == 1 ) {
       // jQuery( '.swipebox' ).swipebox();
-      jQuery( 'body' ).swipebox({ 
+      jQuery( '.swipebox' ).swipebox({
         selector: '.swipebox',
         hideBarsDelay : 0
       });

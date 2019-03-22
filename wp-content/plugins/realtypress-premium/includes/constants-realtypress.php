@@ -29,10 +29,10 @@ function rps_constants( $path, $debug = false )
         define( 'REALTYPRESS_PLUGIN_AUTHOR', 'RealtyPress.ca' );
     }
     if( ! defined( 'REALTYPRESS_PLUGIN_VERSION' ) ) {
-        define( 'REALTYPRESS_PLUGIN_VERSION', '1.7.0' );
+        define( 'REALTYPRESS_PLUGIN_VERSION', '1.7.2' );
     }
     if( ! defined( 'REALTYPRESS_PLUGIN_VERSION_TIMESTAMP' ) ) {
-        define( 'REALTYPRESS_PLUGIN_VERSION_TIMESTAMP', '2018-09-17 10:23:34' );
+        define( 'REALTYPRESS_PLUGIN_VERSION_TIMESTAMP', '2019-03-11 12:21:51' );
     }
     if( ! defined( 'REALTYPRESS_PLUGIN_DOCS_URL' ) ) {
         define( 'REALTYPRESS_PLUGIN_DOCS', $path['plugin_dir_url'] . 'docs/index.html' );
@@ -198,7 +198,7 @@ function rps_constants( $path, $debug = false )
 
     // RealtyPress Database Version
     if( ! defined( 'REALTYPRESS_DB_VERSION' ) ) {
-        define( 'REALTYPRESS_DB_VERSION', '1.7.0' );
+        define( 'REALTYPRESS_DB_VERSION', '1.7.2' );
     }
 
     /*

@@ -160,13 +160,23 @@ elseif( get_option( 'rps-ddf-cron-type' ) == 'unix-cron' ) { ?>
     <?php foreach( $wp_cron as $scheduled ) { ?>
         <?php foreach( $scheduled as $hook => $job ) { ?>
             <?php foreach( $job as $timeslot ) { ?>
-
+                
                 <?php if( $hook == 'realtypress_ddf_cron' ) { ?>
+                    
                     <tr class="alternate">
                         <td><strong>DDF&reg; <?php _e( 'Listing Data', 'realtypress-premium' ) ?></strong></td>
                         <td><?php echo $hook ?></td>
                         <td><?php echo $timeslot['schedule']; ?></td>
-                        <td><?php echo ( ( $timeslot['interval'] / 60 ) / 60 ) . ' ' . __( 'hours', 'realtypress-premium' ) ?></td>
+                        <td>
+                            <?php
+                                if( is_numeric( $timeslot['interval'] ) ) {
+                                    echo ( ( $timeslot['interval'] / 60 ) / 60 ) . ' ' . __( 'hours', 'realtypress-premium' );
+                                }
+                                else {
+                                    echo $timeslot['interval'];
+                                }
+                            ?>
+                        </td>
                         <td>
                             <?php
                             $start_time = get_option( 'rps-cron-start-time', '' );

@@ -8078,7 +8078,7 @@ class Realtypress_Admin {
             rps_create_photos_table();
             rps_create_rooms_table();
 
-            update_option( 'rps-database-version', '1.7.0' );
+            update_option( 'rps-database-version', '1.7.2' );
             update_option( 'rps-database-update-status', 'update-success' );
 
         }
@@ -8115,9 +8115,9 @@ class Realtypress_Admin {
 //
 //            }
             
-            if( $database_version < '1.7.0' ) {
+            if( $database_version < '1.7.2' ) {
 
-                // v1.7.0 DB update
+                // v1.7.2 DB update
                 // ================
 
                 $db_update = array();
@@ -8155,7 +8155,7 @@ class Realtypress_Admin {
                 else {
 
                     // Database is current
-                    update_option( 'rps-database-version', '1.7.0' );
+                    update_option( 'rps-database-version', '1.7.2' );
 
                 }
 

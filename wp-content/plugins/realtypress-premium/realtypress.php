@@ -11,7 +11,7 @@
  * Plugin Name:       RealtyPress Premium
  * Plugin URI:        realtypress.ca
  * Description:       RealtyPress is a Premium WordPress Plugin that provides REALTORS® seamless integration of the CREA Data Distribution Facility feed. Easily synchronize MLS® listings and ensure that MLS® content displayed is accurate, up to date, and uses CREA’s trademarks correctly.
- * Version:           1.7.0
+ * Version:           1.7.2
  * Author:            RealtyPress Team
  * Author URI:        http://realtypress.ca
  * License:           GPL-2.0+

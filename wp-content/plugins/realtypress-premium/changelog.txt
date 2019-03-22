@@ -5,13 +5,20 @@
 ### See our blog post at https://realtypress.ca/v1-5-0-template-updates/ for more information.
 ### --------------------------------------------------------------------------------------------
 
-## 1.7.0 (2018-02-11)
+## 1.7.2 (2019-03-11)
+---------------------------------------------------------
+Added:      Caching of geocode values source and stored values write date.
+
+## 1.7.1 (2019-02-28)
+---------------------------------------------------------
+Fixed:       Swipbox bug introduced in v1.7.0
+
+## 1.7.0 (2019-02-15)
 ---------------------------------------------------------
 Added:       Disabling of Swipebox arrows and close button hiding.
 Added:       WP cron scheduled event check to handle lost scheduled cron job.
 Added:       Alt tag values to single listing images.
 Added:       Halting of sync when required Geocoding API Key is not set.
-Updated:     Office table 'province' column length to accommodate long name replacing short name.
 Updated:     Swipebox enqueue script to exclude if library is disabled.
 Updated:     Database province column length.
 Removed:     Admin notices from on page new and page edit for Gutenberg compatiblity.
@@ -36,7 +43,6 @@ Updated:     Map to discard listings with missing coordinates.
 Updated:     Single listing appearance page to hide street view when google is not being used.
 Added:       Support to import listings with not address specified.
 Optimized:   Listing Photo repair script to find and repair further missing images.
-
 
 ## 1.6.7 (2018-09-17)
 ---------------------------------------------------------

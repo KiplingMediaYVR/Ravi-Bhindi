@@ -575,6 +575,7 @@ class Realtypress_Public {
 	                    $tbl_property.LeasePerUnit,
 	                    $tbl_property.LeaseTermRemaining,
 	                    $tbl_property.LeaseTermRemainingFreq,
+	                    $tbl_property.LeaseTermRemainingFreq,
 	                    $tbl_property.LeaseType,
 	                    $tbl_property.MaintenanceFee,
 	                    $tbl_property.MaintenanceFeePaymentUnit,
@@ -584,23 +585,25 @@ class Realtypress_Public {
                  FROM $wpdb->posts 
 	         	LEFT JOIN $tbl_property 
 	         				 ON $tbl_property.ListingID = $wpdb->posts.post_excerpt 
-	         	LEFT JOIN $tbl_property_photos 
-	         				 ON $tbl_property_photos.ListingID = $wpdb->posts.post_excerpt 
-                WHERE $wpdb->posts.post_excerpt = '".$lid."' && 
-						$wpdb->posts.post_type = 'rps_listing' && 
+	         	LEFT JOIN $tbl_property_photos
+	         				 ON $tbl_property_photos.ListingID = $wpdb->posts.post_excerpt
+                WHERE $wpdb->posts.post_excerpt = '".$lid."' &&
+						$wpdb->posts.post_type = 'rps_listing' &&
 						$wpdb->posts.post_status = 'publish'";
+//						GROUP BY $tbl_property_photos.SequenceID";
+		
 						// $wpdb->posts.post_status = 'publish' &&
 						// $wpdb->posts.post_date < NOW() ";
 		$listing = $wpdb->get_results( $query, ARRAY_A );
 
 		$listing = $listing[0];
-
+  
 		$photos               = json_decode($listing['Photos'], true);		
 		$listing['OpenHouse'] = json_decode($listing['OpenHouse'], true);		
 
 		$pop_content = '<div class="map-pop-content">';
 			$pop_content .= '<div class="map-pop-left">';
-
+			
       if( !empty( $photos['LargePhoto']['filename'] ) ) {
         $img = REALTYPRESS_LISTING_PHOTO_URL . '/' . $photos['LargePhoto']['id'] . '/' . $photos['LargePhoto']['filename'];
       }

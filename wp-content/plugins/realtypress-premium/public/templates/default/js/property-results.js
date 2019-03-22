@@ -33,18 +33,18 @@ function initialize_map(data) {
   if (document.getElementById('rps-map')) {
     var map_id = 'rps-map';
   } else {
-    var map_id = 'map'; 
+    var map_id = 'map';
   }
 
   var center_map = [data.rps_result_map_center_lat,data.rps_result_map_center_lng];
-  var map = L.map(map_id, { 
+  var map = L.map(map_id, {
     center: center_map,
     zoomsliderControl: true,
-    scrollWheelZoom:true, 
+    scrollWheelZoom:true,
     zoomAnimation: true,
     zoom: data.rps_result_map_zoom,
     fullscreenControl: true
-    // layers: [tiles] 
+    // layers: [tiles]
   });
 
   L.Map.include({
@@ -164,13 +164,13 @@ function initialize_map(data) {
       var popup = e.target.getPopup();
       var lid = value.lid;
 
-      jQuery.post( 
-        ajaxurl, 
+      jQuery.post(
+        ajaxurl,
         {
           'dataType': 'JSON',
           'action': 'rps_ajax_map_popup',
           'data':   lid
-        }, 
+        },
         function( response ) {
           var data = JSON.parse( response );
           popup.setContent(data);
@@ -180,27 +180,27 @@ function initialize_map(data) {
       );
 
     });
-    
+
     markerList.push(marker);
-  }); 
+  });
 
   // console.log('initialize_map() :: Start Clustering: ' + window.performance.now());
 
   markers.addLayers(markerList);
   map.addLayer(markers);
-  
+
   if( marker_points.length > 0 ) {
 
     // Fit map to markers
     if( data.rps_result_map_center_lat == '56.130366' && data.rps_result_map_center_lng == '-106.34677' ) {
       map.fitBounds(markers, { padding: [10,10] });
     }
-    
+
   }
   else {
     // Fit to canada
-    // map.fitBounds([[53.7266683, -127.64762059999998],[46.510712, -63.416813599999955]]);
-    jQuery('.rps-no-map-results').slideDown(400);
+    map.fitBounds([[53.7266683, -127.64762059999998],[46.510712, -63.416813599999955]]);
+    // jQuery('.rps-no-map-results').slideDown(400);
   }
 
   // History Plugin
@@ -219,7 +219,7 @@ function initialize_map(data) {
 
 function adjust_map( map, marker_data ) {
 
-  jQuery('.rps-no-map-results').slideUp(400);
+  // jQuery('.rps-no-map-results').slideUp(400);
 
   var json = jQuery('#listing-result-map-json').html();
   var data = JSON.parse(json);
@@ -322,26 +322,26 @@ function adjust_map( map, marker_data ) {
 
   var markerList = [];
   jQuery.each( marker_data, function( key, value ) {
-    
+
     var marker = L.marker(L.latLng(value.lat, value.lon), { title: '' });
 
     // On marker click get ajax popup content
     marker.on('click', function(e) {
 
-      // Bind popup to marker  
+      // Bind popup to marker
       var title = '<div class="leaflet-popup-loading"><span class="fa fa-circle-o-notch fa-spin"></span>loading</div>';
       marker.bindPopup(title);
 
       var popup = e.target.getPopup();
       var lid = value.lid;
 
-      jQuery.post( 
-        ajaxurl, 
+      jQuery.post(
+        ajaxurl,
         {
           'dataType': 'JSON',
           'action': 'rps_ajax_map_popup',
           'data':   lid
-        }, 
+        },
         function( response ) {
 
           var data = JSON.parse( response );
@@ -356,22 +356,22 @@ function adjust_map( map, marker_data ) {
     // Add marker to marker list
     markerList.push(marker);
 
- });   
+ });
 
   markers.addLayers(markerList);
   map.addLayer(markers);
 
   if( marker_data.length > 0 ) {
     // Fit map to markers
-    map.fitBounds(markers, { padding: [10,10] });  
+    map.fitBounds(markers, { padding: [10,10] });
   }
   else {
     // Fit to canada
     map.fitBounds([[53.7266683, -127.64762059999998],[46.510712, -63.416813599999955]], { padding: [10,10] });
-    jQuery('.rps-no-map-results').slideDown(400);
+    // jQuery('.rps-no-map-results').slideDown(400);
   }
 
-} 
+}
 
 function rps_result_filter_form_search( map ) {
 
@@ -394,13 +394,13 @@ function rps_result_filter_form_search( map ) {
     if( jQuery('.row-property-result #view').val() == 'map' ) {
 
       // Ajax post
-      jQuery.post( 
+      jQuery.post(
         ajaxurl,
         {
           'dataType': 'JSON',
           'action': 'rps_ajax_search_posts',
           'data':   form_data
-        }, 
+        },
         function( response ) {
 
           // Parse json
@@ -416,7 +416,7 @@ function rps_result_filter_form_search( map ) {
           else {
 
             var street_address = jQuery(".result-filter-frm input[name=input_street_address]").val();
-            if( typeof street_address !== 'undefined' ) {  
+            if( typeof street_address !== 'undefined' ) {
               var neighborhood = jQuery(".result-filter-frm input[name=input_neighbourhood]").val();
             }
             else {
@@ -433,7 +433,7 @@ function rps_result_filter_form_search( map ) {
             look = look.filter(Boolean);
             look = look.join(', ');
           }
-          jQuery( ".col-property-result input[name=input_map_look]" ).val( look );  
+          jQuery( ".col-property-result input[name=input_map_look]" ).val( look );
 
           // Set href for view links
           jQuery('.rps-result-view-grid').attr('href', '?' + form_data + '&' + jQuery.param({ 'view': 'grid' }));
@@ -473,7 +473,7 @@ jQuery( document ).ready(function($) {
   .on('mouseenter', '.image-holder', function () {
     $(this).find('.rps-price, .rps-ribbon').stop( true, true ).slideUp(200);
     $(this).find('.rps-favorited-heart').stop( true, true ).hide(200);
-    
+
   })
   .on('mouseleave', '.image-holder', function () {
     $(this).find('.rps-price, .rps-ribbon').stop( true, true ).slideDown(200);
@@ -484,13 +484,13 @@ jQuery( document ).ready(function($) {
 
   var data = '';
   if( json != null ) {
-    var data = JSON.parse(json);  
+    var data = JSON.parse(json);
   }
 
   if( data.view == 'map' ) {
 
     if( data.rps_result_map_google_autocomplete == 1 ) {
-      google_autocomplete();  
+      google_autocomplete();
     }
 
     // -------------------------
@@ -516,12 +516,12 @@ jQuery( document ).ready(function($) {
 
         //if( form_data != 'input_map_look=' ) {
 
-          $.post( 
+          $.post(
             ajaxurl, {
               'dataType': 'JSON',
               'action': 'rps_ajax_map_look',
               'data':   form_data
-            }, 
+            },
             function( response ) {
 
               // console.log(response)
@@ -540,12 +540,12 @@ jQuery( document ).ready(function($) {
 
                 // Set mls number in result-filter-frm
                 if( typeof response.address.mls_number !== 'undefined' ) {
-                  $( "input[name=input_mls]" ).val( response.address.mls_number ); 
+                  $( "input[name=input_mls]" ).val( response.address.mls_number );
                 }
 
                 // Set city in result-filter-frm
                 if( typeof response.address.city !== 'undefined' ) {
-                  $( "input[name=input_city]" ).val( response.address.city ); 
+                  $( "input[name=input_city]" ).val( response.address.city );
                 }
 
                 // Set province in result-filter-frm
@@ -557,12 +557,12 @@ jQuery( document ).ready(function($) {
 
                 // Set street Address in result-filter-frm
                 if( typeof response.address.street_address !== 'undefined' ) {
-                  $( "input[name=input_street_address]" ).val( response.address.street_address ); 
+                  $( "input[name=input_street_address]" ).val( response.address.street_address );
                 }
 
                 // Set neighbourhood in result-filter-frm
                 if( typeof response.address.neighborhood !== 'undefined' ) {
-                  $( "input[name=input_neighbourhood]" ).val( response.address.neighborhood ); 
+                  $( "input[name=input_neighbourhood]" ).val( response.address.neighborhood );
                 }
 
                 // Submit result filter form
@@ -605,7 +605,7 @@ jQuery( document ).ready(function($) {
             'dataType': 'JSON',
             'action': 'rps_ajax_map_look',
             'data':   data
-          }, 
+          },
           function( response ) {
 
             var response = JSON.parse( response );
@@ -614,7 +614,7 @@ jQuery( document ).ready(function($) {
               $( "input[name=input_mls]" ).val( response.address.mls_number );
               $( "input[name=input_street_address]" ).val('');
               $( "input[name=input_city]" ).val('');
-              $( "select[name=input_province]" ).val('');  
+              $( "select[name=input_province]" ).val('');
               $( "input[name=input_neighbourhood]" ).val('');
             }
             else {
@@ -622,10 +622,10 @@ jQuery( document ).ready(function($) {
               $( "input[name=input_street_address]" ).val( response.address.street_address );
               $( "input[name=input_city]" ).val( response.address.city );
               $( "input[name=input_neighbourhood]" ).val( response.address.neighborhood );
-              $( "select[name=input_province]" ).val( response.address.province );  
+              $( "select[name=input_province]" ).val( response.address.province );
             }
 
-            // var bounds = [ 
+            // var bounds = [
             //   [response.northEast.lat, response.northEast.lng],
             //   [response.southWest.lat, response.southWest.lng]
             // ];
@@ -639,7 +639,7 @@ jQuery( document ).ready(function($) {
 
       }
       else {
-        $( ".result-filter-frm" ).trigger( "submit" );  
+        $( ".result-filter-frm" ).trigger( "submit" );
       }
     }
   }
@@ -658,8 +658,8 @@ jQuery( document ).ready(function($) {
 
     $('body').scrollTo( $('#top').offset().top-150, 800 );
 
-    $('.rps-result-overlay').fadeIn(200, function(){ 
-      
+    $('.rps-result-overlay').fadeIn(200, function(){
+
       // load page to result-wrap
       $('.col-inner-result').load(href + ' .col-inner-result', function(data) {
 
@@ -678,7 +678,7 @@ jQuery( document ).ready(function($) {
         // Update page title
         document.title = $(data).filter('title').text();
       });
-               
+
     });
 
   });
@@ -693,14 +693,14 @@ jQuery( document ).ready(function($) {
     // Update browser url
     history.pushState({}, '', url);
 
-    $('.rps-result-overlay').fadeIn(200, function(){ 
+    $('.rps-result-overlay').fadeIn(200, function(){
 
       // load page to result-wrap
       $('.col-inner-result').load(url + ' .col-inner-result', function() {
         load_jrange();
         $('.rps-result-overlay').fadeOut(200);
       });
-               
+
     });
 
   });
@@ -713,11 +713,11 @@ jQuery( document ).ready(function($) {
     var href = $( this ).attr( 'href' ); // Get the href attribute
     var view = $( this ).attr( 'data-view' );
     href = update_query_string_parameter(href, 'view', view);
-    
+
     // Update browser url
     history.pushState({}, '', href);
 
-    $('.rps-result-overlay').fadeIn(200, function(){ 
+    $('.rps-result-overlay').fadeIn(200, function(){
 
       // load page to result-wrap
       $('.col-inner-result').load(href + ' .col-inner-result', function() {

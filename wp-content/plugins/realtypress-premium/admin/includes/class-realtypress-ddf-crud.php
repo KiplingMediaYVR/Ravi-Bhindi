@@ -1990,6 +1990,7 @@ class RealtyPress_DDF_CRUD {
                 // --------
                 $geometry                  = $json['results'][0]['geometry'];
                 $components                = $json['results'][0]['components'];
+                $geo_data['GeoSource']        = 'opencage';
                 $geo_data['status']        = $json['status'];
                 $geo_data['Latitude']      = $geometry['lat'];
                 $geo_data['Longitude']     = $geometry['lng'];
@@ -2002,6 +2003,7 @@ class RealtyPress_DDF_CRUD {
                 // GeoCodio
                 // --------
                 $location              = $json['results'][0]['location'];
+                $geo_data['GeoSource']    = 'geocodio';
                 $geo_data['status']    = $json['status'];
                 $geo_data['Latitude']  = $location['lat'];
                 $geo_data['Longitude'] = $location['lng'];
@@ -2012,6 +2014,7 @@ class RealtyPress_DDF_CRUD {
                 // Google
                 // ------
                 $location              = $json['results'][0]['geometry']['location'];
+                $geo_data['GeoSource']    = 'google';
                 $geo_data['status']    = $json['status'];
                 $geo_data['Latitude']  = $location['lat'];
                 $geo_data['Longitude'] = $location['lng'];
@@ -2408,7 +2411,12 @@ class RealtyPress_DDF_CRUD {
         /* Geo Data */
         $listing_sql['Latitude']  = ( ! empty( $listing['Latitude'] ) && ! is_array( $listing['Latitude'] ) ) ? $listing['Latitude'] : '';
         $listing_sql['Longitude'] = ( ! empty( $listing['Longitude'] ) && ! is_array( $listing['Longitude'] ) ) ? $listing['Longitude'] : '';
-
+        
+        if( !empty( $listing['GeoSource'] ) ) {
+            $listing_sql['GeoLastUpdated'] = date('Y-m-d H:i:s');
+            $listing_sql['GeoSource']      = $listing['GeoSource'];
+        }
+        
         /* Property Details */
         $listing_sql['AmmenitiesNearBy']          = ( ! empty( $listing['AmmenitiesNearBy'] ) && ! is_array( $listing['AmmenitiesNearBy'] ) ) ? $listing['AmmenitiesNearBy'] : '';
         $listing_sql['CommunicationType']         = ( ! empty( $listing['CommunicationType'] ) && ! is_array( $listing['CommunicationType'] ) ) ? $listing['CommunicationType'] : '';
