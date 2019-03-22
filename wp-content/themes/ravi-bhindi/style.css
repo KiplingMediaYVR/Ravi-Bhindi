@@ -57,6 +57,8 @@ Author URI: http://kiplingmedia.com/
 .single .bootstrap-realtypress .rps-single-listing .rps-property-photo-row > .col-md-3 {
     float: none !important;
     width: 100% !important;
+    -webkit-box-flex: 100% !important;
+    -ms-flex: 100% !important;
     flex: 100% !important;
     max-width: 100%;
 }
@@ -65,12 +67,24 @@ Author URI: http://kiplingmedia.com/
     display: none;
 }
 
-.single .bootstrap-realtypress .btn-primary {
+.single .bootstrap-realtypress .btn-primary,
+.archive .bootstrap-realtypress .btn-primary {
     background-image: none;
     background-color: #f3bc65;
     border-color: #d99221;
 }
 
-.single .bootstrap-realtypress .btn-primary:hover {
+.single .bootstrap-realtypress .btn-primary:hover,
+.archive .bootstrap-realtypress .btn-primary:hover {
     background-color: #d99221;
+}
+
+.single .bootstrap-realtypress .rps-single-listing .open-house-row .open-house-calendar {
+    width: 90px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.single .bootstrap-realtypress .rps-single-listing .open-house-row {
+    margin-top: 30px;
 }
