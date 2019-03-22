@@ -1,0 +1,29 @@
+.single,
+.archive {
+
+    .CCMC-Widget {
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .CCMC-WidgetTitle {
+
+        font-family: $font-family-base;
+        font-size: 30px;
+        font-weight: 300;
+        color: #555;
+        text-align: left;
+    }
+
+    .CCMC-Widget label,
+    .CCMC-Widget input[type=text] {
+        font-family: $font-family-base;
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+    #cc_mortgage_canada-2-mortgage,
+    #cc_mortgage_canada-2-monthlyPayment {
+        font-family: $font-family-base;
+    }
+}
