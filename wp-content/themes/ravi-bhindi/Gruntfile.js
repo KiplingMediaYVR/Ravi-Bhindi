@@ -43,6 +43,7 @@ module.exports = function (grunt) {
                     '<%= config.assets %>/scripts/frontend.min.js': [
                         '<%= config.source%>/vendor/bootstrap.min.js',
                         '<%= config.source%>/vendor/slick.js',
+                        '<%= config.source%>/vendor/ekko-lightbox.js',
                         '<%= config.source%>/scripts/frontend.js'
                     ]
                 }
@@ -57,6 +58,7 @@ module.exports = function (grunt) {
             target: {
                 files: {
                     '<%= config.assets%>/css/frontend.min.css': [
+                        '<%= config.source%>/vendor/ekko-lightbox.css',
                         '<%= config.assets%>/css/main.css'
                     ]
                 }

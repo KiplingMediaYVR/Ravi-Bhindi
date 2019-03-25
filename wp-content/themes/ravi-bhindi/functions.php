@@ -46,7 +46,9 @@ add_action('init', 'register_my_menu');
 
 //reserved words: ‘thumb’, ‘thumbnail’, ‘medium’, ‘large’, ‘post-thumbnail’
 set_post_thumbnail_size(300, 250, true);
-//add_image_size('main-headline', 720, 420, true);
+add_image_size('presales-featured', 1200, 600, true);
+add_image_size('presales-thumb', 400, 300, true);
+add_image_size('presales-big', 1100, 700, true);
 
 // remove junk from head
 remove_action('wp_head', 'rsd_link');

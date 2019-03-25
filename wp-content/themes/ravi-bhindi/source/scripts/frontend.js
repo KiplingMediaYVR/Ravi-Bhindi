@@ -29,10 +29,18 @@
             });
         };
 
+        var customLightbox = function () {
+            $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+        };
+
         //THEN ADD THEM TO THE RUN FUNCTION
         var run = function () {
             hashSelect();
             testimonialsSlider();
+            customLightbox();
         };
 
         run();
