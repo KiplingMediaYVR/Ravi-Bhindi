@@ -56,7 +56,7 @@ $map = get_field('map_embed');
 
         <?php if (have_rows('presale_images')) : ?>
 
-            <div id="presales-images" class="row">
+            <div id="presales-images" class="d-flex">
 
                 <?php while (have_rows('presale_images')): the_row();
 
