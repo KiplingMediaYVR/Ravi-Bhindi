@@ -1,0 +1,140 @@
+#presales-content {
+    padding-bottom: 50px;
+}
+
+.single-presales {
+
+    .breadcrumb {
+        background: none;
+
+        a {
+            color: #222;
+
+            &:hover {
+                color: $brand-yellow;
+            }
+        }
+    }
+}
+
+#presales-header {
+    margin: 30px 0;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+        font-size: em(50);
+        text-transform: uppercase;
+    }
+}
+
+.presales-featured-img {
+    margin-bottom: 50px;
+
+    img {
+        @extend .img-fluid;
+        width: 100%;
+    }
+}
+
+#featured-video {
+    margin-bottom: 30px;
+}
+
+#presales-description {
+    margin: 0 0 50px;
+
+    p {
+        font-size: em(18);
+
+        &:not(:last-child) {
+            margin: 0 0 20px;
+        }
+    }
+}
+
+#presales-images {
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: 100px;
+    }
+
+    &:hover {
+        .presale-img {
+            img {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+.presale-img {
+    @include make-col(6);
+    background-color: #000;
+
+    @include media-breakpoint-up(md) {
+        @include make-col(4);
+    }
+
+    img {
+        @extend .img-fluid;
+        width: 100%;
+        @include transition(all 200ms ease);
+    }
+
+    &:hover {
+        img {
+            opacity: 1 !important;
+        }
+    }
+}
+
+.presales-address {
+    margin-bottom: 30px;
+    text-align: center;
+
+    p {
+        margin: 0;
+        font-size: em(24);
+        text-transform: uppercase;
+    }
+}
+
+#presales-form {
+    margin: 0 0 50px;
+    padding: 50px 0;
+    background-color: $brand-blue;
+
+    header {
+        text-align: center;
+
+        h2,
+        p {
+            color: $white;
+        }
+
+        h2 {
+            font-size: em(40);
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: em(22);
+        }
+
+        @include media-breakpoint-down(sm) {
+            h2 {
+                font-size: em(28);
+            }
+
+            p {
+                font-size: em(18);
+            }
+        }
+    }
+
+    [type=text].form-control {
+        height: 50px;
+    }
+}
