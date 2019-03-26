@@ -114,6 +114,10 @@ $map = get_field('map_embed');
                             <textarea name="presales-message" id="presales-message" class="form-control" cols="30" rows="10" placeholder="What are you looking for in this project?"></textarea>
                         </div>
                         <!-- /.form-group -->
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-submit form-submit">Send</button>
+                        </div>
                     </form>
 
                 </div>
