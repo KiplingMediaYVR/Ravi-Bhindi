@@ -5,9 +5,135 @@
     <div class="featured-listings">
         <div class="container">
 
-            <h2>Featured Listings</h2>
+            <?php
 
-            <?php echo do_shortcode('[rps-listing-carousel city="Vancouver" max_slides=7 slide_width=200 class="featured-home-carousel"]'); ?>
+            $featured_args = array(
+                'post_type' => 'presales',
+
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'listing_type',
+                        'field' => 'slug',
+                        'terms' => 'featured-listing',
+                    ),
+                ),
+            );
+
+            $current_args = array(
+                'post_type' => 'presales',
+
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'listing_type',
+                        'field' => 'slug',
+                        'terms' => 'current-listing',
+                    ),
+                ),
+            );
+
+            $sold_args = array(
+                'post_type' => 'presales',
+
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'listing_type',
+                        'field' => 'slug',
+                        'terms' => 'sold-listing',
+                    ),
+                ),
+            );
+
+            $featured = new WP_Query($featured_args);
+            $current = new WP_Query($current_args);
+            $sold = new WP_Query($sold_args);
+            ?>
+
+            <?php if ($featured->have_posts()) : ?>
+
+                <h2>Featured Listings</h2>
+
+                <div class="featured-listings-carousel">
+
+                    <?php while ($featured->have_posts()) : $featured->the_post(); ?>
+
+                        <div class="featured-carousel-item">
+
+                            <div class="carousel-item-img">
+                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('presales-thumb'); ?></a>
+                            </div>
+
+                            <div class="carousel-item-body">
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            </div>
+
+                        </div>
+                        <!-- /.featured-carousel-item -->
+
+                    <?php endwhile; ?>
+                    <?php wp_reset_query(); ?>
+
+                </div>
+                <!-- /#featured-listings-carousel -->
+
+            <?php endif; ?>
+
+            <?php if ($current->have_posts()) : ?>
+
+                <h2>Current Listings</h2>
+
+                <div class="featured-listings-carousel">
+
+                    <?php while ($current->have_posts()) : $current->the_post(); ?>
+
+                        <div class="featured-carousel-item">
+
+                            <div class="carousel-item-img">
+                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('presales-thumb'); ?></a>
+                            </div>
+
+                            <div class="carousel-item-body">
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            </div>
+
+                        </div>
+                        <!-- /.featured-carousel-item -->
+
+                    <?php endwhile; ?>
+                    <?php wp_reset_query(); ?>
+
+                </div>
+                <!-- /#featured-listings-carousel -->
+
+            <?php endif; ?>
+
+            <?php if ($sold->have_posts()) : ?>
+
+                <h2>Sold Properties</h2>
+
+                <div class="featured-listings-carousel">
+
+                    <?php while ($sold->have_posts()) : $sold->the_post(); ?>
+
+                        <div class="featured-carousel-item">
+
+                            <div class="carousel-item-img">
+                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('presales-thumb'); ?></a>
+                            </div>
+
+                            <div class="carousel-item-body">
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            </div>
+
+                        </div>
+                        <!-- /.featured-carousel-item -->
+
+                    <?php endwhile; ?>
+                    <?php wp_reset_query(); ?>
+
+                </div>
+                <!-- /#featured-listings-carousel -->
+
+            <?php endif; ?>
 
         </div>
         <!-- /.container -->

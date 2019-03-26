@@ -3,7 +3,7 @@
 }
 
 .featured-listings {
-    margin: 0 0 30px;
+    margin: 0 0 50px;
 
     h2 {
         font-size: em(50);
@@ -14,61 +14,42 @@
     }
 }
 
-.listing-item {
-    position: relative;
-    margin: 0 0 20px;
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
+#featured-listings-carousel {
 
-    &.see-all {
-        background-color: $brand-blue;
-        text-align: center;
+    .slick-dots {
 
-        a {
-            position: absolute;
-            width: 100%;
-            top: 50%;
-            left: 0;
-            margin-top: -30px;
-            font-size: em(60);
-            line-height: 1;
-            color: #FFF;
+        bottom: -35px;
+
+        li button:before {
+            font-size: 16px;
+            color: $brand-yellow;
         }
     }
 }
 
-.listing-item-img,
-.listing-item-info {
-    position: absolute;
-    left: 0;
-}
+.featured-carousel-item {
+    padding: 0 15px;
 
-.listing-item-img {
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
+    .carousel-item-img {
+        margin-bottom: 10px;
 
-    img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        img {
+            @extend .img-fluid;
+            width: 100%;
+        }
     }
-}
 
-.listing-item-info {
-    bottom: 0;
-    padding: 15px;
-    width: 100%;
-    text-align: center;
-    z-index: 101;
+    .carousel-item-body {
+        text-align: center;
 
-    h3 {
-        font-size: em(18);
-        color: #FFF;
+        a {
+            font-size: em(18);
+            color: $black;
+
+            &:hover {
+                color: $brand-blue;
+            }
+        }
     }
 }
 

@@ -5,6 +5,7 @@
 
         //CREATE FUNCTIONS FOR THE SITE
         var hashSelect = function () {
+
             var parts = window.location.href.split('/');
 
             if (parts.length > 0) {
@@ -13,6 +14,7 @@
         };
 
         var testimonialsSlider = function () {
+
             var $slickContainer = $('.testimonials-slider');
 
             $slickContainer.slick({
@@ -29,6 +31,33 @@
             });
         };
 
+        var featuredCarousel = function () {
+
+            var $slickContainer = $('.featured-listings-carousel');
+
+            $slickContainer.each(function () {
+
+                $(this).slick({
+                    arrows: true,
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+
+                    responsive: [
+                        {
+                            breakpoint: 767,
+                            settings: {
+                                arrows: false,
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                            }
+                        }
+                    ]
+                });
+            });
+        };
+
         var customLightbox = function () {
             $(document).on('click', '[data-toggle="lightbox"]', function (event) {
                 event.preventDefault();
@@ -40,6 +69,7 @@
         var run = function () {
             hashSelect();
             testimonialsSlider();
+            featuredCarousel();
             customLightbox();
         };
 
