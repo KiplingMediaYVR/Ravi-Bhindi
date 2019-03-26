@@ -65,12 +65,23 @@
             });
         };
 
+        var responsiveIframe = function () {
+
+            var $embedResponsive = $(document).find('.embed-responsive');
+
+            $embedResponsive.each(function () {
+                $embedItem = $(this).find('iframe');
+                $embedItem.addClass('embed-responsive-item');
+            });
+        };
+
         //THEN ADD THEM TO THE RUN FUNCTION
         var run = function () {
             hashSelect();
             testimonialsSlider();
             featuredCarousel();
             customLightbox();
+            responsiveIframe();
         };
 
         run();

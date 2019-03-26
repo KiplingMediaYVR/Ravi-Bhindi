@@ -29,7 +29,7 @@ $map = get_field('map_embed');
 
                 <div class="col-12">
                     <div id="featured-video" class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="<?php echo $video; ?>" allowfullscreen></iframe>
+                        <?php echo $video; ?>
                     </div>
                 </div>
 
@@ -144,7 +144,7 @@ $map = get_field('map_embed');
 
             <div class="col-12">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="<?php echo $map; ?>" allowfullscreen></iframe>
+                    <?php echo $map; ?>
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ Template Name: Questionnaire
 
             <div class="col-12">
                 <div id="featured-video" class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="<?php the_field('questionnaire_video'); ?>" allowfullscreen></iframe>
+                    <?php the_field('questionnaire_video'); ?>
                 </div>
             </div>
 
