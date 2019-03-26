@@ -1,13 +1,13 @@
 [
     {
-        "key": "group_5c756d7aa1606",
-        "title": "Homepage",
+        "key": "group_5c9a5b1cd05f5",
+        "title": "Questionnaire",
         "fields": [
             {
-                "key": "field_5c756dd31aae3",
-                "label": "Hero background",
-                "name": "hero_background",
-                "type": "image",
+                "key": "field_5c9a5b22fd158",
+                "label": "Questionnaire video",
+                "name": "questionnaire_video",
+                "type": "textarea",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -16,16 +16,11 @@
                     "class": "",
                     "id": ""
                 },
-                "return_format": "url",
-                "preview_size": "thumbnail",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
             }
         ],
         "location": [
@@ -33,7 +28,7 @@
                 {
                     "param": "page_template",
                     "operator": "==",
-                    "value": "front-page.php"
+                    "value": "page-questionnaire.php"
                 }
             ]
         ],
