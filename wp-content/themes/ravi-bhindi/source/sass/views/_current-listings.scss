@@ -1,0 +1,39 @@
+#listings-content {
+    padding: 50px;
+
+    header {
+        padding: 0 0 50px;
+        text-align: center;
+
+        h1 {
+            font-size: em(50);
+            text-transform: uppercase;
+        }
+    }
+}
+
+.current-listings-item-img {
+    margin-bottom: 15px;
+
+    img {
+        @extend .img-fluid;
+        width: 100%;
+    }
+}
+
+.current-listings-item {
+    margin-bottom: 30px;
+}
+
+.current-listings-item-body {
+    text-align: center;
+
+    a {
+        font-size: em(18);
+        color: $black;
+
+        &:hover {
+            color: $brand-blue;
+        }
+    }
+}
