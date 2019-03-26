@@ -19,18 +19,6 @@
                 ),
             );
 
-            $current_args = array(
-                'post_type' => 'presales',
-
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => 'listing_type',
-                        'field' => 'slug',
-                        'terms' => 'current-listing',
-                    ),
-                ),
-            );
-
             $sold_args = array(
                 'post_type' => 'presales',
 
@@ -44,7 +32,6 @@
             );
 
             $featured = new WP_Query($featured_args);
-            $current = new WP_Query($current_args);
             $sold = new WP_Query($sold_args);
             ?>
 
@@ -55,6 +42,7 @@
                 <div class="featured-listings-carousel">
 
                     <?php while ($featured->have_posts()) : $featured->the_post(); ?>
+                        <?php $exclude_ids[] = $post->ID; ?>
 
                         <div class="featured-carousel-item">
 
@@ -75,7 +63,25 @@
                 </div>
                 <!-- /#featured-listings-carousel -->
 
+            <?php else : ?>
+
+                <h2>Featured Listings</h2>
+
+                <?php echo do_shortcode('[rps-listing-carousel city="Vancouver" max_slides=7 slide_width=200 class="featured-home-carousel"]'); ?>
+
             <?php endif; ?>
+
+            <?php
+            $current_args = array(
+                'post_type' => 'presales',
+                'posts_per_page' => -1,
+                'post__status' => 'published',
+                'offset' => 0,
+                'post__not_in' => $exclude_ids
+            );
+
+            $current = new WP_Query($current_args);
+            ?>
 
             <?php if ($current->have_posts()) : ?>
 
