@@ -16,10 +16,6 @@
         #header {
             background-image: url("<?php the_field('hero_background', $front_page_id); ?>");
         }
-
-        .logo h1 a span {
-            background-image: url("<?php the_field('logo', $front_page_id); ?>");
-        }
     </style>
 
 </head>
