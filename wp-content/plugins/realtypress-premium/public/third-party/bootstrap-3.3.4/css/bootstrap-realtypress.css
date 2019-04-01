@@ -6784,56 +6784,6 @@
     }
 }
 
-.bootstrap-realtypress .clearfix:before,
-.bootstrap-realtypress .clearfix:after,
-.bootstrap-realtypress .dl-horizontal dd:before,
-.bootstrap-realtypress .dl-horizontal dd:after,
-.bootstrap-realtypress .container:before,
-.bootstrap-realtypress .container:after,
-.bootstrap-realtypress .container-fluid:before,
-.bootstrap-realtypress .container-fluid:after,
-.bootstrap-realtypress .form-horizontal .form-group:before,
-.bootstrap-realtypress .form-horizontal .form-group:after,
-.bootstrap-realtypress .btn-toolbar:before,
-.bootstrap-realtypress .btn-toolbar:after,
-.bootstrap-realtypress .btn-group-vertical > .btn-group:before,
-.bootstrap-realtypress .btn-group-vertical > .btn-group:after,
-.bootstrap-realtypress .nav:before,
-.bootstrap-realtypress .nav:after,
-.bootstrap-realtypress .navbar:before,
-.bootstrap-realtypress .navbar:after,
-.bootstrap-realtypress .navbar-header:before,
-.bootstrap-realtypress .navbar-header:after,
-.bootstrap-realtypress .navbar-collapse:before,
-.bootstrap-realtypress .navbar-collapse:after,
-.bootstrap-realtypress .pager:before,
-.bootstrap-realtypress .pager:after,
-.bootstrap-realtypress .panel-body:before,
-.bootstrap-realtypress .panel-body:after,
-.bootstrap-realtypress .modal-footer:before,
-.bootstrap-realtypress .modal-footer:after {
-    content: " ";
-    display: table;
-}
-
-.bootstrap-realtypress .clearfix:after,
-.bootstrap-realtypress .dl-horizontal dd:after,
-.bootstrap-realtypress .container:after,
-.bootstrap-realtypress .container-fluid:after,
-.bootstrap-realtypress .row:after,
-.bootstrap-realtypress .form-horizontal .form-group:after,
-.bootstrap-realtypress .btn-toolbar:after,
-.bootstrap-realtypress .btn-group-vertical > .btn-group:after,
-.bootstrap-realtypress .nav:after,
-.bootstrap-realtypress .navbar:after,
-.bootstrap-realtypress .navbar-header:after,
-.bootstrap-realtypress .navbar-collapse:after,
-.bootstrap-realtypress .pager:after,
-.bootstrap-realtypress .panel-body:after,
-.bootstrap-realtypress .modal-footer:after {
-    clear: both;
-}
-
 .bootstrap-realtypress .center-block {
     display: block;
     margin-left: auto;
