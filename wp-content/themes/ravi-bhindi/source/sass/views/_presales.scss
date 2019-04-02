@@ -55,6 +55,7 @@
 
 #presales-images {
     margin-bottom: 30px;
+    flex-wrap: wrap;
 
     @include media-breakpoint-up(md) {
         margin-bottom: 100px;
@@ -137,4 +138,8 @@
     [type=text].form-control {
         height: 50px;
     }
+}
+
+.modal-backdrop.fade.in {
+    opacity: 0.5;
 }

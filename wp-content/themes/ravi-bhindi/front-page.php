@@ -19,20 +19,7 @@
                 ),
             );
 
-            $sold_args = array(
-                'post_type' => 'presales',
-
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => 'listing_type',
-                        'field' => 'slug',
-                        'terms' => 'sold-listing',
-                    ),
-                ),
-            );
-
             $featured = new WP_Query($featured_args);
-            $sold = new WP_Query($sold_args);
             ?>
 
             <?php if ($featured->have_posts()) : ?>
@@ -111,6 +98,23 @@
                 <!-- /#featured-listings-carousel -->
 
             <?php endif; ?>
+
+            <?php
+
+            $sold_args = array(
+                'post_type' => 'presales',
+
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'listing_type',
+                        'field' => 'slug',
+                        'terms' => 'sold-listing',
+                    ),
+                ),
+            );
+
+            $sold = new WP_Query($sold_args);
+            ?>
 
             <?php if ($sold->have_posts()) : ?>
 
