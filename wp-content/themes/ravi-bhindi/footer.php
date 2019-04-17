@@ -1,3 +1,7 @@
+<?php
+$front_page_id = get_option('page_on_front');
+?>
+
 </div>
 <!-- /#wrap -->
 

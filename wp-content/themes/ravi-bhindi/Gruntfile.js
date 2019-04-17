@@ -176,7 +176,8 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         src: [
-                            './*.{html,php}'
+                            './*.{html,php}',
+                            './*.css'
                         ],
                         dest: '<%= config.dist %>/',
                         filter: 'isFile'
