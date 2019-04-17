@@ -4,100 +4,10 @@
 
     <div class="featured-listings">
         <div class="container">
+			
+			<h2>Featured Listings</h2>
 
-            <?php
-
-            $featured_args = array(
-                'post_type' => 'presales',
-
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => 'listing_type',
-                        'field' => 'slug',
-                        'terms' => 'featured-listing',
-                    ),
-                ),
-            );
-
-            $featured = new WP_Query($featured_args);
-            ?>
-
-            <?php if ($featured->have_posts()) : ?>
-
-                <h2>Featured Listings</h2>
-
-                <div class="featured-listings-carousel">
-
-                    <?php while ($featured->have_posts()) : $featured->the_post(); ?>
-                        <?php $exclude_ids[] = $post->ID; ?>
-
-                        <div class="featured-carousel-item">
-
-                            <div class="carousel-item-img">
-                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('presales-thumb'); ?></a>
-                            </div>
-
-                            <div class="carousel-item-body">
-                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                            </div>
-
-                        </div>
-                        <!-- /.featured-carousel-item -->
-
-                    <?php endwhile; ?>
-                    <?php wp_reset_query(); ?>
-
-                </div>
-                <!-- /#featured-listings-carousel -->
-
-            <?php else : ?>
-
-                <h2>Featured Listings</h2>
-
-                <?php echo do_shortcode('[rps-listing-carousel city="Vancouver" max_slides=7 slide_width=200 class="featured-home-carousel"]'); ?>
-
-            <?php endif; ?>
-
-            <?php
-            $current_args = array(
-                'post_type' => 'presales',
-                'posts_per_page' => -1,
-                'post__status' => 'published',
-                'offset' => 0,
-                'post__not_in' => $exclude_ids
-            );
-
-            $current = new WP_Query($current_args);
-            ?>
-
-            <?php if ($current->have_posts()) : ?>
-
-                <h2>Current Listings</h2>
-
-                <div class="featured-listings-carousel">
-
-                    <?php while ($current->have_posts()) : $current->the_post(); ?>
-
-                        <div class="featured-carousel-item">
-
-                            <div class="carousel-item-img">
-                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('presales-thumb'); ?></a>
-                            </div>
-
-                            <div class="carousel-item-body">
-                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                            </div>
-
-                        </div>
-                        <!-- /.featured-carousel-item -->
-
-                    <?php endwhile; ?>
-                    <?php wp_reset_query(); ?>
-
-                </div>
-                <!-- /#featured-listings-carousel -->
-
-            <?php endif; ?>
+                <?php echo do_shortcode('[rps-listing-carousel agent_id=1527289 max_slides=1 slide_width=400]'); ?>
 
             <?php
 
