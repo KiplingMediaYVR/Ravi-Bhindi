@@ -9,3 +9,26 @@
         height: 50px;
     }
 }
+
+/*------------------------------------*\
+   #MAILCHIMP STYLES
+\*------------------------------------*/
+
+#mc_embed_signup .mc-field-group.input-group ul {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#mc_embed_signup .mc-field-group.input-group ul li {
+    line-height: 1;
+}
+
+#mc_embed_signup .mc-field-group.input-group label {
+    margin-left: 5px;
+}
+
+#mc_embed_signup .mc-field-group.input-group input[type=checkbox] {
+    position: relative;
+    top: 2px;
+}

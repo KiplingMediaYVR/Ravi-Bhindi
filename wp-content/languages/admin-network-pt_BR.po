@@ -1,5 +1,5 @@
-# Translation of WordPress - 5.1.x - Development - Administration - Network Admin in Portuguese (Brazil)
-# This file is distributed under the same license as the WordPress - 5.1.x - Development - Administration - Network Admin package.
+# Translation of WordPress - 5.2.x - Development - Administration - Network Admin in Portuguese (Brazil)
+# This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2019-01-31 22:03:27+0000\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: pt_BR\n"
-"Project-Id-Version: WordPress - 5.1.x - Development - Administration - Network Admin\n"
+"Project-Id-Version: WordPress - 5.2.x - Development - Administration - Network Admin\n"
 
 #. translators: %s: DO_NOT_UPGRADE_GLOBAL_TABLES
 #: wp-admin/includes/network.php:113
@@ -44,10 +44,6 @@ msgstr "Instalação com subdiretório"
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:671
 msgid "Active Child Theme"
 msgstr "Ativar tema descendente"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:666
-msgid "Active Theme"
-msgstr "Ativar tema"
 
 #: wp-admin/network/site-info.php:192
 msgid "Attributes"
@@ -215,7 +211,7 @@ msgstr "Ativar"
 msgid "No sites found."
 msgstr "Nenhum site encontrado."
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:173
+#: wp-admin/includes/class-wp-ms-users-list-table.php:171
 msgctxt "user"
 msgid "Registered"
 msgstr "Registrado"
@@ -258,7 +254,7 @@ msgid_plural "Enabled <span class=\"count\">(%s)</span>"
 msgstr[0] "Ativado <span class=\"count\">(%s)</span>"
 msgstr[1] "Ativados <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:144
+#: wp-admin/includes/class-wp-ms-users-list-table.php:142
 msgid "Super Admin <span class=\"count\">(%s)</span>"
 msgid_plural "Super Admins <span class=\"count\">(%s)</span>"
 msgstr[0] "Super Admin <span class=\"count\">(%s)</span>"
@@ -339,12 +335,12 @@ msgstr "Habilitar %s na rede"
 msgid "Network Disable %s"
 msgstr "Desabilitar %s na rede"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:118
+#: wp-admin/includes/class-wp-ms-users-list-table.php:116
 msgctxt "user"
 msgid "Not Spam"
 msgstr "Não é spam"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:117
+#: wp-admin/includes/class-wp-ms-users-list-table.php:115
 msgctxt "user"
 msgid "Mark as Spam"
 msgstr "Marcar como spam"
@@ -492,7 +488,7 @@ msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\">Doc
 msgstr "<a href=\"https://codex.wordpress.org/https://codex.wordpress.org/pt-br:Administrar_Rede_-_Configurações\" target=\"_blank\">Documentação sobre configurações da rede</a>"
 
 #. translators: 1: site url, 2: server error message
-#: wp-admin/network/upgrade.php:96
+#: wp-admin/network/upgrade.php:97
 msgid "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: %2$s"
 msgstr "Atenção! Problema ao atualizar %1$s. O seu servidor pode estar impedido de se conectar aos sites rodando nele. Mensagem de erro: %2$s"
 
@@ -623,12 +619,12 @@ msgstr "Tarefas rápidas"
 msgid "Only use this screen once you have updated to a new version of WordPress through Updates/Available Updates (via the Network Administration navigation menu or the Toolbar). Clicking the Upgrade Network button will step through each site in the network, five at a time, and make sure any database updates are applied."
 msgstr "Apenas use esta tela após ter atualizado para a versão mais recente do WordPress em Atualizações/Atualizações Disponíveis (através do menu Administração da Rede na Barra de Ferramentas). Ao clicar no botão Atualizar Rede cada site da rede será acessado, cinco por vez, para garantir que as atualizações foram aplicadas."
 
-#: wp-admin/network/upgrade.php:137
+#: wp-admin/network/upgrade.php:138
 msgid "WordPress has been updated! Before we send you on your way, we need to individually upgrade the sites in your network."
 msgstr "O WordPress foi atualizado! Antes de prosseguir, precisamos atualizar os sites de sua rede individualmente."
 
 #: wp-admin/network/upgrade.php:15 wp-admin/network/upgrade.php:42
-#: wp-admin/network/upgrade.php:141 wp-admin/network/menu.php:34
+#: wp-admin/network/upgrade.php:142 wp-admin/network/menu.php:34
 msgid "Upgrade Network"
 msgstr "Atualizar rede"
 
@@ -859,6 +855,10 @@ msgstr "Rede"
 msgid "This screen allows you to configure a network as having subdomains (<code>site1.example.com</code>) or subdirectories (<code>example.com/site1</code>). Subdomains require wildcard subdomains to be enabled in Apache and DNS records, if your host allows it."
 msgstr "Esta tela permite que você configure uma rede formada por subdomínios  (<code>site1.exemplo.com</code>) ou subdiretórios (<code>exemplo.com/site1</code>). Os subdomínios necessitam de um wildcard para serem ativados nos registros Apache e DNS, se sua hospedagem permitir."
 
+#: wp-admin/includes/network.php:189
+msgid "Note:"
+msgstr "Note:"
+
 #: wp-admin/includes/network.php:155
 msgid "ERROR: The network could not be created."
 msgstr "ERRO: Não foi possível criar a rede."
@@ -1078,7 +1078,7 @@ msgstr "Se este processo falhar por qualquer motivo, quando os usuários acessar
 msgid "The following words are reserved for use by WordPress functions and cannot be used as blog names: %s"
 msgstr "As seguintes palavras são reservadas para uso de funções do WordPress e não podem ser usadas como nomes de blogs: %s"
 
-#: wp-admin/network/upgrade.php:121
+#: wp-admin/network/upgrade.php:122
 msgid "If your browser doesn&#8217;t start loading the next page automatically, click this link:"
 msgstr "Se o seu navegador não começar a carregar a página automaticamente, clique neste link:"
 
@@ -1182,7 +1182,7 @@ msgstr "O autor do primeiro comentário em um novo site."
 msgid "The URL for the first comment on a new site."
 msgstr "O URL para o primeiro comentário em um novo site."
 
-#: wp-admin/network/upgrade.php:72
+#: wp-admin/network/upgrade.php:73
 msgid "All done!"
 msgstr "Concluído!"
 
@@ -1235,7 +1235,7 @@ msgstr "Endereço de e-mail ausente."
 msgid "[%s] New Site Created"
 msgstr "[%s] Novo site criado"
 
-#: wp-admin/network/upgrade.php:121
+#: wp-admin/network/upgrade.php:122
 msgid "Next Sites"
 msgstr "Próximos sites"
 
