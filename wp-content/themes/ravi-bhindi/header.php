@@ -62,31 +62,12 @@
             </div>
 
             <div class="main-menu">
-                <ul>
-                    <li><a href="<?php echo site_url(); ?>/about-us/">About us</a></li>
-                    <li><a href="<?php echo site_url(); ?>/listing/">Properties</a></li>
-
-                    <li class="with-submenu">
-
-                        <a href="#">Find an Agent</a>
-
-                        <div class="submenu">
-                            <a href="<?php echo site_url(); ?>/find-an-agent/#Vancouver">Vancouver</a>
-                            <a href="<?php echo site_url(); ?>/find-an-agent/#Burnaby">Burnaby</a>
-                            <a href="<?php echo site_url(); ?>/find-an-agent/#Richmond">Richmond</a>
-                            <a href="<?php echo site_url(); ?>/find-an-agent/#NewWest">New West</a>
-                            <a href="<?php echo site_url(); ?>/find-an-agent/#Surrey">Surrey</a>
-                            <a href="<?php echo site_url(); ?>/find-an-agent/#WhiteRock">White Rock</a>
-                            <a href="<?php echo site_url(); ?>/find-an-agent/#Abbotsford">Abbotsford</a>
-                            <a href="<?php echo site_url(); ?>/find-an-agent/#MapleRidge">Maple Ridge</a>
-                            <a href="<?php echo site_url(); ?>/find-an-agent/#PittMeadows">Pitt Meadows</a>
-                            <a href="<?php echo site_url(); ?>/find-an-agent/#NorthVancouver">North Vancouver</a>
-                            <a href="<?php echo site_url(); ?>/find-an-agent/#PortCoquitlam">Port Coquitlam</a>
-                            <a href="<?php echo site_url(); ?>/find-an-agent/#Coquitlam">Coquitlam</a>
-                            <a href="<?php echo site_url(); ?>/find-an-agent/#PortMoody">Port Moody</a>
-                        </div>
-                    </li>
-                </ul>
+                <?php wp_nav_menu(
+                    array(
+                        'theme_location' => 'main-menu',
+                        'container' => false
+                    )
+                ); ?>
             </div>
             <!-- /.main-menu -->
 

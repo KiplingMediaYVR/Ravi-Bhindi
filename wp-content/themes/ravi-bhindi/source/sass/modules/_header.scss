@@ -78,12 +78,12 @@
         li {
 
             /* SUBMENU */
-            &.with-submenu {
+            &.menu-item-has-children {
                 position: relative;
 
                 &:hover {
 
-                    .submenu {
+                    .sub-menu {
                         display: block;
                     }
                 }
@@ -98,7 +98,7 @@
     }
 }
 
-.submenu {
+.sub-menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -109,6 +109,10 @@
 
     &:hover {
         display: block;
+    }
+
+    li {
+        width: 100%;
     }
 
     a {
