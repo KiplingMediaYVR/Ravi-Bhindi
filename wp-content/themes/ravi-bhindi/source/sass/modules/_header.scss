@@ -3,6 +3,10 @@
     #header {
         height: 80vh;
 
+        @include media-breakpoint-up(md) {
+            background-position-y: -140px;
+        }
+
         @include media-breakpoint-down(sm) {
             height: 300px;
             margin-bottom: 680px; /* SEARCH FORM HEIGHT */
@@ -70,35 +74,52 @@
         width: 100%;
         text-align: center;
     }
+}
 
-    ul {
-        @include list-reset();
-        @include list-float();
+.menu {
+    @include list-reset();
+    @include list-float();
 
-        li {
+    > li {
 
-            /* SUBMENU */
-            &.menu-item-has-children {
-                position: relative;
+        /* SUBMENU */
+        &.menu-item-has-children {
+            position: relative;
 
-                &:hover {
+            &:hover {
 
-                    .sub-menu {
-                        display: block;
-                    }
+                .sub-menu {
+                    display: block;
                 }
             }
+        }
 
-            a {
-                color: #FFF;
-                margin: 0 10px;
-                text-transform: uppercase;
+        > a {
+            margin: 0 10px;
+            font-size: em(18);
+            font-weight: 700;
+            color: #222;
+            text-decoration: underline;
+            text-transform: uppercase;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            @include media-breakpoint-down(sm) {
+                margin: 0;
+                padding: 5px 10px;
+                font-size: em(11);
+                color: $white;
+                background-color: #222;
+                text-decoration: none;
             }
         }
     }
 }
 
 .sub-menu {
+    @include list-reset();
     display: none;
     position: absolute;
     top: 100%;
@@ -111,21 +132,21 @@
         display: block;
     }
 
-    li {
+    > li {
         width: 100%;
-    }
 
-    a {
-        display: block;
-        padding: 10px 5px;
-        margin: 0 !important;
-        font-size: em(13);
-        color: #FFF;
-        text-decoration: none;
-        @include transition(all 200ms ease);
+        > a {
+            display: block;
+            padding: 10px 5px 10px 15px;
+            margin: 0 !important;
+            font-size: em(13);
+            color: #FFF;
+            text-decoration: none;
+            @include transition(all 200ms ease);
 
-        &:hover {
-            background-color: darken($brand-yellow, 10%);
+            &:hover {
+                background-color: darken($brand-yellow, 10%);
+            }
         }
     }
 }
